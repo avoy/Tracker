@@ -1,0 +1,520 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = alias; 
+            externalType = varchar; 
+            name = alias; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 20; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "assigned_to"; 
+            externalType = mediumint; 
+            name = assignedTo; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "bug_file_loc"; 
+            externalType = text; 
+            name = bugFileLoc; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 65535; 
+        }, 
+        {
+            columnName = "bug_id"; 
+            externalType = mediumint; 
+            name = bugId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "bug_severity"; 
+            externalType = varchar; 
+            name = bugSeverity; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = "bug_status"; 
+            externalType = varchar; 
+            name = bugStatus; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = "cf_processcat"; 
+            externalType = varchar; 
+            name = category; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = "cclist_accessible"; 
+            externalType = tinyint; 
+            name = cclistAccessible; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "cf_code_reviewed"; 
+            externalType = varchar; 
+            name = codeReviewed; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 10; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "component_id"; 
+            externalType = smallint; 
+            name = componentId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "creation_ts"; 
+            externalType = datetime; 
+            name = creationTs; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = deadline; 
+            externalType = datetime; 
+            name = deadline; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = "delta_ts"; 
+            externalType = datetime; 
+            name = deltaTs; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "cf_eng_docs_completed"; 
+            externalType = varchar; 
+            name = engDocsCompleted; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 10; 
+        }, 
+        {
+            columnName = "estimated_time"; 
+            externalType = decimal; 
+            name = estimatedTime; 
+            precision = 5; 
+            scale = 2; 
+            valueClassName = NSDecimalNumber; 
+            valueType = B; 
+        }, 
+        {
+            columnName = everconfirmed; 
+            externalType = tinyint; 
+            name = everconfirmed; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "cf_hot"; 
+            externalType = varchar; 
+            name = hot; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 10; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = keywords; 
+            externalType = mediumtext; 
+            name = keywords1; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = lastdiffed; 
+            externalType = datetime; 
+            name = lastdiffed; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "cf_level"; 
+            externalType = varchar; 
+            name = level; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "op_sys"; 
+            externalType = varchar; 
+            name = opSys; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = priority; 
+            externalType = varchar; 
+            name = priority; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "product_id"; 
+            externalType = smallint; 
+            name = productId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "qa_contact"; 
+            externalType = mediumint; 
+            name = qaContactId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = rank; 
+            externalType = mediumint; 
+            internalInfo = {"_nameInObjectStore" = "cf_mode"; }; 
+            name = rank; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "cf_release_number"; 
+            externalType = varchar; 
+            name = relNum; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 5; 
+        }, 
+        {
+            columnName = "remaining_time"; 
+            externalType = decimal; 
+            name = remainingTime; 
+            precision = 5; 
+            scale = 2; 
+            valueClassName = NSDecimalNumber; 
+            valueType = B; 
+        }, 
+        {
+            columnName = "rep_platform"; 
+            externalType = varchar; 
+            name = repPlatform; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = "reporter_accessible"; 
+            externalType = tinyint; 
+            name = reporterAccessible; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = reporter; 
+            externalType = mediumint; 
+            name = reporterId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = resolution; 
+            externalType = varchar; 
+            name = resolution; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = "short_desc"; 
+            externalType = mediumtext; 
+            name = shortDesc; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            columnName = "cf_status"; 
+            externalType = varchar; 
+            name = state; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = "status_whiteboard"; 
+            externalType = mediumtext; 
+            name = statusWhiteboard; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            columnName = "cf_supportcase"; 
+            externalType = mediumtext; 
+            name = sfCases; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "cf_story_reviewed"; 
+            externalType = varchar; 
+            name = storyReviewed; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 10; 
+        }, 
+        {
+            columnName = "target_milestone"; 
+            externalType = varchar; 
+            name = targetMilestone; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 20; 
+        }, 
+        {
+            columnName = "cf_type"; 
+            externalType = varchar; 
+            name = type; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "cf_unit_tests_completed"; 
+            externalType = varchar; 
+            name = unitTestsCompleted; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 10; 
+        }, 
+        {
+            columnName = version; 
+            externalType = varchar; 
+            name = version; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = votes; 
+            externalType = mediumint; 
+            name = votes; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (bugId); 
+    className = Item; 
+    classProperties = (
+        qaContact, 
+        targetMilestone, 
+        resolution, 
+        component, 
+        bugFileLoc, 
+        creationTs, 
+        product, 
+        bugSeverity, 
+        assignee, 
+        bugStatus, 
+        repPlatform, 
+        reporter, 
+        productId, 
+        qaContactId, 
+        shortDesc, 
+        deadline, 
+        bugId, 
+        statusWhiteboard, 
+        priority, 
+        version, 
+        lastdiffed, 
+        children, 
+        parents, 
+        activities, 
+        reporterId, 
+        estimatedTime, 
+        remainingTime, 
+        descriptions, 
+        keywords, 
+        type, 
+        relNum, 
+        state, 
+        codeReviewed, 
+        engDocsCompleted, 
+        storyReviewed, 
+        unitTestsCompleted
+    ); 
+    externalName = bugs; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (
+            qaContact, 
+            targetMilestone, 
+            resolution, 
+            remainingTime, 
+            bugFileLoc, 
+            reporterAccessible, 
+            creationTs, 
+            votes, 
+            componentId, 
+            alias, 
+            bugSeverity, 
+            estimatedTime, 
+            bugStatus, 
+            repPlatform, 
+            reporter, 
+            productId, 
+            deltaTs, 
+            shortDesc, 
+            deadline, 
+            statusWhiteboard, 
+            everconfirmed, 
+            opSys, 
+            priority, 
+            keywords, 
+            cclistAccessible, 
+            version, 
+            lastdiffed
+        ); 
+        uniqueID = 196630599; 
+    }; 
+    name = Item; 
+    primaryKeyAttributes = (bugId); 
+    relationships = (
+        {
+            destination = BugsActivity; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = bugId; sourceAttribute = bugId; }); 
+            name = activities; 
+        }, 
+        {
+            destination = Profiles; 
+            internalInfo = {uniqueID = 196630750; }; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = userid; sourceAttribute = assignedTo; }); 
+            name = assignee; 
+        }, 
+        {
+            definition = "toDependencies.toChild"; 
+            internalInfo = {"_nameInObjectStore" = "toDependencies_toChild"; }; 
+            joinSemantic = EOInnerJoin; 
+            name = children; 
+        }, 
+        {
+            destination = Components; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = componentId; sourceAttribute = componentId; }); 
+            name = component; 
+        }, 
+        {
+            destination = Longdescs; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = bugId; sourceAttribute = bugId; }); 
+            name = descriptions; 
+        }, 
+        {
+            definition = "toKeywords.toKeyword"; 
+            internalInfo = {"_nameInObjectStore" = "toKeywords_toKeyword"; }; 
+            joinSemantic = EOInnerJoin; 
+            name = keywords; 
+        }, 
+        {
+            definition = "toBlocked.toParent"; 
+            internalInfo = {"_nameInObjectStore" = "toBlocked_toParent"; }; 
+            joinSemantic = EOInnerJoin; 
+            name = parents; 
+        }, 
+        {
+            destination = Products; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = productId; sourceAttribute = productId; }); 
+            name = product; 
+        }, 
+        {
+            destination = Profiles; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = userid; sourceAttribute = qaContactId; }); 
+            name = qaContact; 
+        }, 
+        {
+            destination = Profiles; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = userid; sourceAttribute = reporterId; }); 
+            name = reporter; 
+        }, 
+        {
+            destination = Dependencies; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = dependson; sourceAttribute = bugId; }); 
+            name = toBlocked; 
+            userInfo = {modificationDate = "2004-04-21 01:13:36 +0000"; }; 
+        }, 
+        {
+            destination = Dependencies; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = blocked; sourceAttribute = bugId; }); 
+            name = toDependencies; 
+            userInfo = {modificationDate = "2004-04-21 01:12:31 +0000"; }; 
+        }, 
+        {
+            destination = Keywords; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = bugId; sourceAttribute = bugId; }); 
+            name = toKeywords; 
+        }
+    ); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

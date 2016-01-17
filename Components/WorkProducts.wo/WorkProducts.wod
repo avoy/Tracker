@@ -1,0 +1,552 @@
+ActiveImage1: WOActiveImage {
+	action = emailCurrentPage;
+	border = 0;
+	filename = "Email.gif";
+	framework = "app";
+}
+
+CheckBox1: WOCheckboxMatrix {
+	list = session.potentialStates;
+	item = aState;
+	selections = selectedStates;
+	maxColumns = 7;
+}
+
+Conditional1: WOConditional {
+	condition = currentItem.isURL;
+	negate = true;
+}
+
+Conditional10: WOConditional {
+	condition = currentItem.isURL;
+	negate = true;
+}
+
+
+Conditional11: WOConditional {
+	condition = currentItem.isURL;
+}
+
+Conditional12: WOConditional {
+	condition = currentItem.isURL;
+	negate = true;
+}
+
+Conditional13: WOConditional {
+	condition = currentItem.isURL;
+	negate = true;
+}
+
+Conditional14: WOConditional {
+	condition = currentItem.isURL;
+}
+
+Conditional15: WOConditional {
+	condition = launchItems.@count;
+}
+
+Conditional16: WOConditional {
+	condition = measurementItems.@count;
+}
+
+Conditional17: WOConditional {
+	condition = developmentItems.@count;
+}
+
+Conditional18: WOConditional {
+	condition = isComplete;
+}
+
+Conditional19: WOConditional {
+	condition = isComplete;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = planningItems.@count;
+}
+
+Conditional20: WOConditional {
+	condition = isComplete;
+	negate = true;
+}
+
+Conditional21: WOConditional {
+	condition = isPorURL;
+}
+
+Conditional22: WOConditional {
+	condition = isPorURL;
+	negate = true;
+}
+
+Conditional23: WOConditional {
+	condition = preConceptItems.@count;
+}
+
+Conditional24: WOConditional {
+	condition = conceptItems.@count;
+}
+
+Conditional25: WOConditional {
+	condition = isComplete;
+}
+
+Conditional26: WOConditional {
+	condition = isComplete;
+	negate = true;
+}
+
+Conditional27: WOConditional {
+	condition = isComplete;
+}
+
+Conditional28: WOConditional {
+	condition = isComplete;
+	negate = true;
+}
+
+Conditional29: WOConditional {
+	condition = isComplete;
+}
+
+Conditional3: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Conditional30: WOConditional {
+	condition = isComplete;
+	negate = true;
+}
+
+Conditional31: WOConditional {
+	condition = isComplete;
+}
+
+Conditional32: WOConditional {
+	condition = isComplete;
+	negate = true;
+}
+
+Conditional33: WOConditional {
+	condition = isComplete;
+}
+
+Conditional34: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = currentItem.isURL;
+}
+
+Conditional5: WOConditional {
+	condition = currentItem.isURL;
+}
+
+Conditional6: WOConditional {
+	condition = currentItem.isURL;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Conditional8: WOConditional {
+	condition = isEmail;
+}
+
+Conditional9: WOConditional {
+	condition = currentItem.isURL;
+}
+
+Form1: WOForm {
+}
+
+Hyperlink1: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink10: WOHyperlink {
+	href = currentItem.bugFileLoc;
+}
+
+Hyperlink11: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink12: WOHyperlink {
+	href = planOfRecordURL;
+}
+
+Hyperlink13: WOHyperlink {
+	href = planOfRecordURL;
+}
+
+Hyperlink2: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink3: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink4: WOHyperlink {
+	href = currentItem.bugFileLoc;
+}
+
+Hyperlink5: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink6: WOHyperlink {
+	href = currentItem.bugFileLoc;
+}
+
+Hyperlink7: WOHyperlink {
+	directActionName = "priorities";
+}
+
+Hyperlink8: WOHyperlink {
+	href = currentItem.bugFileLoc;
+}
+
+Hyperlink9: WOHyperlink {
+	href = currentItem.bugFileLoc;
+}
+
+Image1: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image10: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image11: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image12: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image2: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image3: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image4: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image5: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image6: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image7: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image8: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image9: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Repetition1: WORepetition {
+	item = currentItem;
+	list = preConceptItems;
+}
+Repetition2: WORepetition {
+	item = currentItem;
+	list = conceptItems;
+}
+Repetition3: WORepetition {
+	item = currentItem;
+	list = planningItems;
+}
+
+Repetition4: WORepetition {
+	item = currentItem;
+	list = launchItems;
+}
+
+Repetition5: WORepetition {
+	item = currentItem;
+	list = measurementItems;
+}
+
+Repetition6: WORepetition {
+	item = aState;
+	list = selectedStates;
+}
+Repetition7: WORepetition {
+	item = currentItem;
+	list = developmentItems;
+}
+
+
+String1: WOString {
+	value = currentItem.shortDesc;
+}
+
+String10: WOString {
+	value = currentItem.simplePriority;
+}
+
+String11: WOString {
+	value = currentItem.simplePriority;
+}
+
+String12: WOString {
+	value = currentItem.simplePriority;
+}
+
+String13: WOString {
+	value = currentItem.shortDesc;
+}
+
+String14: WOString {
+	value = currentItem.shortDesc;
+}
+
+String15: WOString {
+	value = currentItem.shortDesc;
+}
+
+String16: WOString {
+	value = currentItem.state;
+}
+
+String17: WOString {
+	value = currentItem.version;
+}
+
+String18: WOString {
+	value = today;
+	dateformat = "%B %d, %Y  %I:%M:%S %p";
+}
+
+String19: WOString {
+	value = currentItem.shortDesc;
+}
+
+String2: WOString {
+	value = currentItem.statusWhiteboard;
+}
+
+String20: WOString {
+	value = currentItem.statusWhiteboard;
+}
+
+String21: WOString {
+	value = currentItem.shortDesc;
+}
+
+String22: WOString {
+	value = currentItem.shortDesc;
+}
+
+String23: WOString {
+	value = currentItem.shortDesc;
+}
+
+String24: WOString {
+	value = currentItem.bugId;
+}
+
+String25: WOString {
+	value = aState;
+}
+
+String26: WOString {
+	value = today;
+	dateformat = "%B %d, %Y  %I:%M:%S %p";
+}
+
+String27: WOString {
+	value = aState;
+}
+
+String28: WOString {
+	value = currentItem.version;
+}
+
+String29: WOString {
+	value = itemNumber;
+}
+
+String3: WOString {
+	value = currentItem.bugId;
+}
+
+String30: WOString {
+	value = itemNumber;
+}
+
+String31: WOString {
+	value = itemNumber;
+}
+
+String32: WOString {
+	value = itemNumber;
+}
+
+String33: WOString {
+	value = currentItem.simplePriority;
+}
+
+String34: WOString {
+	value = itemNumber;
+}
+
+String35: WOString {
+	value = currentItem.state;
+}
+
+String36: WOString {
+	value = currentItem.version;
+}
+
+String37: WOString {
+	value = currentItem.statusWhiteboard;
+}
+
+String38: WOString {
+	value = currentItem.shortDesc;
+}
+
+String39: WOString {
+	value = currentItem.shortDesc;
+}
+
+String4: WOString {
+	value = currentItem.version;
+}
+
+String40: WOString {
+	value = currentItem.bugId;
+}
+
+String41: WOString {
+	value = currentItem.simplePriority;
+}
+
+String42: WOString {
+	value = itemNumber;
+}
+
+String43: WOString {
+	value = assignee;
+}
+
+String44: WOString {
+	value = assignee;
+}
+
+String45: WOString {
+	value = assignee;
+}
+
+String46: WOString {
+	value = assignee;
+}
+
+String47: WOString {
+	value = assignee;
+}
+
+String48: WOString {
+	value = assignee;
+}
+
+String49: WOString {
+	value = currentItem.component.componentName;
+}
+
+String5: WOString {
+	value = currentItem.bugId;
+}
+
+String50: WOString {
+	value = currentItem.component.componentName;
+}
+
+String51: WOString {
+	value = currentItem.component.componentName;
+}
+
+String52: WOString {
+	value = currentItem.component.componentName;
+}
+
+String53: WOString {
+	value = currentItem.component.componentName;
+}
+
+String54: WOString {
+	value = currentItem.component.componentName;
+}
+
+String55: WOString {
+	value = currentItem.type;
+}
+
+String56: WOString {
+	value = currentItem.type;
+}
+
+String57: WOString {
+	value = currentItem.type;
+}
+
+String58: WOString {
+	value = currentItem.type;
+}
+
+String59: WOString {
+	value = currentItem.type;
+}
+
+String6: WOString {
+	value = currentItem.bugId;
+}
+
+String60: WOString {
+	value = currentItem.type;
+}
+
+String61: WOString {
+	value = currentItem.version;
+}
+
+String7: WOString {
+	value = currentItem.state;
+}
+
+String8: WOString {
+	value = currentItem.state;
+}
+
+String9: WOString {
+	value = currentItem.state;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = goUpdate;
+	value = "Update";
+}

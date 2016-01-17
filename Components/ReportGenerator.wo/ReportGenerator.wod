@@ -1,0 +1,175 @@
+Conditional1: WOConditional {
+	condition = showReport;
+}
+
+Conditional10: WOConditional {
+	condition = displayHyperlink;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = columnCount;
+}
+
+Conditional3: WOConditional {
+	condition = columnCount;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = hideReportSpecifier;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = displayGroup.allObjects.@count;
+}
+
+Conditional6: WOConditional {
+	condition = isError;
+}
+
+Conditional7: WOConditional {
+	condition = aBugStat.allBugs.@count;
+}
+
+Conditional8: WOConditional {
+	condition = aBugStat.allBugs.@count;
+	negate = true;
+}
+
+Conditional9: WOConditional {
+	condition = displayHyperlink;
+}
+
+Form2: WOForm {
+	multipleSubmit = true;
+}
+
+Hyperlink1: WOHyperlink {
+	href = urlForColumnBugs;
+}
+
+Hyperlink2: WOHyperlink {
+	href = urlForAll;
+}
+
+Hyperlink3: WOHyperlink {
+	href = urlForRow;
+}
+
+Hyperlink7: WOHyperlink {
+	href = displayBugs;
+
+}
+
+
+PopUpButton1: WOPopUpButton {
+	item = aRow;
+	list = rowsAxisList;
+	selection = selectedRow;
+}
+
+PopUpButton2: WOPopUpButton {
+	item = aColumn;
+	list = columnsAxisList;
+	selection = selectedColumn;
+}
+
+Repetition1: WORepetition {
+	item = aColumn;
+	list = distinctColumns;
+}
+
+Repetition5: WORepetition {
+	item = aValue;
+	list = aBugStat.sortedValues;
+	index = index;
+}
+
+Repetition6: WORepetition {
+	item = aBugStat;
+	list = bugStats;
+}
+
+Repetition7: WORepetition {
+	item = aString;
+	list = distinctColumns;
+}
+
+String1: WOString {
+	value = columnCount;
+}
+
+String10: WOString {
+	value = aBugStat.allBugs.@count;
+}
+
+String12: WOString {
+	value = aValue;
+}
+
+String13: WOString {
+	value = aValue;
+}
+
+String14: WOString {
+	value = aBugStat.label;
+}
+
+String15: WOString {
+	value = aString;
+}
+
+String16: WOString {
+	value = selectedColumn;
+}
+
+String17: WOString {
+	value = selectedRow;
+}
+
+
+String18: WOString {
+	value = errorMessage;
+}
+
+String2: WOString {
+	value = displayGroup.allObjects.@count;
+}
+String20: WOString {
+	value = urlForColumnBugs;
+}
+String21: WOString {
+	value = displayAllBugs;
+}
+
+String22: WOString {
+	value = displayAllBugs;
+}
+
+String23: WOString {
+}
+
+String24: WOString {
+	value = urlForColumnBugs;
+}
+String25: WOString {
+	value = urlForColumnBugs;
+}
+String26: WOString {
+	value = urlForAll;
+}
+
+
+String3: WOString {
+	value = columnCount;
+}
+
+String4: WOString {
+	value = aBugStat.allBugs.@count;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = createReport;
+}

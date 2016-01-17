@@ -1,0 +1,91 @@
+{
+    attributes = (
+        {
+            columnName = "already_wrapped"; 
+            externalType = tinyint; 
+            name = alreadyWrapped; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "bug_id"; 
+            externalType = mediumint; 
+            name = bugId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "bug_when"; 
+            externalType = datetime; 
+            name = bugWhen; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = type; 
+            externalType = tinyint; 
+            internalInfo = {"_nameInObjectStore" = "already_wrapped"; }; 
+            name = descType; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = isprivate; 
+            externalType = tinyint; 
+            name = isprivate; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = thetext; 
+            externalType = mediumtext; 
+            name = thetext; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            columnName = who; 
+            externalType = mediumint; 
+            name = who; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "work_time"; 
+            externalType = decimal; 
+            name = workTime; 
+            precision = 5; 
+            scale = 2; 
+            valueClassName = NSDecimalNumber; 
+            valueType = B; 
+        }
+    ); 
+    attributesUsedForLocking = (isprivate, who, alreadyWrapped, workTime, thetext, descType); 
+    className = EOGenericRecord; 
+    classProperties = (isprivate, who, alreadyWrapped, workTime, bugWhen, thetext, descType, bug); 
+    externalName = longdescs; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (isprivate, who, alreadyWrapped, workTime, bugWhen, bugId, thetext); 
+        uniqueID = 196630507; 
+    }; 
+    name = Longdescs; 
+    primaryKeyAttributes = (bugWhen); 
+    relationships = (
+        {
+            destination = Item; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = bugId; sourceAttribute = bugId; }); 
+            name = bug; 
+        }
+    ); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

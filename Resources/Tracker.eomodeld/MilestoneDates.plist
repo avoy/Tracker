@@ -1,0 +1,110 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = "ACTUAL_DATE"; 
+            externalType = TIMESTAMP; 
+            internalInfo = {"_nameInObjectStore" = "TARGET_DATE"; }; 
+            name = actualDate; 
+            userInfo = {modificationDate = "2004-04-08 23:30:46 +0000"; }; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = COMMENT; 
+            externalType = VARCHAR; 
+            name = comment; 
+            userInfo = {modificationDate = "2004-04-09 01:09:39 +0000"; }; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1000; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "END_DATE"; 
+            externalType = TIMESTAMP; 
+            internalInfo = {"_nameInObjectStore" = "TARGET_DATE"; }; 
+            name = endDate; 
+            userInfo = {modificationDate = "2004-04-08 23:30:46 +0000"; }; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "FORECAST_DATE"; 
+            externalType = TIMESTAMP; 
+            internalInfo = {"_nameInObjectStore" = "TARGET_DATE"; }; 
+            name = forecastDate; 
+            userInfo = {modificationDate = "2004-04-08 23:30:46 +0000"; }; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = MILESTONE; 
+            externalType = VARCHAR; 
+            name = milestone; 
+            userInfo = {modificationDate = "2004-04-08 23:23:23 +0000"; }; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = "MILESTONE_DATE_UID"; 
+            externalType = INTEGER; 
+            name = milestoneDateUid; 
+            precision = 9; 
+            userInfo = {modificationDate = "2004-04-08 23:22:42 +0000"; }; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "PLANNED_DATE"; 
+            externalType = TIMESTAMP; 
+            internalInfo = {"_nameInObjectStore" = "TARGET_DATE"; }; 
+            name = plannedDate; 
+            userInfo = {modificationDate = "2004-04-08 23:30:46 +0000"; }; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "RELEASE_NAME"; 
+            externalType = VARCHAR; 
+            name = releaseName; 
+            userInfo = {modificationDate = "2004-04-09 01:09:39 +0000"; }; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "START_DATE"; 
+            externalType = TIMESTAMP; 
+            internalInfo = {"_nameInObjectStore" = "TARGET_DATE"; }; 
+            name = startDate; 
+            userInfo = {modificationDate = "2004-04-08 23:30:46 +0000"; }; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }
+    ); 
+    attributesUsedForLocking = (milestoneDateUid, forecastDate); 
+    className = MilestoneDates; 
+    classProperties = (
+        releaseName, 
+        milestone, 
+        startDate, 
+        endDate, 
+        actualDate, 
+        comment, 
+        plannedDate, 
+        forecastDate
+    ); 
+    externalName = "MILESTONE_DATES"; 
+    internalInfo = {"_clientClassPropertyNames" = (actual); }; 
+    name = MilestoneDates; 
+    primaryKeyAttributes = (milestoneDateUid); 
+    userInfo = {modificationDate = "2004-04-10 00:14:08 +0000"; }; 
+}

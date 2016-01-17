@@ -1,0 +1,346 @@
+ActiveImage1: WOActiveImage {
+	action = emailCurrentPage;
+	border = 0;
+	filename = "Email.gif";
+	framework = "app";
+}
+
+CheckBox1: WOCheckboxMatrix {
+	list = session.potentialStates;
+	item = aState;
+	selections = selectedStates;
+	maxColumns = 7;
+}
+
+Conditional1: WOConditional {
+	condition = newBugs.@count;
+}
+
+Conditional10: WOConditional {
+	condition = currentItem.isURL;
+	negate = true;
+}
+
+
+Conditional11: WOConditional {
+	condition = currentItem.isURL;
+}
+
+Conditional12: WOConditional {
+	condition = currentItem.isURL;
+	negate = true;
+}
+
+Conditional13: WOConditional {
+	condition = currentItem.isURL;
+}
+
+Conditional14: WOConditional {
+	condition = currentItem.isURL;
+	negate = true;
+}
+
+Conditional15: WOConditional {
+	condition = currentItem.isURL;
+}
+
+Conditional16: WOConditional {
+	condition = currentItem.isURL;
+	negate = true;
+}
+
+Conditional17: WOConditional {
+	condition = ongoingBugs.@count;
+}
+
+Conditional18: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Conditional19: WOConditional {
+	condition = showLater;
+}
+
+Conditional2: WOConditional {
+	condition = laterBugs.@count;
+}
+
+Conditional20: WOConditional {
+	condition = isComplete;
+}
+
+Conditional21: WOConditional {
+	condition = isPorURL;
+}
+
+Conditional22: WOConditional {
+	condition = isPorURL;
+	negate = true;
+}
+
+Conditional23: WOConditional {
+	condition = criticalBugs.@count;
+}
+
+Conditional24: WOConditional {
+	condition = importantBugs.@count;
+}
+
+Conditional3: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = completeBugs.@count;
+}
+
+Conditional5: WOConditional {
+	condition = currentItem.isURL;
+}
+
+Conditional6: WOConditional {
+	condition = currentItem.isURL;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Conditional8: WOConditional {
+	condition = isEmail;
+}
+
+Conditional9: WOConditional {
+	condition = currentItem.isURL;
+}
+
+Form1: WOForm {
+}
+
+Hyperlink1: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink10: WOHyperlink {
+	href = currentItem.bugFileLoc;
+}
+
+Hyperlink11: WOHyperlink {
+	href = currentItem.bugFileLoc;
+}
+
+Hyperlink12: WOHyperlink {
+	href = planOfRecordURL;
+}
+
+Hyperlink13: WOHyperlink {
+	href = planOfRecordURL;
+}
+
+Hyperlink2: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink3: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink4: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink5: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink6: WOHyperlink {
+	href = currentItem.bugFileLoc;
+}
+
+Hyperlink7: WOHyperlink {
+	directActionName = "priorities";
+}
+
+Hyperlink8: WOHyperlink {
+	href = currentItem.bugFileLoc;
+}
+
+Hyperlink9: WOHyperlink {
+	href = currentItem.bugFileLoc;
+}
+
+Repetition1: WORepetition {
+	item = currentItem;
+	list = criticalBugs;
+}
+Repetition2: WORepetition {
+	item = currentItem;
+	list = importantBugs;
+}
+Repetition3: WORepetition {
+	item = currentItem;
+	list = laterBugs;
+}
+
+Repetition4: WORepetition {
+	item = currentItem;
+	list = newBugs;
+}
+
+Repetition5: WORepetition {
+	item = currentItem;
+	list = completeBugs;
+}
+
+Repetition6: WORepetition {
+	item = aState;
+	list = selectedStates;
+}
+Repetition7: WORepetition {
+	item = currentItem;
+	list = ongoingBugs;
+}
+
+
+String1: WOString {
+	value = currentItem.shortDesc;
+}
+
+String10: WOString {
+	value = currentItem.simplePriority;
+}
+
+String11: WOString {
+	value = currentItem.simplePriority;
+}
+
+String12: WOString {
+	value = currentItem.simplePriority;
+}
+
+String13: WOString {
+	value = currentItem.shortDesc;
+}
+
+String14: WOString {
+	value = currentItem.shortDesc;
+}
+
+String15: WOString {
+	value = currentItem.shortDesc;
+}
+
+String16: WOString {
+	value = currentItem.shortDesc;
+}
+
+String17: WOString {
+	value = currentItem.bugId;
+}
+
+String18: WOString {
+	value = today;
+	dateformat = "%B %d, %Y  %I:%M:%S %p";
+}
+
+String19: WOString {
+	value = currentItem.shortDesc;
+}
+
+String2: WOString {
+	value = currentItem.statusWhiteboard;
+}
+
+String20: WOString {
+	value = currentItem.shortDesc;
+}
+
+String21: WOString {
+	value = currentItem.bugId;
+}
+
+String22: WOString {
+	value = currentItem.shortDesc;
+}
+
+String23: WOString {
+	value = currentItem.shortDesc;
+}
+
+String24: WOString {
+	value = currentItem.shortDesc;
+}
+
+String25: WOString {
+	value = aState;
+}
+
+String26: WOString {
+	value = today;
+	dateformat = "%B %d, %Y  %I:%M:%S %p";
+}
+
+String27: WOString {
+	value = aState;
+}
+
+String28: WOString {
+	value = currentItem.version;
+}
+
+String29: WOString {
+	value = itemNumber;
+}
+
+String3: WOString {
+	value = currentItem.bugId;
+}
+
+String30: WOString {
+	value = itemNumber;
+}
+
+String31: WOString {
+	value = itemNumber;
+}
+
+String32: WOString {
+	value = itemNumber;
+}
+
+String33: WOString {
+	value = currentItem.version;
+}
+
+String4: WOString {
+	value = currentItem.version;
+}
+
+String5: WOString {
+	value = currentItem.bugId;
+}
+
+String6: WOString {
+	value = currentItem.bugId;
+}
+
+String7: WOString {
+	value = currentItem.state;
+}
+
+String8: WOString {
+	value = currentItem.state;
+}
+
+String9: WOString {
+	value = currentItem.state;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = goUpdate;
+	value = "Update";
+}

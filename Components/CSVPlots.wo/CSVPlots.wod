@@ -1,0 +1,29 @@
+Repetition1: WORepetition {
+	item = aKey;
+	list = xValues;
+}
+
+Repetition2: WORepetition {
+	item = aSubPlot;
+	list = plot.plots;
+}
+
+Repetition3: WORepetition {
+	item = aY;
+	list = aSubPlot.yData;
+}
+
+String1: WOString {
+	escapeHTML = false;
+	value = aKey;
+}
+
+String2: WOString {
+	value = aSubPlot.title;
+}
+
+String3: WOString {
+	value = aY;
+	numberformat = "0";
+}
+

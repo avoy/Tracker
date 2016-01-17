@@ -1,0 +1,54 @@
+CollapsibleComponentContent: WOCollapsibleComponentContent { 	openedLabel = "Settings";
+	closedLabel = "Settings";
+}
+
+Conditional1: WOConditional {
+	condition = isWrapped;
+}
+
+Form1: WOForm {
+}
+
+Image1: WOImage {
+	data = newImage;
+	mimeType = "image/gif";
+}
+
+PopUpButton1: WOPopUpButton {
+	item = aString;
+	list = potentialTypes;
+	selection = selectedType;
+}
+
+Repetition1: WORepetition {
+}
+
+SubmitButton1: WOSubmitButton {
+	action = adjustDimensions;
+}
+
+TextField1: WOTextField {
+	value = width;
+	size = 3;
+	numberformat = "0";
+}
+
+TextField2: WOTextField {
+	value = height;
+	size = 3;
+	numberformat = "0";
+}
+
+TextField5: WOTextField {
+	value = yAbs;
+	size = 3;
+	numberformat = "0";
+}
+
+TextField6: WOTextField {
+	value = yTics;
+	size = 3;
+	numberformat = "0";
+}
+
+

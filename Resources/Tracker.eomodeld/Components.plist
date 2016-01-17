@@ -1,0 +1,71 @@
+{
+    attributes = (
+        {
+            columnName = id; 
+            externalType = smallint; 
+            name = componentId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = componentName; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = description; 
+            externalType = mediumtext; 
+            name = conponentDescription; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            columnName = initialowner; 
+            externalType = mediumint; 
+            name = initialowner; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = initialqacontact; 
+            externalType = mediumint; 
+            name = initialqacontact; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "product_id"; 
+            externalType = smallint; 
+            name = productId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }
+    ); 
+    attributesUsedForLocking = (componentId); 
+    className = EOGenericRecord; 
+    classProperties = (
+        initialqacontact, 
+        componentName, 
+        initialowner, 
+        productId, 
+        conponentDescription
+    ); 
+    externalName = components; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (initialqacontact, initialowner, productId, conponentDescription); 
+        uniqueID = 196630644; 
+    }; 
+    name = Components; 
+    primaryKeyAttributes = (componentId); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

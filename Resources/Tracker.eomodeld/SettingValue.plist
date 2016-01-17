@@ -1,0 +1,40 @@
+{
+    attributes = (
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = name; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 32; 
+        }, 
+        {
+            columnName = sortindex; 
+            externalType = smallint; 
+            name = sortindex; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = value; 
+            externalType = varchar; 
+            name = value; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 32; 
+        }
+    ); 
+    attributesUsedForLocking = (sortindex); 
+    className = EOGenericRecord; 
+    classProperties = (name, sortindex, value); 
+    externalName = "setting_value"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (name, sortindex, value); 
+        uniqueID = 196630521; 
+    }; 
+    name = SettingValue; 
+    primaryKeyAttributes = (name, value); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

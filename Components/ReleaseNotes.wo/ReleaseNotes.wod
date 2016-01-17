@@ -1,0 +1,105 @@
+Conditional1: WOConditional {
+	condition = fixedInVersion.@count;
+}
+
+Conditional2: WOConditional {
+	condition = foundInVersion;
+}
+
+Conditional3: WOConditional {
+	condition = currentItem.isWontFix;
+}
+
+Conditional4: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = isEmail;
+}
+
+Conditional6: WOConditional {
+	condition = currentItem.isWontFix;
+}
+
+Conditional7: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Hyperlink1: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink2: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink3: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "releasenotes";
+}
+
+Repetition2: WORepetition {
+	item = currentItem;
+	list = fixedInVersion;
+}
+
+Repetition3: WORepetition {
+	item = currentItem;
+	list = deferredFromVersion;
+}
+
+String1: WOString {
+	value = selectedProject;
+}
+
+String10: WOString {
+	value = currentItem.bugId;
+}
+
+String11: WOString {
+	value = currentItem.version;
+}
+
+String12: WOString {
+	value = currentItem.version;
+}
+String19: WOString {
+	value = aVersion;
+}
+
+String2: WOString {
+	value = today;
+	dateformat = "%B %d, %Y  %I:%M:%S %p";
+}
+
+String3: WOString {
+	value = currentItem.bugId;
+}
+
+String4: WOString {
+	value = currentItem.shortDesc;
+}
+
+String5: WOString {
+	value = currentItem.shortDesc;
+}
+
+String6: WOString {
+	value = currentItem.bugStatus;
+}
+
+String7: WOString {
+	value = currentItem.versionFoundIn;
+}
+
+String8: WOString {
+	value = currentItem.versionFoundIn;
+}
+
+String9: WOString {
+	value = currentItem.bugStatus;
+}
+

@@ -1,0 +1,56 @@
+{
+    attributes = (
+        {
+            columnName = linkinfooter; 
+            externalType = tinyint; 
+            name = linkinfooter; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = name; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = query; 
+            externalType = mediumtext; 
+            name = query; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            columnName = "query_type"; 
+            externalType = tinyint; 
+            name = queryType; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = userid; 
+            externalType = mediumint; 
+            name = userid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (queryType, userid, name, linkinfooter, query); 
+    className = EOGenericRecord; 
+    classProperties = (queryType, userid, name, linkinfooter, query); 
+    externalName = namedqueries; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (queryType, userid, name, linkinfooter, query); 
+        uniqueID = 196630420; 
+    }; 
+    name = Namedqueries; 
+    primaryKeyAttributes = (userid, name); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

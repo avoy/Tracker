@@ -1,0 +1,385 @@
+BatchNavigationBar: WOBatchNavigationBar { 	displayGroup = trustedAccessDisplayGroup;
+}
+
+BatchNavigationBar2: WOBatchNavigationBar { 	displayGroup = secureStorageDisplayGroup;
+}
+
+CheckBox1: WOCheckboxMatrix {
+	list = potentialQueues;
+	item = aQueue;
+	selections = selectedQueues;
+}
+
+Conditional1: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional10: WOConditional {
+	condition = isTA;
+}
+
+Conditional11: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional12: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional13: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional14: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional15: WOConditional {
+	condition = secureStorageDisplayGroup.allObjects.@count;
+}
+
+Conditional16: WOConditional {
+	condition = isSS;
+}
+
+Conditional2: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional31: WOConditional {
+	condition = show;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = secureStorageDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional6: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = trustedAccessDisplayGroup.allObjects.@count;
+}
+
+Conditional8: WOConditional {
+	condition = trustedAccessDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional9: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Form1: WOForm {
+}
+
+Hyperlink1: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink2: WOHyperlink {
+	directActionName = "customerIssues";
+	actionClass = "DirectAction";
+	?customerId = aCustomer.bugId;
+}
+
+Hyperlink3: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink4: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink5: WOHyperlink {
+	directActionName = "customerIssues";
+	actionClass = "DirectAction";
+	?customerId = aCustomer.bugId;
+}
+
+Hyperlink6: WOHyperlink {
+	directActionName = "customerIssues";
+	actionClass = "DirectAction";
+	?customerId = aCustomer.bugId;
+}
+
+Hyperlink7: WOHyperlink {
+	directActionName = "customerIssues";
+	actionClass = "DirectAction";
+	?customerId = aCustomer.bugId;
+}
+
+Hyperlink8: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Image1: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image2: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Repetition1: WORepetition {
+	item = anItem;
+	list = trustedAccessDisplayGroup.displayedObjects;
+}
+
+Repetition2: WORepetition {
+	item = aCustomer;
+	list = customersFromItem;
+}
+
+Repetition3: WORepetition {
+	item = anItem;
+	list = secureStorageResolvedItems;
+}
+
+Repetition4: WORepetition {
+	item = anItem;
+	list = trustedAccessResolvedItems;
+}
+
+Repetition5: WORepetition {
+	item = aCustomer;
+	list = customersFromItem;
+}
+
+Repetition6: WORepetition {
+	item = aCustomer;
+	list = customersFromItem;
+}
+
+Repetition7: WORepetition {
+	item = aCustomer;
+	list = customersFromItem;
+}
+
+Repetition8: WORepetition {
+	item = anItem;
+	list = secureStorageDisplayGroup.displayedObjects;
+}
+
+SortOrder: WOSortOrder { 	
+	key = "bugId";
+	displayKey = "ID";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder2: WOSortOrder { 	
+	key = "bugStatus";
+	displayKey = "Status";
+	displayGroup = secureStorageDisplayGroup;
+}
+
+SortOrder3: WOSortOrder { 	
+	key = "version";
+	displayKey = "Release";
+	displayGroup = secureStorageDisplayGroup;
+}
+
+SortOrder34: WOSortOrder { 	
+	key = "type";
+	displayKey = "Type";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder4: WOSortOrder { 	
+	key = "priority";
+	displayKey = "Priority";
+	displayGroup = secureStorageDisplayGroup;
+}
+
+SortOrder5: WOSortOrder { 	
+	key = "bugStatus";
+	displayKey = "Status";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder6: WOSortOrder { 	
+	key = "priority";
+	displayKey = "Priority";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder7: WOSortOrder { 	
+	key = "version";
+	displayKey = "Release";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder8: WOSortOrder { 	
+	key = "type";
+	displayKey = "Type";
+	displayGroup = secureStorageDisplayGroup;
+}
+
+SortOrder9: WOSortOrder { 	
+	key = "bugId";
+	displayKey = "Id";
+	displayGroup = secureStorageDisplayGroup;
+}
+
+String1: WOString {
+	value = anItem.bugId;
+}
+
+String10: WOString {
+	value = cleanItemDescription;
+}
+
+String11: WOString {
+	value = anItem.bugStatus;
+}
+
+String12: WOString {
+	value = filteredRelease;
+}
+
+String13: WOString {
+	value = anItem.priority;
+}
+
+String14: WOString {
+	value = anItem.type;
+}
+
+String15: WOString {
+	value = anItem.bugId;
+}
+
+String16: WOString {
+	value = cleanCustomerDescription;
+}
+
+String17: WOString {
+	value = cleanItemDescription;
+}
+
+String18: WOString {
+	value = anItem.bugStatus;
+}
+
+String19: WOString {
+	value = filteredRelease;
+}
+
+String2: WOString {
+	value = anItem.priority;
+}
+
+String20: WOString {
+	value = anItem.priority;
+}
+
+String21: WOString {
+	value = anItem.type;
+}
+
+String22: WOString {
+	value = anItem.bugId;
+}
+
+String25: WOString {
+	value = aQueue;
+}
+
+String3: WOString {
+	value = cleanCustomerDescription;
+}
+
+String31: WOString {
+	value = cleanItemDescription;
+}
+
+String33: WOString {
+	value = anItem.bugStatus;
+}
+
+String35: WOString {
+	value = filteredRelease;
+}
+
+String37: WOString {
+	value = anItem.priority;
+}
+
+String38: WOString {
+	value = anItem.bugId;
+}
+
+String4: WOString {
+	value = cleanCustomerDescription;
+}
+
+String5: WOString {
+	value = anItem.bugStatus;
+}
+
+String6: WOString {
+	value = cleanCustomerDescription;
+}
+
+String7: WOString {
+	value = cleanItemDescription;
+}
+
+String75: WOString {
+	value = anItem.type;
+}
+
+String76: WOString {
+	value = anItem.type;
+}
+
+String8: WOString {
+	dateformat = "%b %d, %Y %I:%M:%S %p";
+	value = today;
+}
+
+String9: WOString {
+	value = filteredRelease;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = goUpdate;
+	value = "Update";
+}
+
+TableRow: WOGenericContainer {
+	bgcolor = rowColor;
+	elementName = "tr";
+}
+
+TableRow2: WOGenericContainer {
+	bgcolor = rowColor;
+	elementName = "tr";
+}

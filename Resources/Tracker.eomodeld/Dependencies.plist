@@ -1,0 +1,46 @@
+{
+    attributes = (
+        {
+            columnName = blocked; 
+            externalType = mediumint; 
+            name = blocked; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = dependson; 
+            externalType = mediumint; 
+            name = dependson; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (blocked, dependson); 
+    className = EOGenericRecord; 
+    externalName = dependencies; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {"_clientClassPropertyNames" = (dependson); uniqueID = 196630561; }; 
+    name = Dependencies; 
+    primaryKeyAttributes = (blocked, dependson); 
+    relationships = (
+        {
+            destination = Item; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = bugId; sourceAttribute = dependson; }); 
+            name = toChild; 
+            userInfo = {modificationDate = "2004-04-21 00:16:42 +0000"; }; 
+        }, 
+        {
+            destination = Item; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = bugId; sourceAttribute = blocked; }); 
+            name = toParent; 
+            userInfo = {modificationDate = "2004-04-21 00:16:13 +0000"; }; 
+        }
+    ); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

@@ -1,0 +1,116 @@
+Browser1: WOBrowser {
+	displayString = aProfile.realname;
+	item = aProfile;
+	list = profiles;
+	multiple = true;
+	selections = selectedCC;
+}
+
+CheckBox2: WOCheckBox {
+	selection = hot;
+	value = "true";
+}
+
+Conditional1: WOConditional {
+	condition = isSS;
+}
+
+Form1: WOForm {
+	multipleSubmit = true;
+}
+
+PageWrapper: PageWrapper {
+
+}
+
+PopUpButton1: WOPopUpButton {
+	item = aString;
+	list = potentialComponents;
+	selection = selectedComponent;
+	name = "component";
+}
+
+PopUpButton2: WOPopUpButton {
+	item = aType;
+	list = potentialProducts;
+	selection = selectedProduct;
+	onChange = "submit();";
+
+	name = "product";
+}
+
+PopUpButton4: WOPopUpButton {
+	item = aString;
+	list = potentialSeverities;
+	selection = selectedSeverity;
+}
+
+PopUpButton5: WOPopUpButton {
+	item = aString;
+	list = potentialVersions;
+	selection = selectedVersion;
+}
+
+PopUpButton6: WOPopUpButton {
+	item = aString;
+	list = potentialModels;
+	selection = selectedModel;
+}
+
+PopUpButton7: WOPopUpButton {
+	item = aString;
+	list = potentialModes;
+	selection = selectedMode;
+	noSelectionString = "---";
+}
+
+PopUpButton8: WOPopUpButton {
+	item = aString;
+	list = potentialOSes;
+	noSelectionString = "---";
+	selection = os;
+}
+
+PopUpButton9: WOPopUpButton {
+	item = aString;
+	list = potentialPriorities;
+	selection = selectedPriority;
+}
+
+RadioButtonList: WORadioButtonList { 
+	item = anItem;	
+	list = potentialItemTypes;
+	maxColumns = 2;
+	selection = selectedItemType;
+}
+
+String1: WOString {
+	value = errorMessage;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = submitEscalation;
+}
+
+Text1: WOText {
+	cols = 80;
+	rows = 10;
+	value = theDetails;
+	wrap = "hard";
+}
+
+TextField1: WOTextField {
+	maxlength = 100;
+	size = 80;
+	value = theSummary;
+}
+
+TextField2: WOTextField {
+	value = build;
+}
+
+TextField3: WOTextField {
+	maxlength = 100;
+	size = 80;
+	value = comments;
+}

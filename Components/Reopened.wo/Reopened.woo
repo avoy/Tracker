@@ -1,0 +1,24 @@
+{
+    "WebObjects Release" = "WebObjects 5.0"; 
+    encoding = NSUTF8StringEncoding; 
+    variables = {
+        displayGroup = {
+            class = WODisplayGroup; 
+            dataSource = {
+                class = EODatabaseDataSource; 
+                editingContext = "session.defaultEditingContext"; 
+                fetchSpecification = {
+                    class = EOFetchSpecification; 
+                    entityName = Item; 
+                    fetchLimit = 0; 
+                    isDeep = YES; 
+                }; 
+            }; 
+            formatForLikeQualifier = "%@*"; 
+            localKeys = (); 
+            numberOfObjectsPerBatch = 0; 
+            selectsFirstObjectAfterFetch = YES; 
+            sortOrdering = ({class = EOSortOrdering; key = bugId; selectorName = "compareAscending:"; }); 
+        }; 
+    }; 
+}

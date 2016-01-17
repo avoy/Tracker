@@ -1,0 +1,42 @@
+Body: WOComponentContent {
+	_unroll = true;
+}
+
+BodyContainer: WOBody {
+	filename = "Background.gif";
+	framework = "app";
+}
+
+
+Conditional1: WOConditional {
+	condition = isWrapped;
+
+}
+
+Conditional2: WOConditional {
+	condition = isWrapped;
+	negate = true;
+
+}
+
+Form1: WOForm {
+    method = "get";
+}
+
+Head: D2WHead {
+}
+
+Header: MenuHeader {
+}
+
+
+
+SubmitButton1: WOSubmitButton {
+	action = goFindBug;
+	value = "Find";
+}
+
+TextField1: WOTextField {
+	value = bugNumber;
+	size = 7;
+}

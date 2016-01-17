@@ -1,0 +1,50 @@
+{
+    attributes = (
+        {
+            columnName = id; 
+            externalType = smallint; 
+            name = id; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = description; 
+            externalType = mediumtext; 
+            name = keywordDefsDescription; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = keywordName; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }
+    ); 
+    attributesUsedForLocking = (id); 
+    className = EOGenericRecord; 
+    classProperties = (keywordName, keywordDefsDescription, toBugs); 
+    externalName = keyworddefs; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (keywordDefsDescription, name); 
+        uniqueID = 196630613; 
+    }; 
+    name = Keyworddefs; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = Keywords; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = keywordid; sourceAttribute = id; }); 
+            name = toBugs; 
+        }
+    ); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

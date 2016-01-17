@@ -1,0 +1,281 @@
+CollapsibleComponentContent: WOCollapsibleComponentContent { 	
+	openedLabel = cleanDescription;
+	closedLabel = cleanDescription;
+}
+
+Conditional1: WOConditional {
+	condition = anEo.hasChildren;
+}
+
+Conditional10: WOConditional {
+	condition = anEo.isURL;
+}
+
+Conditional11: WOConditional {
+	condition = isTopLevelStoryCommitted;
+}
+
+Conditional12: WOConditional {
+	condition = isTopLevelStoryCommitted;
+	negate = true;
+}
+
+Conditional13: WOConditional {
+	condition = anEo.isURL;
+	negate = true;
+}
+
+Conditional14: WOConditional {
+	condition = anEo.hasChildren;
+	negate = true;
+}
+
+Conditional15: WOConditional {
+	condition = isString;
+}
+
+Conditional16: WOConditional {
+	condition = isDoneForKey;
+}
+
+Conditional17: WOConditional {
+	condition = isDoneForKey;
+	negate = true;
+}
+
+Conditional19: WOConditional {
+	condition = isListEmpty;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = isTopLevelStoryCommitted;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = isChild;
+	negate = true;
+}
+Conditional4: WOConditional {
+	condition = isChild;
+}
+
+Conditional5: WOConditional {
+	condition = anEo.isURL;
+	negate = true;
+}
+
+Conditional6: WOConditional {
+	condition = anEo.isURL;
+}
+
+Conditional7: WOConditional {
+	condition = isTopLevelStoryCommitted;
+}
+
+Conditional8: WOConditional {
+	condition = isChild;
+	negate = true;
+}
+
+Conditional9: WOConditional {
+	condition = isEO;
+}
+
+Hyperlink1: WOHyperlink {
+	href = anEo.bugURL;
+}
+
+Hyperlink2: WOHyperlink {
+	href = anEo.bugFileLoc;
+}
+
+Hyperlink3: WOHyperlink {
+	href = anEo.bugURL;
+}
+
+Hyperlink4: WOHyperlink {
+	href = anEo.bugFileLoc;
+}
+
+Hyperlink5: WOHyperlink {
+ onClick=toggleString;
+	href = "#";
+}
+
+Hyperlink6: WOHyperlink {
+	href = urlForKey;
+}
+
+Image1: WOImage {
+	filename = "RightTriangle.gif";
+	framework = "JavaWOExtensions";
+	id = rightArrowName;
+	onClick=toggleString;
+
+}
+
+Image10: WOImage {
+	filename = "RightTriangle.gif";
+	framework = "JavaWOExtensions";
+	id = rightArrowName;
+	onClick=toggleString;
+
+}
+Image2: WOImage {
+	filename = "DownTriangle.gif";
+	framework = "JavaWOExtensions";
+	id = downArrowName;
+	style="display:none";
+	onClick=toggleString;
+
+}
+
+Image3: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image4: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image5: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image6: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image7: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image9: WOImage {
+	filename = "DownTriangle.gif";
+	framework = "JavaWOExtensions";
+	id = downArrowName;
+	style="display:none";
+	onClick=toggleString;
+
+}
+
+NestedItems1: NestedItems3 {
+	itemList = listForKey;
+	level = level;
+	isChild = true;
+}
+
+
+
+NestedItems3: NestedItems3 {
+	itemList = listForKey;
+	isChild = true;
+	level = level;
+}
+
+Repetition1: WORepetition {
+	item = aKey;
+	list = itemList;
+}
+
+
+Repetition5: WORepetition {
+	item = sprintKey;
+	list = sprintKeys;
+}
+
+Repetition6: WORepetition {
+	item = anEo;
+	list = storiesForCurrentSprint;
+}
+
+String1: WOString {
+	value = anEo.state;
+}
+
+String10: WOString {
+	value = cleanDescription;
+}
+
+String11: WOString {
+	value = percentCompleteForKey;
+}
+
+String12: WOString {
+	value = statusForKey;
+}
+
+String13: WOString {
+	value = committedForKey;
+}
+
+String14: WOString {
+	value = listForKey.@count;
+}
+
+String15: WOString {
+	value = keyDescription;
+}
+
+String16: WOString {
+	value = sprintsForTopLevel;
+}
+String17: WOString {
+	value = uniqueID;
+}
+String18: WOString {
+	value = anEo.percentCompleteCountQATasks;
+}
+
+String19: WOString {
+	value = child.shortDesc;
+}
+
+String2: WOString {
+	value = anEo.bugId;
+}
+
+String20: WOString {
+	value = anEo.percentCompleteCountChildren;
+}
+
+String3: WOString {
+	value = anEo.percentCompleteCountNonQATasks;
+}
+
+String4: WOString {
+	value = anEo.state;
+}
+
+String5: WOString {
+	value = cleanDescription;
+}
+
+String6: WOString {
+	value = cleanDescription;
+}
+
+String7: WOString {
+	value = sprintsForTopLevel;
+}
+
+String8: WOString {
+	value = anEo.bugId;
+}
+
+String9: WOString {
+	value = cleanDescription;
+}
+TRToggle: WOGenericContainer {
+	elementName = "tr";
+	id=uniqueID;
+	style="display:none";
+}
+
+TRToggle2: WOGenericContainer {
+	elementName = "tr";
+	id=uniqueID;
+	style="display:none";
+}

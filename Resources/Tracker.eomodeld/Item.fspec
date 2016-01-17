@@ -1,0 +1,547 @@
+{
+    getBug = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOKeyValueQualifier; 
+            key = bugId; 
+            selectorName = "isEqualTo:"; 
+            value = {"_key" = bugId; class = EOQualifierVariable; }; 
+        }; 
+    }; 
+    hoursWorked = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOKeyValueQualifier; 
+            key = "activities.fieldid"; 
+            selectorName = "isEqualTo:"; 
+            value = {class = NSNumber; value = 45; }; 
+        }; 
+        refreshesRefetchedObjects = YES; 
+    }; 
+    mustFix = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOOrQualifier; 
+                    qualifiers = (
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = NEW; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = ASSIGNED; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = REOPENED; 
+                        }
+                    ); 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = version; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = version; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = targetMilestone; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = sprint; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOOrQualifier; 
+                    qualifiers = (
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = priority; 
+                            selectorName = "isEqualTo:"; 
+                            value = "1 - Urgent"; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = priority; 
+                            selectorName = "isEqualTo:"; 
+                            value = "2 - High"; 
+                        }
+                    ); 
+                }, 
+                {
+                    class = EOOrQualifier; 
+                    qualifiers = (
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = type; 
+                            selectorName = "isEqualTo:"; 
+                            value = Bug; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = type; 
+                            selectorName = "isEqualTo:"; 
+                            value = Enhancement; 
+                        }
+                    ); 
+                }
+            ); 
+        }; 
+        sortOrderings = (
+            {class = EOSortOrdering; key = priority; selectorName = "compareAscending:"; }, 
+            {
+                class = EOSortOrdering; 
+                key = bugSeverity; 
+                selectorName = "compareAscending:"; 
+            }
+        ); 
+    }; 
+    myBugs = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = assignee; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = user; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = version; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = version; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOOrQualifier; 
+                    qualifiers = (
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = CONFIRMED; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = UNCONFIRMED; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = REOPENED; 
+                        }
+                    ); 
+                }
+            ); 
+        }; 
+        refreshesRefetchedObjects = YES; 
+    }; 
+    ocmClosedInLastWeek = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = "activities.bugWhen"; 
+                    selectorName = "isGreaterThan:"; 
+                    value = {"_key" = startdate; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = "activities.added"; 
+                    selectorName = "isEqualTo:"; 
+                    value = CLOSED; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = "product.productId"; 
+                    selectorName = "isEqualTo:"; 
+                    value = {class = NSNumber; value = 6; }; 
+                }
+            ); 
+        }; 
+    }; 
+    projectBugs = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = version; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = version; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOOrQualifier; 
+                    qualifiers = (
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = type; 
+                            selectorName = "isEqualTo:"; 
+                            value = Bug; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = type; 
+                            selectorName = "isEqualTo:"; 
+                            value = Enhancement; 
+                        }
+                    ); 
+                }
+            ); 
+        }; 
+        sortOrderings = ({class = EOSortOrdering; key = bugId; selectorName = "compareAscending:"; }); 
+    }; 
+    projectFeatures = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = version; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = version; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = "keywords.keywordName"; 
+                    selectorName = "isEqualTo:"; 
+                    value = project; 
+                }
+            ); 
+        }; 
+        sortOrderings = ({class = EOSortOrdering; key = bugId; selectorName = "compareAscending:"; }); 
+    }; 
+    projectTasks = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = version; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = version; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = type; 
+                    selectorName = "isNotEqualTo:"; 
+                    value = Story; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = type; 
+                    selectorName = "isNotEqualTo:"; 
+                    value = Epic; 
+                }
+            ); 
+        }; 
+    }; 
+    projectTopPriorityBugs = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = version; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = version; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOOrQualifier; 
+                    qualifiers = (
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = type; 
+                            selectorName = "isEqualTo:"; 
+                            value = Bug; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = type; 
+                            selectorName = "isEqualTo:"; 
+                            value = Enhancement; 
+                        }
+                    ); 
+                }, 
+                {
+                    class = EOOrQualifier; 
+                    qualifiers = (
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = priority; 
+                            selectorName = "isEqualTo:"; 
+                            value = "1 - Urgent"; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = priority; 
+                            selectorName = "isEqualTo:"; 
+                            value = "2 - High"; 
+                        }
+                    ); 
+                }
+            ); 
+        }; 
+    }; 
+    supportServiceEscalations = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOOrQualifier; 
+                    qualifiers = (
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = NEW; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = ASSIGNED; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = REOPENED; 
+                        }
+                    ); 
+                }, 
+                {
+                    class = EOOrQualifier; 
+                    qualifiers = (
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = "assignee.loginName"; 
+                            selectorName = "isEqualTo:"; 
+                            value = "serviceescalation@ deadline"; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = "assignee.loginName"; 
+                            selectorName = "isEqualTo:"; 
+                            value = "serverescalation@marblesecurity.com"; 
+                        }
+                    ); 
+                }
+            ); 
+        }; 
+        refreshesRefetchedObjects = YES; 
+        sortOrderings = (
+            {class = EOSortOrdering; key = priority; selectorName = "compareAscending:"; }, 
+            {
+                class = EOSortOrdering; 
+                key = bugSeverity; 
+                selectorName = "compareAscending:"; 
+            }
+        ); 
+    }; 
+    topIssues = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOOrQualifier; 
+                    qualifiers = (
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = CONFIRMED; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = UNCONFIRMED; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = ASSIGNED; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugStatus; 
+                            selectorName = "isEqualTo:"; 
+                            value = REOPENED; 
+                        }
+                    ); 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = version; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = version; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = priority; 
+                    selectorName = "isEqualTo:"; 
+                    value = "1 - Urgent"; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = type; 
+                    selectorName = "isEqualTo:"; 
+                    value = Bug; 
+                }, 
+                {
+                    class = EOOrQualifier; 
+                    qualifiers = (
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugSeverity; 
+                            selectorName = "isEqualTo:"; 
+                            value = "0 - Blocker"; 
+                        }, 
+                        {
+                            class = EOKeyValueQualifier; 
+                            key = bugSeverity; 
+                            selectorName = "isEqualTo:"; 
+                            value = "1 - Critical"; 
+                        }
+                    ); 
+                }
+            ); 
+        }; 
+        sortOrderings = (
+            {class = EOSortOrdering; key = priority; selectorName = "compareAscending:"; }, 
+            {
+                class = EOSortOrdering; 
+                key = bugSeverity; 
+                selectorName = "compareAscending:"; 
+            }
+        ); 
+    }; 
+    topSupport = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = "keywords.keywordName"; 
+                    selectorName = "isEqualTo:"; 
+                    value = "support-escalation"; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = bugStatus; 
+                    selectorName = "isNotEqualTo:"; 
+                    value = CLOSED; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = bugSeverity; 
+                    selectorName = "isNotEqualTo:"; 
+                    value = "6 - Enhancement"; 
+                }
+            ); 
+        }; 
+        sortOrderings = (
+            {class = EOSortOrdering; key = priority; selectorName = "compareAscending:"; }, 
+            {
+                class = EOSortOrdering; 
+                key = bugSeverity; 
+                selectorName = "compareAscending:"; 
+            }, 
+            {class = EOSortOrdering; key = version; selectorName = "compareAscending:"; }
+        ); 
+    }; 
+    triageBugs = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = version; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = version; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = bugStatus; 
+                    selectorName = "isEqualTo:"; 
+                    value = UNCONFIRMED; 
+                }
+            ); 
+        }; 
+        refreshesRefetchedObjects = YES; 
+    }; 
+    triageBugsAll = {
+        class = EOFetchSpecification; 
+        entityName = Item; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOKeyValueQualifier; 
+            key = bugStatus; 
+            selectorName = "isEqualTo:"; 
+            value = UNCONFIRMED; 
+        }; 
+        refreshesRefetchedObjects = YES; 
+    }; 
+}

@@ -1,0 +1,108 @@
+Browser1: WOBrowser {
+	item = aAssignee;
+	list = potentialAssignees;
+	selections = selectedCC;
+	multiple = "true";
+}
+
+CancelButton : WOImage {
+	width = "88";
+	height = "31";
+	alt = "Reverts your changes";
+	filename = "CancelMetalBtn.gif";
+	name = "Reverts your changes";
+	border = "0";
+	framework = "JavaDirectToWeb";
+};
+
+CancelLink : WOHyperlink {
+	action = goCancel;
+};
+
+Conditional5: WOConditional {
+	condition = isCurrentObject;
+}
+
+EditingForm : WOForm {
+	multipleSubmit = true;
+};
+
+ErrorMessage : WOString {
+	escapeHTML = "NO";
+	value = errorMessage;
+};
+
+ErrorPanel : WOConditional {
+	condition = errorMessage.length;
+};
+
+ErrorTable : WOGenericContainer {
+	elementName = "table";
+	border = "1";
+	cellpadding = "2";
+	bgColor = "FF0000";
+};
+
+PageWrapper : PageWrapper {
+};
+
+PopUpButton1: WOPopUpButton {
+	item = aAssignee;
+	list = potentialAssignees;
+	selection = selectedAssignee;
+}
+
+PopUpButton2: WOPopUpButton {
+	item = aType;
+	list = potentialTypes;
+	selection = selectedType;
+}
+
+PopUpButton4: WOPopUpButton {
+	item = aString;
+	list = potentialSeverities;
+	selection = selectedSeverity;
+}
+
+PopUpButton9: WOPopUpButton {
+	item = aString;
+	list = potentialPriorities;
+	selection = selectedPriority;
+}
+
+String1: WOString {
+	value = assigneeSelectString;
+	escapeHTML = false;
+}
+
+String4: WOString {
+	value = currentObject.shortDesc;
+}
+
+
+
+SubmitChanges : WOImageButton {
+	width = "88";
+	filename = "SaveMetalBtn.gif";
+	alt = "Saves your changes";
+	name = "Saves your changes";
+	border = "0";
+	action = goSave;
+	height = "31";
+	framework = "JavaDirectToWeb";
+};
+
+Text1: WOText {
+	cols = 80;
+	rows = 16;
+	value = comments;
+}
+
+TextField1: WOTextField {
+	size = 80;
+	value = child.summary;
+}
+
+TextField2: WOTextField {
+	value = estimatedTime;
+}

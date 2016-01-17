@@ -1,0 +1,92 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = cryptpassword; 
+            externalType = varchar; 
+            name = cryptpassword; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 128; 
+        }, 
+        {
+            columnName = disabledtext; 
+            externalType = mediumtext; 
+            name = disabledtext; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "extern_id"; 
+            externalType = varchar; 
+            name = externId; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = "login_name"; 
+            externalType = varchar; 
+            name = loginName; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 255; 
+        }, 
+        {
+            columnName = mybugslink; 
+            externalType = tinyint; 
+            name = mybugslink; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = realname; 
+            externalType = varchar; 
+            name = realname; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 255; 
+        }, 
+        {
+            columnName = "refreshed_when"; 
+            externalType = datetime; 
+            name = refreshedWhen; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = userid; 
+            externalType = mediumint; 
+            name = userid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (userid); 
+    className = EOGenericRecord; 
+    classProperties = (externId, loginName, disabledtext, bugs, realname); 
+    externalName = profiles; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (externId, loginName, disabledtext, refreshedWhen, realname); 
+        uniqueID = 196630631; 
+    }; 
+    name = Profiles; 
+    primaryKeyAttributes = (userid); 
+    relationships = (
+        {
+            destination = Item; 
+            internalInfo = {uniqueID = 196630777; }; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = assignedTo; sourceAttribute = userid; }); 
+            name = bugs; 
+        }
+    ); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

@@ -1,0 +1,135 @@
+Conditional1: WOConditional {
+	condition = releaseNotesAssignedToVersion.@count;
+}
+
+Conditional2: WOConditional {
+	condition = newReleaseNotes.@count;
+}
+
+Conditional3: WOConditional {
+	condition = openReleaseNotes.@count;
+}
+
+Conditional4: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = isEmail;
+}
+
+Conditional6: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Hyperlink1: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink2: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink3: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "releasenotes";
+}
+
+Hyperlink4: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Repetition1: WORepetition {
+	list = versionsAll;
+	item = aVersion;
+}
+
+Repetition2: WORepetition {
+	item = currentItem;
+	list = releaseNotesAssignedToVersion;
+}
+
+Repetition3: WORepetition {
+	item = currentItem;
+	list = newReleaseNotes;
+}
+
+Repetition4: WORepetition {
+	list = openReleaseNotes;
+	item = currentItem;
+}
+
+String1: WOString {
+	value = aVersion;
+}
+
+String10: WOString {
+	value = currentItem.bugId;
+}
+
+String11: WOString {
+	value = currentItem.version;
+}
+
+String12: WOString {
+	value = currentItem.version;
+}
+
+String13: WOString {
+	value = currentItem.shortDesc;
+}
+
+String14: WOString {
+	value = currentItem.version;
+}
+
+String15: WOString {
+	value = currentItem.versionFoundIn;
+}
+
+String16: WOString {
+	value = currentItem.bugStatus;
+}
+
+String17: WOString {
+	value = currentItem.bugId;
+}
+String19: WOString {
+	value = aVersion;
+}
+
+String2: WOString {
+	value = today;
+	dateformat = "%B %d, %Y  %I:%M:%S %p";
+}
+
+String3: WOString {
+	value = currentItem.bugId;
+}
+
+String4: WOString {
+	value = currentItem.shortDesc;
+}
+
+String5: WOString {
+	value = currentItem.shortDesc;
+}
+
+String6: WOString {
+	value = currentItem.bugStatus;
+}
+
+String7: WOString {
+	value = currentItem.versionFoundIn;
+}
+
+String8: WOString {
+	value = currentItem.versionFoundIn;
+}
+
+String9: WOString {
+	value = currentItem.bugStatus;
+}
+

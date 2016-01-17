@@ -1,0 +1,29 @@
+{
+    attributes = (
+        {
+            columnName = dupe; 
+            externalType = mediumint; 
+            name = dupe; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "dupe_of"; 
+            externalType = mediumint; 
+            name = dupeOf; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (dupeOf, dupe); 
+    className = EOGenericRecord; 
+    classProperties = (dupeOf); 
+    externalName = duplicates; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {"_clientClassPropertyNames" = (dupeOf); uniqueID = 196630456; }; 
+    name = Duplicates; 
+    primaryKeyAttributes = (dupe); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

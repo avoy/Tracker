@@ -1,0 +1,64 @@
+{
+    attributes = (
+        {
+            columnName = eventid; 
+            externalType = mediumint; 
+            name = eventid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = id; 
+            externalType = mediumint; 
+            name = id; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = onemailperbug; 
+            externalType = tinyint; 
+            name = onemailperbug; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "query_name"; 
+            externalType = varchar; 
+            name = queryName; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = sortkey; 
+            externalType = smallint; 
+            name = sortkey; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = title; 
+            externalType = varchar; 
+            name = title; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 128; 
+        }
+    ); 
+    attributesUsedForLocking = (onemailperbug, sortkey, title, queryName, eventid, id); 
+    className = EOGenericRecord; 
+    classProperties = (onemailperbug, sortkey, title, queryName, eventid); 
+    externalName = "whine_queries"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (onemailperbug, sortkey, title, queryName, eventid); 
+        uniqueID = 196630444; 
+    }; 
+    name = WhineQueries; 
+    primaryKeyAttributes = (id); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

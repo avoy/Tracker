@@ -1,0 +1,101 @@
+
+<!--isChild - not -->
+<webobject name="Conditional3">
+    <table width=100% cellspacing="2" border="0" cellpadding="2" bgcolor="#aaaaaa"></webobject>
+<!--isChild  -->
+<webobject name="Conditional4">
+    <table align="center" width=100% cellspacing="1" border="0" cellpadding="3" bgcolor="#d0d0d0"></webobject>
+<!--Header -->
+<webobject name="Conditional3"><tr bgcolor="#a5a5a5"><th colspan=2><font size="2">Description</font></th><th width="65" align="center"><font size="2">Sprint(s)</font></th><th width="40"><font size="2">Dev %</font></th><th><font size="2">QA %</font></th><th width="70"><font size="2">Status</font></th></tr></webobject>
+<webobject name="Repetition1"><p></p>
+    <!--Has children -->
+    <webobject name="Conditional9">
+        <webobject name="Conditional1">
+            <tr bgcolor="#ffffff">
+                <td align="center" valign="top"><font size="2"><webobject name="Image1"></webobject><webobject name="Image2"></webobject></font></td>
+                <td align="left" valign="top"><font size="2"><webobject name="Conditional5"><webobject name="String5"></webobject></webobject>
+                    <webobject name="Conditional6"><webobject name="Hyperlink2"><webobject name="String6"></webobject></webobject></webobject>
+                    &nbsp;&nbsp;(<webobject name="Hyperlink1"><webobject name="String2"></webobject></webobject>)</font>
+                    <table width=100%>
+                        <webobject name="TRToggle">
+                            <td><webobject name="NestedItems3"></webobject></td>
+                        </webobject>
+                    </table>
+                </td>
+                <td align="center" width="65" bgcolor="#ffffff">
+					<font size="2"><webobject name="String7"></webobject></font>
+
+	                <!--
+					<webobject name="Conditional11">
+					<webobject name="Image3"></webobject></webobject>
+                    <webobject name="Conditional12"><webobject name="Image4"></webobject></webobject>
+					-->
+                </td>
+
+                <!--Only add these [Dev % / QA %]  for top-level parents -->
+                <webobject name="Conditional3">
+                    <td align="center"><font size="2"><webobject name="String3"></webobject></font></td>
+                    <td align="center"><font size="2"><webobject name="String18"></webobject></font></td>
+                </webobject>
+                <!--'Status' Column  - added for both top-level and sub-levels -->
+                <td align="center" width="65"><font size="2"><webobject name="String4"></webobject></font></td>
+            </tr>
+        </webobject>
+        <!--No children -->
+        <webobject name="Conditional14">
+            <tr bgcolor="#ffffff">
+                <td align="center" width="15">&bull;</td>
+                <td align="left"><font size="2">
+                        <webobject name="Conditional13">
+                            <webobject name="String10"></webobject>
+                        </webobject>
+                        <webobject name="Conditional10">
+                            <webobject name="Hyperlink4"><webobject name="String9"></webobject></webobject></webobject>
+                        (<webobject name="Hyperlink3"><webobject name="String8"></webobject></webobject>) </font>
+                </td>
+                <!-- 'Sprint' was 'Committed'  -->
+                <td align="center" bgcolor="#ffffff">
+					<font size="2"><webobject name="String7"></webobject></font>
+					<!--
+						<webobject name="Conditional7"><webobject name="Image6"></webobject></webobject>
+                   		<webobject name="Conditional2"><webobject name="Image5"></webobject></webobject>
+					-->
+                </td>
+                <!--Only add these [Dev % / QA %]  for top-level parents -->
+                <webobject name="Conditional8">
+                    <!--'% Complete'  -->
+                    <td align="center"><font size="2"><webobject name="String3"></webobject></font></td>
+                    <td align="center"><font size="2"><webobject name="String18"></webobject></font></td>
+                </webobject>
+                <!--'Status'  -->
+                <td align="center" width="65"><font size="2"><webobject name="String1"></webobject></font></td>
+            </tr>
+        </webobject>
+    </webobject>
+    <!--OtherBugs row -->
+    <webobject name="Conditional15">
+        <tr bgcolor="#ffffff">
+            <td align="center" valign="top">
+                <font size="2"><webobject name="Image10"></webobject><webobject name="Image9"></webobject></font>
+            </td>
+            <td align="left" valign="top">
+                <font size="2"><webobject name="Hyperlink6"><webobject name="String15"></webobject></webobject>
+                    (<webobject name="String14"></webobject>)</font><font size="2">&nbsp;</font>
+                <table width="100%"><webobject name="TRToggle2">
+                        <td><webobject name="NestedItems1"></webobject></td></webobject>
+                </table>
+            </td>
+            <!--OtherBugs 'Committed' -->
+            <td align="center" width="65"><font size="2">
+                    <webobject name="Conditional16">
+                        <webobject name="Image7"></webobject>
+                    </webobject>
+                    <webobject name="Conditional17"><webobject name="String13"></webobject></webobject></font>
+            </td>
+            <!--OtherBugs '%' -->
+            <td align="center"><font size="2"><webobject name="String11"></webobject></font></td>
+            <td align="center"><font size="2">---</font></td>
+            <!--OtherBugs 'Status' -->
+            <td align="center"><font size="2"><webobject name="String12"></webobject></font></td></tr></webobject>
+</webobject>
+</table>

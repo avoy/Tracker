@@ -1,0 +1,98 @@
+ActiveImage1: WOActiveImage {
+	action = goNoWhere;
+	border = 0;
+	filename = "firstWText.gif";
+	framework = "app";
+	imageMapFile = "tab.map";
+}
+
+ActiveImage2: WOActiveImage {
+	action = goNoWhere;
+	filename = "secondWText.gif";
+	border = 0;
+	framework = "app";
+	imageMapFile = "tab.map";
+}
+
+ActiveImage3: WOActiveImage {
+	action = goNoWhere;
+	border = 0;
+	filename = "thirdWText.gif";
+	framework = "app";
+	imageMapFile = "tab.map";
+}
+
+ActiveImage4: WOActiveImage {
+	action = goNoWhere;
+	border = 0;
+	filename = "fourthWText.gif";
+	framework = "app";
+	imageMapFile = "tab.map";
+}
+
+ActiveImage5: WOActiveImage {
+	action = goNoWhere;
+	border = 0;
+	filename = "fifthWText.gif";
+	framework = "app";
+	imageMapFile = "tab.map";
+}
+
+Conditional1: WOConditional {
+	condition = isMyBugs;
+}
+
+Conditional2: WOConditional {
+	condition = isProject;
+}
+
+Conditional3: WOConditional {
+	condition = isTriage;
+}
+
+Conditional4: WOConditional {
+	condition = isRelease;
+}
+
+Conditional5: WOConditional {
+	condition = isMyBugs;
+}
+
+Conditional6: WOConditional {
+	condition = isProject;
+}
+
+Conditional7: WOConditional {
+	condition = isTriage;
+}
+
+Conditional8: WOConditional {
+	condition = isRelease;
+}
+
+Conditional9: WOConditional {
+	condition = isUsability;
+}
+
+MYBUGS: MyBugs {
+}
+PROJECT: Project {
+}
+
+PageWrapper: PageWrapper {
+}
+
+TRIAGE: Triage {
+}
+
+KEYWORDS: Keywords {
+}
+
+RELEASEPLAN: ReleasePlan {
+}
+
+String1: WOString {
+	value = session.realname;
+}
+
+

@@ -1,0 +1,74 @@
+Conditional1: WOConditional {
+	condition = isAny;
+}
+
+Conditional2: WOConditional {
+	condition = isAny;
+	negate = true;
+}
+
+Image1: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Repetition1: WORepetition {
+	item = aMilestone;
+	list = sprintDatesForProject;
+}
+
+Repetition2: WORepetition {
+	item = aMilestone;
+	list = milestoneDatesForProject;
+}
+
+
+
+String1: WOString {
+	value = aMilestone.milestone;
+}
+
+String10: WOString {
+	value = aMilestone.comment;
+}
+
+String11: WOString {
+	value = aMilestone.milestone;
+}
+
+String2: WOString {
+	dateformat = "%A, %B %d, %Y";
+	value = aMilestone.startDate;
+}
+
+String3: WOString {
+	dateformat = "%A, %B %d, %Y";
+	value = aMilestone.endDate;
+}
+
+String4: WOString {
+	dateformat = "%A, %B %d, %Y";
+	value = aMilestone.forecastDate;
+}
+
+String5: WOString {
+	dateformat = "%A, %B %d, %Y";
+	value = aMilestone.plannedDate;
+}
+
+String6: WOString {
+	value = aMilestone.milestone;
+}
+
+String7: WOString {
+	dateformat = "%A, %B %d, %Y";
+	value = aMilestone.actualDate;
+}
+
+String8: WOString {
+	value = aMilestone.comment;
+}
+
+String9: WOString {
+	value = selectedProject;
+}

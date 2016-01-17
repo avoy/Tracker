@@ -1,0 +1,360 @@
+ActiveImage1: WOActiveImage {
+	action = emailCurrentPage;
+	border = 0;
+	filename = "Email.gif";
+	framework = "app";
+}
+
+Browser1: WOBrowser {
+	displayString = aString;
+	item = aString;
+	list = itemTypes;
+	multiple = true;
+	selections = selectedItemTypes;
+	size = 6;
+}
+
+Browser2: WOBrowser {
+	displayString = aString;
+	item = aString;
+	list = itemProducts;
+	multiple = "true";
+	selections = selectedItemProducts;
+	size = 6;
+	name = "products";
+	onChange = "submit();";
+}
+
+CheckboxMatrix: WOCheckboxMatrix { 
+	item = aStatus;	
+	list = session.potentialStatus;
+	selections = selectedStatus;
+	maxColumns = 6;
+}
+
+Conditional1: WOConditional {
+	condition = isList;
+}
+
+Conditional10: WOConditional {
+	condition = isListEmpty;
+	negate = true;
+}
+
+Conditional11: WOConditional {
+	condition = session.isAdmin;
+}
+
+Conditional2: WOConditional {
+	condition = isReport;
+}
+
+Conditional3: WOConditional {
+	condition = isEstimate;
+}
+
+Conditional4: WOConditional {
+	condition = isListEmpty;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = isListEmpty;
+}
+
+Conditional6: WOConditional {
+	condition = isToolBar;
+}
+
+Conditional7: WOConditional {
+	condition = isReport;
+}
+Conditional8: WOConditional {
+	condition = itemsInTriage;
+}
+
+Conditional9: WOConditional {
+	condition = itemsInTriage;
+	negate = true;
+}
+
+ESTIMATEACTUAL: EstimateActual {
+    displayGroup = displayGroup;
+} 
+
+ExclamationImage : WOImage {
+	border = "0";
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+};
+
+FontContainer : WOGenericContainer {
+	color = "000000";
+	elementName = "font";
+};
+
+Form1: WOForm {
+method = "get";
+	multipleSubmit = true;
+}
+
+Hyperlink1: WOHyperlink {
+	action = showReport;
+}
+
+Hyperlink10: WOHyperlink {
+	href = triageURL;
+	target = "_blank";
+}
+
+Hyperlink11: WOHyperlink {
+	directActionName = "projects";
+	actionClass = "DirectAction";
+}
+
+Hyperlink12: WOHyperlink {
+	directActionName = "priorities";
+}
+
+Hyperlink13: WOHyperlink {
+	action = goTopPriorityFindFix;
+}
+
+Hyperlink14: WOHyperlink {
+	actionClass = "DirectAction";
+	?version = selectedProject;
+	?row = "Reporter";
+	directActionName = "listItems";
+	?status = "RESOLVED";
+
+	?column = "Priority";
+	?wosid = false;
+	?type = "Bug,Enhancement";
+}
+
+Hyperlink15: WOHyperlink {
+	directActionName = "releasenotes";
+	actionClass = "DirectAction";
+}
+
+Hyperlink16: WOHyperlink {
+	action = goRecent;
+}
+
+Hyperlink17: WOHyperlink {
+	action = goReopened;
+}
+
+Hyperlink18: WOHyperlink {
+	action = goTaser;
+}
+
+Hyperlink19: WOHyperlink {
+	action = goStoryPriorities;
+}
+
+Hyperlink2: WOHyperlink {
+	action = goFindFix;
+}
+
+Hyperlink20: WOHyperlink {
+	action = goReleaseReport;
+}
+
+Hyperlink21: WOHyperlink {
+	directActionName = "escalationQueue";
+	actionClass = "DirectAction";
+}
+
+Hyperlink22: WOHyperlink {
+	action = goSecurityIssues;
+}
+
+Hyperlink23: WOHyperlink {
+	action = goReleaseNote;
+}
+
+Hyperlink24: WOHyperlink {
+	action = goCustomerIssues;
+}
+
+Hyperlink25: WOHyperlink {
+	action = goNewStory;
+}
+
+Hyperlink26: WOHyperlink {
+	action = goTopSupport;
+}
+
+Hyperlink27: WOHyperlink {
+	action = goTopCustomerIssues;
+}
+
+Hyperlink28: WOHyperlink {
+	action = goBacklogTracker;
+}
+
+Hyperlink29: WOHyperlink {
+	action = goWorkProducts;
+}
+
+Hyperlink3: WOHyperlink {
+	action = showList;
+}
+
+Hyperlink30: WOHyperlink {
+	href = "http://qaapp1.hq.ironkey.com/Tracker/WebObjects/Tracker.woa/wa/customerIssues?customerId=17018";
+}
+
+Hyperlink31: WOHyperlink {
+	action = goNetOpsReport;
+}
+
+Hyperlink32: WOHyperlink {
+	action = goReleasePlan;
+}
+
+Hyperlink33: WOHyperlink {
+	?wosid = false;
+	actionClass = "DirectAction";
+	directActionName = "productCouncil";
+}
+
+Hyperlink34: WOHyperlink {
+
+	?wosid = false;
+	actionClass = "DirectAction";
+	?project = selectedProject;
+	directActionName = "featureReport";
+}
+
+Hyperlink35: WOHyperlink {
+	action = goOrphans;
+}
+
+Hyperlink36: WOHyperlink {
+	action = goReleaseSchedule;
+}
+
+Hyperlink37: WOHyperlink {
+	action = goPunchListRatings;
+}
+
+Hyperlink38: WOHyperlink {
+	action = goReleaseSummary;
+}
+
+Hyperlink4: WOHyperlink {
+	action = goAutomationQueues;
+}
+
+Hyperlink5: WOHyperlink {
+	directActionName = "supportEscalate";
+	actionClass = "DirectAction";
+}
+
+Hyperlink6: WOHyperlink {
+	action = goTestPage;
+}
+
+Hyperlink7: WOHyperlink {
+	action = goReleaseOverview;
+}
+
+Hyperlink8: WOHyperlink {
+	directActionName = "topIssues";
+	actionClass = "DirectAction";
+	?project = selectedProject;
+}
+
+Hyperlink9: WOHyperlink {
+	action = goOCM;
+}
+
+PROJECTLIST: ItemList {
+    itemDisplayGroup = displayGroup;
+	releaseFlag = false;
+}
+
+PopUpButton1: WOPopUpButton {
+	item = session.aString;
+	list = potentialProjects;
+	selection = selectedProject;
+}
+
+String1: WOString {
+	value = aStatus;
+}
+
+String10: WOString {
+	value = selectedProject;
+}
+
+String13: WOString {
+	value = itemsInTriage;
+}
+
+String14: WOString {
+	value = selectedProject;
+}
+
+String15: WOString {
+	value = selectedProject;
+}
+
+String16: WOString {
+	value = selectedProject;
+}
+
+String3: WOString {
+	value = label;
+}
+
+String4: WOString {
+	value = resolvedBugsForProject;
+}
+
+String5: WOString {
+	value = selectedProject;
+}
+
+String6: WOString {
+	value = itemsInTriage;
+}
+
+String7: WOString {
+	value = percentDefectsComplete;
+	numberformat = "0";
+}
+
+String8: WOString {
+	value = selectedProject;
+}
+
+String9: WOString {
+	value = selectedProject;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = resetDisplayedBugs;
+	value = "Update";
+}
+
+componentState: ReportGenerator {
+    displayGroup = displayGroup;
+	showReport = true;
+    hideReportSpecifier = hideController;
+	selectedRow = aRow;
+	selectedColumn = aColumn;
+	needUpdate = needUpdate;
+}
+
+priorityState: ReportGenerator {
+	showReport = true;
+    hideReportSpecifier = true;
+	selectedRow = "Product";
+	selectedColumn = "Status";
+    needUpdate = needUpdate;
+    displayGroup = displayGroup;
+
+}

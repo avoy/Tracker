@@ -1,0 +1,64 @@
+{
+    attributes = (
+        {
+            columnName = canedit; 
+            externalType = tinyint; 
+            name = canedit; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = entry; 
+            externalType = tinyint; 
+            name = entry; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "group_id"; 
+            externalType = mediumint; 
+            name = groupId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = membercontrol; 
+            externalType = tinyint; 
+            name = membercontrol; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = othercontrol; 
+            externalType = tinyint; 
+            name = othercontrol; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "product_id"; 
+            externalType = mediumint; 
+            name = productId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (productId, membercontrol, entry, groupId, canedit, othercontrol); 
+    className = EOGenericRecord; 
+    classProperties = (productId, membercontrol, entry, groupId, canedit, othercontrol); 
+    externalName = "group_control_map"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (productId, membercontrol, entry, groupId, canedit, othercontrol); 
+        uniqueID = 196630637; 
+    }; 
+    name = GroupControlMap; 
+    primaryKeyAttributes = (productId, groupId); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

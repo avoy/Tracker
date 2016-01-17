@@ -1,0 +1,19 @@
+ReportListWrapper: ReportListWrapper {
+    displayGroup = displayGroup;
+    aRow = aRow;
+    aColumn = aColumn;
+	isReport = isReport;
+	isList = isList;
+	needUpdate = needUpdate;
+
+}
+
+ReportListWrapper2: ReportListWrapper {
+    displayGroup = displayGroup2;
+    aRow = aRow;
+    aColumn = aColumn;
+	isReport = isReport;
+	isList = isList;
+	needUpdate = needUpdate;
+
+}

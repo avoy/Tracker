@@ -1,0 +1,904 @@
+ActiveImage1: WOActiveImage {
+	action = emailCurrentPage;
+	border = 0;
+	filename = "Email.gif";
+	framework = "app";
+}
+
+Browser2: WOBrowser {
+	displayString = aString;
+	item = aString;
+	list = itemProducts;
+	multiple = "true";
+	selections = selectedItemProducts;
+	size = 4;
+	name = "products";
+	onChange = "submit();";
+}
+
+BurnDown1: BurnDown {
+	startDate = projectStartDate;
+	selectedProject = selectedProject;
+	chartType = "count";
+	itemsToGraph = bugsAndEnhancementsForSelectedRelease;
+}
+
+BurnDown2: BurnDown {
+	chartType = "hours";
+	itemsToGraph = tasksForCurrentSprint;
+}
+
+CheckboxMatrix: WOCheckboxMatrix { 	
+	list = potentialInclusions;
+	item = aString;
+	selections = selectedInclusions;
+}
+
+Conditional1: WOConditional {
+	condition = isStatusWhiteboard;
+}
+
+Conditional10: WOConditional {
+	condition = anEo.children.@count;
+	negate = true;
+}
+
+Conditional11: WOConditional {
+	condition = anEo.children.@count;
+}
+
+Conditional12: WOConditional {
+	condition = ocmsForSelectedRelease.@count;
+}
+
+Conditional13: WOConditional {
+	condition = ocmsForSelectedRelease.@count;
+	negate = true;
+}
+
+Conditional14: WOConditional {
+	condition = isPerson;
+}
+
+Conditional15: WOConditional {
+	condition = isRC1;
+}
+
+Conditional16: WOConditional {
+	condition = isRC1;
+	negate = true;
+}
+
+Conditional17: WOConditional {
+	condition = isRTP;
+}
+
+Conditional18: WOConditional {
+	condition = isRTP;
+	negate = true;
+}
+
+Conditional19: WOConditional {
+	condition = topicForCurrentPersonForCurrentSprint.taskItem.allItems.@count;
+}
+
+Conditional2: WOConditional {
+	condition = isStatusWhiteboard;
+	negate = true;
+}
+
+Conditional20: WOConditional {
+	condition = isHoursInCurrentSprint;
+}
+
+Conditional21: WOConditional {
+	condition = isPerson;
+}
+
+Conditional22: WOConditional {
+	condition = topicForCurrentPersonForCurrentSprint.taskItem.allItems.@count;
+	negate = true;
+}
+
+Conditional23: WOConditional {
+	condition = topicForCurrentPersonForCurrentSprint.taskItem.allItems.@count;
+	negate = true;
+}
+
+Conditional24: WOConditional {
+	condition = topicForCurrentPersonForCurrentSprint.taskItem.allItems.@count;
+}
+
+Conditional25: WOConditional {
+	condition = isStatusWhiteboard2;
+	negate = true;
+}
+
+Conditional26: WOConditional {
+	condition = isStatusWhiteboard2;
+}
+
+Conditional27: WOConditional {
+	condition = topicForCurrentPersonForCurrentSprint.taskItem.allItems.@count;
+	negate = true;
+}
+
+Conditional28: WOConditional {
+	condition = topicForCurrentPersonForCurrentSprint.taskItem.allItems.@count;
+}
+
+Conditional29: WOConditional {
+	condition = topicForCurrentPersonForCurrentSprint.taskItem.allItems.@count;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = isStory;
+}
+
+Conditional30: WOConditional {
+	condition = topicForCurrentPersonForCurrentSprint.taskItem.allItems.@count;
+}
+
+Conditional31: WOConditional {
+	condition = collapsibleView;
+}
+
+Conditional32: WOConditional {
+	condition = isCurrentSprint;
+}
+
+Conditional33: WOConditional {
+	condition = topicForCurrentPersonForCurrentSprint.isAllTasksEstimated;
+	negate = true;
+}
+
+Conditional34: WOConditional {
+	condition = isListEmpty;
+	negate = true;
+}
+
+Conditional35: WOConditional {
+	condition = anEo.isURL;
+	negate = true;
+}
+
+Conditional36: WOConditional {
+	condition = anEo.isURL;
+}
+
+Conditional37: WOConditional {
+	condition = isCC;
+	negate = true;
+}
+
+Conditional38: WOConditional {
+	condition = isCC;
+}
+
+Conditional39: WOConditional {
+	condition = isRC1;
+}
+
+Conditional40: WOConditional {
+	condition = isCC;
+}
+
+Conditional41: WOConditional {
+	condition = supportEscalationBugsAndEnhancementsForSelectedRelease.@count;
+}
+
+Conditional42: WOConditional {
+	condition = supportEscalationBugsAndEnhancementsForSelectedRelease.@count;
+	negate = true;
+}
+
+Conditional43: WOConditional {
+	condition = customerReportedBugsAndEnhancementsForSelectedRelease.@count;
+}
+
+Conditional44: WOConditional {
+	condition = customerReportedBugsAndEnhancementsForSelectedRelease.@count;
+	negate = true;
+}
+
+Conditional48: WOConditional {
+	condition = issues.@count;
+}
+
+Conditional49: WOConditional {
+	condition = aKey.isURL;
+	negate = true;
+}
+
+Conditional50: WOConditional {
+	condition = aKey.isURL;
+}
+
+Conditional51: WOConditional {
+	condition = isItem;
+}
+
+Conditional52: WOConditional {
+	condition = isItem;
+}
+
+Conditional53: WOConditional {
+	condition = isItem;
+	negate = true;
+}
+
+Conditional54: WOConditional {
+	condition = isItem;
+	negate = true;
+}
+
+Conditional55: WOConditional {
+	condition = isItem;
+}
+
+Conditional56: WOConditional {
+	condition = isItem;
+	negate = true;
+}
+
+Conditional57: WOConditional {
+	condition = isListEmpty;
+	negate = true;
+}
+
+Conditional58: WOConditional {
+	condition = anEo.children.@count;
+}
+
+Conditional59: WOConditional {
+	condition = showBySprint;
+}
+
+Conditional6: WOConditional {
+	condition = isToolBar;
+}
+
+Conditional60: WOConditional {
+	condition = anEo.children.@count;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = isRTP;
+}
+
+Conditional8: WOConditional {
+	condition = isStory;
+}
+Conditional9: WOConditional {
+	condition = isList;
+}
+
+EpicStorySummary2: EpicStorySummary {
+	selectedProject = selectedProject;
+	storiesForRelease = logicalStoriesForRelease;
+	otherBugs = bugsAndEnhancementsNotInStoryForSelectedRelease;
+}
+
+Form1: WOForm {
+method = "get";
+}
+
+Generic1: WOGenericContainer {
+	elementName = "tr";
+	id= labelForSprintKey;
+	style = downToggleStyle;
+
+}
+
+Hyperlink10: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+}
+
+Hyperlink11: WOHyperlink {
+	action = goTaskDetails;
+	class = colorBoxClass;
+}
+
+Hyperlink12: WOHyperlink {
+	action = goSprintBugMetrics;
+	class = "useColorboxBurnDown";
+
+}
+
+
+Hyperlink13: WOHyperlink {
+	href = urlForOpen;
+	target="_blank";
+
+}
+
+Hyperlink14: WOHyperlink {
+	directActionName = "topIssues";
+	actionClass = "DirectAction";
+	?project = selectedProject;
+	class = "useColorboxLarge";
+
+}
+
+Hyperlink15: WOHyperlink {
+	action = goViewMilestoneDates;
+	class="useColorboxMilestones";
+
+}
+
+Hyperlink16: WOHyperlink {
+	action = goBurnDown;
+	class = "useColorboxBurnDown";
+
+}
+
+Hyperlink18: WOHyperlink {
+	href = anEo.bugURL;
+	target = "_blank";
+}
+
+Hyperlink19: WOHyperlink {
+	action = goPersonView;
+}
+
+Hyperlink2: WOHyperlink {
+	action = goDisplayComment;
+}
+
+Hyperlink20: WOHyperlink {
+	action = goItemsForPerson;
+	class = colorBoxClass;
+	rel = labelForSprintKey;
+}
+
+Hyperlink21: WOHyperlink {
+	href = urlForOcmsForSelectedRelease;
+}
+
+
+Hyperlink22: WOHyperlink {
+	action = goStoryView;
+}
+
+Hyperlink23: WOHyperlink {
+	action = goReleaseNotes;
+	class = "useColorboxLarge";
+
+}
+
+Hyperlink25: WOHyperlink {
+	href = anEo.bugFileLoc;
+}
+
+Hyperlink26: WOHyperlink {
+	href = urlForVerifiedAndClosed;
+	target="_blank";
+
+}
+
+Hyperlink27: WOHyperlink {
+	action = goTaskDetails2;
+	class = "useColorboxLarge";
+	rel = aKey.targetMilestone;
+}
+
+Hyperlink28: WOHyperlink {
+	action = goDisplayComment2;
+	class="useColorboxSmall";
+
+}
+
+Hyperlink29: WOHyperlink {
+	href = aKey.bugURL;
+	target="_blank";
+
+}
+
+Hyperlink30: WOHyperlink {
+	href = aKey.bugFileLoc;
+}
+
+Hyperlink31: WOHyperlink {
+	href = urlForBugsNotInCurrentSprint;
+	target = "_blank";
+}
+
+Hyperlink32: WOHyperlink {
+	href = anEo.treeURL;
+	class="useColorboxMedium";
+
+}
+
+Hyperlink33: WOHyperlink {
+	action = showReport;
+}
+
+Hyperlink34: WOHyperlink {
+	action = goTaskDetails;
+	class = colorBoxClass;
+	rel = anEo.targetMilestone;
+
+}
+
+Hyperlink35: WOHyperlink {
+	action = goPunchListRatings;
+}
+
+Hyperlink36: WOHyperlink {
+	action = goStatusReport;
+}
+
+Hyperlink37: WOHyperlink {
+	action = goReleaseSchedule;
+}
+
+Hyperlink38: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+}
+
+Hyperlink39: WOHyperlink {
+	action = showList;
+}
+
+Hyperlink4: WOHyperlink {
+	href = urlForAll;
+	target="_blank";
+
+}
+
+Hyperlink40: WOHyperlink {
+
+	?wosid = false;
+	actionClass = "DirectAction";
+	?project = selectedProject;
+	directActionName = "featureReport";
+}
+
+Hyperlink41: WOHyperlink {
+	action = goOrphans;
+}
+
+Hyperlink42: WOHyperlink {
+	action = goNetOpsReport;
+}
+
+Hyperlink43: WOHyperlink {
+	href = anEo.treeURL;
+	class="useColorboxMedium";
+}
+
+Hyperlink44: WOHyperlink {
+	action = goReleaseSummary;
+}
+
+Hyperlink45: WOHyperlink {
+	?wosid = false;
+	actionClass = "DirectAction";
+	directActionName = "productCouncil";
+}
+
+Hyperlink5: WOHyperlink {
+	href = urlForResolved;
+	target="_blank";
+
+}
+
+Hyperlink6: WOHyperlink {
+	href = urlForSupportEscalationBugsAndEnhancementsForSelectedRelease;
+}
+
+Hyperlink7: WOHyperlink {
+	href = urlForCustomerReportedBugsAndEnhancementsForSelectedRelease;
+}
+
+
+Hyperlink9: WOHyperlink {
+	href = anEo.treeURL;
+	class="useColorboxMedium";
+
+}
+
+Image1: WOImage {
+	filename = "RightTriangle.gif";
+	framework = "JavaWOExtensions";
+	id = rightArrowName;
+	style = rightToggleStyle;
+}
+Image2: WOImage {
+	filename = "DownTriangle.gif";
+	framework = "JavaWOExtensions";
+	id = downArrowName;
+	style = downToggleStyle;
+}
+
+MILESTONE_DATES: MilestoneForProject {
+   selectedProject = selectedProject;
+}
+
+MilestoneForProject1: MilestoneForProject {
+  selectedProject = selectedProject;
+}
+
+PopUpButton1: WOPopUpButton {
+	item = session.aString;
+	list = potentialProjects;
+	selection = selectedProject;
+}
+
+Repetition1: WORepetition {
+	item = anEo;
+	list = storiesForSelectedReleaseSortedBySprint;
+}
+
+Repetition10: WORepetition {
+	item = topicString;
+	list = personStatus.topLevelTopics;
+}
+
+Repetition11: WORepetition {
+	item = sprintKey;
+	list = sprintKeys;
+}
+
+Repetition2: WORepetition {
+	item = sprintKey;
+	list = sprintKeys;
+}
+
+Repetition3: WORepetition {
+	item = aPerson;
+	list = peopleForCurrentSprint;
+}
+
+Repetition4: WORepetition {
+	item = anEo;
+	list = issues;
+}
+
+Repetition7: WORepetition {
+	item = aKey;
+	list = storiesPlusForCurrentSprint;
+}
+
+Repetition8: WORepetition {
+	item = anEo;
+	list = storiesForCurrentSprint;
+}
+
+Repetition9: WORepetition {
+	item = sprintKey;
+	list = sprintKeys;
+}
+
+StateTD2: WOGenericContainer {
+	align = "center";
+	bgcolor = bgColorForState2;
+	elementName = "td";
+}
+
+String1: WOString {
+	value = anEo.lastdiffed;
+	dateformat = "%m/%d/%y %I:%M %p";
+}
+
+String10: WOString {
+	value = anEo.bugId;
+}
+
+String11: WOString {
+	value = resolvedbugsAndEnhancementsForSelectedRelease.@count;
+}
+
+String12: WOString {
+	value = rtpDateType;
+}
+
+String13: WOString {
+	value = anEo.shortDesc;
+}
+
+String14: WOString {
+	value = rc1DateType;
+}
+
+String15: WOString {
+	value = anEo.children.@count;
+}
+
+String16: WOString {
+	value = anEo.children.@count;
+}
+
+String17: WOString {
+	value = anEo.percentCompleteCountChildren;
+}
+
+String18: WOString {
+	value = anEo.assignee.realname;
+}
+
+String19: WOString {
+	value = anEo.targetMilestone;
+}
+
+String2: WOString {
+	value = anEo.bugId;
+}
+
+String20: WOString {
+	value = aKey.relNum;
+}
+
+String22: WOString {
+	value = percentCompleteOpen;
+}
+
+String24: WOString {
+	value = topicForCurrentPersonForCurrentSprint.taskItem.currentEstimateHoursAll;
+}
+
+String26: WOString {
+	value = openBugsAndEnhancementsForSelectedRelease.@count;
+}
+
+String27: WOString {
+	dateformat = "%a, %b %d, %Y";
+	value = rtpDate;
+}
+
+String28: WOString {
+	dateformat = "%a, %b %d, %Y";
+	value = rc1Date;
+}
+
+String29: WOString {
+	value = labelForSprintKey;
+}
+
+String3: WOString {
+	value = aKey.assignee.realname;
+}
+
+String30: WOString {
+	value = storiesForCurrentSprint.@count;
+}
+
+String31: WOString {
+	value = startDateForCurrentSprint;
+	dateformat = "%b %d, %Y";
+}
+
+String32: WOString {
+	value = endDateForCurrentSprint;
+	dateformat = "%b %d, %Y";
+}
+
+String33: WOString {
+	value = percentCompleteChildrenForCurrentSprint;
+}
+
+String35: WOString {
+	value = topicForCurrentPersonForCurrentSprint.taskItem.numClosedItems;
+}
+
+String36: WOString {
+	value = topicForCurrentPersonForCurrentSprint.taskItem.percentCompleteCount;
+}
+
+String37: WOString {
+	value = ocmsForSelectedRelease.@count;
+}
+
+String38: WOString {
+	value = ocmsForSelectedRelease.@count;
+}
+
+String39: WOString {
+	value = storyPlus_AllCount;
+}
+
+String4: WOString {
+	value = aKey.lastModifiedAll;
+}
+
+String40: WOString {
+	value = topicForCurrentPersonForCurrentSprint.taskItem.hoursWorkedAll;
+}
+
+String41: WOString {
+	value = topicForCurrentPersonForCurrentSprint.taskItem.percentCompleteHours;
+}
+
+String42: WOString {
+	value = weekdaysRemainingInSprint;
+}
+
+String43: WOString {
+	value = daysRemainingInSprint;
+}
+
+String45: WOString {
+	value = aPerson;
+}
+
+String46: WOString {
+	value = anEo.shortDesc;
+}
+
+String47: WOString {
+	dateformat = "%a, %b %d, %Y";
+	value = ccDate;
+}
+
+String48: WOString {
+	value = percentCompleteVerifiedAndClosed;
+}
+
+String49: WOString {
+	value = verifiedAndClosedBugsAndEnhancementsForSelectedRelease.@count;
+}
+
+String5: WOString {
+	value = topicForCurrentPersonForCurrentSprint.taskItem.allItems.@count;
+}
+
+String50: WOString {
+	value = ccDateType;
+}
+
+String51: WOString {
+	value = supportEscalationBugsAndEnhancementsForSelectedRelease.@count;
+}
+
+String52: WOString {
+	value = customerReportedBugsAndEnhancementsForSelectedRelease.@count;
+}
+
+String54: WOString {
+	value = anEo.targetMilestone;
+}
+
+String58: WOString {
+	value = anEo.shortDesc;
+}
+
+String6: WOString {
+	value = topicForCurrentPersonForCurrentSprint.taskItem.lastModifiedAll;
+}
+
+String60: WOString {
+	value = storyPlus_ClosedCount;
+}
+
+String61: WOString {
+	value = storyPlus_allHours;
+}
+
+String62: WOString {
+	value = storyPlus_hoursWorked;
+}
+
+String63: WOString {
+	value = storyPlus_percentCompleteHours;
+}
+
+String64: WOString {
+	value = storyPlus_Description;
+}
+
+String65: WOString {
+	value = storyPlus_Status;
+}
+
+String67: WOString {
+	value = storyPlus_percentCompleteCount;
+}
+
+String68: WOString {
+	value = storyPlus_AllCount;
+}
+
+String69: WOString {
+	value = storyPlus_ClosedCount;
+}
+
+String7: WOString {
+	value = selectedProject;
+}
+
+String70: WOString {
+	value = storyPlus_Status;
+}
+
+String71: WOString {
+	value = storyPlus_Status;
+}
+
+String72: WOString {
+	value = aKey.bugId;
+}
+
+String73: WOString {
+	value = storyPlus_Description;
+}
+
+String74: WOString {
+	value = storyPlus_Description;
+}
+
+String75: WOString {
+	value = aString;
+}
+
+String76: WOString {
+	value = anEo.shortDesc;
+}
+
+String77: WOString {
+	value = selectedProject;
+}
+
+String78: WOString {
+	value = labelForSprintKey;
+}
+
+String79: WOString {
+	value = anEo.children.@count;
+}
+
+String8: WOString {
+	value = bugsAndEnhancementsForSelectedRelease.@count;
+}
+
+String80: WOString {
+	value = anEo.shortDesc;
+}
+
+String81: WOString {
+	value = selectedProject;
+}
+
+String82: WOString {
+	value = topicString;
+}
+
+String83: WOString {
+	value = anEo.assignee.realname;
+}
+
+String84: WOString {
+	value = anEo.children.@count;
+}
+
+String85: WOString {
+	value = anEo.percentCompleteCountChildren;
+}
+
+String86: WOString {
+	value = selectedProject;
+}
+
+String87: WOString {
+	value = anEo.bugId;
+}
+
+String9: WOString {
+	value = percentCompleteResolved;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = resetDisplayedBugs;
+	value = "Update";
+}
+componentState: ReportGenerator {
+    displayGroup = displayGroup;
+	showReport = true;
+    hideReportSpecifier = hideController;
+	selectedRow = aRow;
+	selectedColumn = aColumn;
+	resubmit = handleNamedAnchor;
+}

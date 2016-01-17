@@ -1,0 +1,139 @@
+<WEBOBJECT NAME="PageWrapper">
+<script type="text/javascript"> 
+    function addInput(divName){
+          var newdiv = document.createElement('div');
+          newdiv.innerHTML = "<input size=50 type='text' name='task_description'> &nbsp;<webobject name="String1"></webobject>&nbsp; <input size=5 type='text' value=0.0 name='estimate'> <br>";
+        document.getElementById(divName).appendChild(newdiv);
+    }
+
+</script>
+
+
+<center><font size="6">New Story</font></center><Table align="left" cellspacing="5" cellpadding="5" border="0">
+      <WEBOBJECT NAME="ErrorPanel">
+         <tr valign="top">
+            <td align="center">
+               <WEBOBJECT NAME="ErrorTable">
+                  <tr>
+                     <td><b><WEBOBJECT NAME="ErrorMessage"></WEBOBJECT></b></td>
+                  </tr>
+               </WEBOBJECT>
+               <br>
+            </td>
+         </tr>
+      </WEBOBJECT>
+      <tr>
+         <td><WEBOBJECT NAME="EditingForm">
+               <table>
+                  <tr valign="top">
+                     <td valign="top" align="right"><Table cellspacing="1" border="0" cellpadding="2">
+                           
+                              <tr>
+                                 <td align="center" colspan="3">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                       <tr>
+                                          <td>
+                                             <WEBOBJECT NAME="Banner"></WEBOBJECT>
+                                          </td>
+                                       </tr>
+                                       <tr bgcolor="#eeeeee">
+                                          <td align="left" colspan="3"><webobject name="FontContainer"><b>Story</b></webobject></td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           
+                           <tr>
+                              <td valign="top" align="center">
+                                 <table border="0" cellpadding="2" cellspacing="2">
+                                    
+                                       <tr bgcolor="#eeeeee"><td align="right"><font size="-1"><strong>Product</strong></font></td><td><webobject name="Conditional1"><webobject name="Browser2"></webobject></webobject> &nbsp;<webobject name="Conditional2"><webobject name="String2"></webobject></webobject></td></tr><tr bgcolor="#eeeeee">
+                                          <td align="right"><font size="-1"><strong>Release</strong></font></td>
+                                          <td>
+                                             <webobject name="Conditional3"><webobject name="PopUpButton1"></webobject></webobject><webobject name="Conditional4"><webobject name="String3"></webobject></webobject></td>
+                                       </tr>
+                                    
+                                       <tr bgcolor="#eeeeee">
+                                          <td align="right"><font size="-1"><strong>Story Description</strong></font></td>
+                                          <td>
+                                             <webobject name="Conditional6"><webobject name="TextField1"></webobject></webobject><webobject name="Conditional5"><webobject name="String4"></webobject></webobject></td>
+                                       </tr>
+                                    
+                                       <tr bgcolor="#eeeeee">
+                                          <td align="right"><font size="-1"><strong>Sprint</strong></font></td>
+                                          <td>
+                                             
+
+   
+   <webobject name="Conditional7"><webobject name="PopUpButton2"></webobject></webobject><webobject name="Conditional8"><webobject name="String5"></webobject></webobject>
+
+</td>
+                                       </tr>
+                                    
+                                       <tr bgcolor="#eeeeee">
+                                          <td align="right"><font size="-1"><strong>Tasks</strong></font></td>
+                                          <td>
+                                             
+
+   
+   <table width="100%" border="0" cellpadding="1">
+      <tr>
+         <td>
+	<div id="dynamicInput">
+          <input  size=50 type='text' name='task_description'> &nbsp;<webobject name="String1"></webobject>&nbsp; <input size=5 type='text' value=0.0 name='estimate'>
+
+<br>
+     </div>
+     <input type="button" value="Add another Task" onClick="addInput('dynamicInput');">
+
+
+
+
+
+</td>
+      </tr>
+   </table>
+
+</td>
+                                       </tr>
+                                    
+                                 </table>
+                              </td>
+                           </tr>
+                        </Table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="center" colspan="3">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                           <tr>
+                              <td align="center">
+                                 
+                                    <WEBOBJECT NAME="CancelLink"><WEBOBJECT NAME="CancelButton"></WEBOBJECT></WEBOBJECT>
+                                 
+                                 
+                              </td>
+                              
+                                 <td align="right">
+                                    
+                                 </td>
+                              
+                              <td align="left">
+                                 
+                                    
+                                 
+                                 
+                                    <WEBOBJECT NAME="SubmitChanges"></WEBOBJECT>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </WEBOBJECT>
+         </td>
+      </tr>
+   </Table>
+
+</WEBOBJECT>

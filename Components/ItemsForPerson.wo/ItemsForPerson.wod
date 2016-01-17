@@ -1,0 +1,500 @@
+Conditional1: WOConditional {
+	condition = personTopic.bugItem.allItems.@count;
+}
+
+Conditional10: WOConditional {
+	condition = isListEmpty;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = personTopic.bugItem.allItems.@count;
+	negate = false;
+}
+
+Conditional3: WOConditional {
+	condition = personTopic.taskItem.allItems.@count;
+}
+
+Conditional4: WOConditional {
+	condition = personTopic.taskItem.allItems.@count;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = personTopic.bugItem.allItems.@count;
+}
+
+Hyperlink1: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+}
+
+Hyperlink2: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+}
+
+Hyperlink3: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+}
+Hyperlink30: WOHyperlink {
+	href = "http://jquery.com";
+}
+
+Hyperlink4: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+}
+
+Hyperlink5: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+
+}
+
+Hyperlink6: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+
+}
+
+Hyperlink7: WOHyperlink {
+	href = anItem.bugURL;
+	title = anItem.shortDesc;
+	target = "_blank";
+}
+
+Hyperlink8: WOHyperlink {
+	href = anItem.bugURL;
+	title = anItem.shortDesc;
+	target = "_blank";
+}
+
+Hyperlink9: WOHyperlink {
+	href = anItem.bugURL;
+	title = anItem.shortDesc;
+	target = "_blank";
+}
+
+Repetition1: WORepetition {
+	item = anEo;
+	list = personTopic.bugItem.allResolvedItems;
+}
+
+Repetition10: WORepetition {
+	item = sprintKey;
+	list = sprintKeys;
+}
+
+Repetition11: WORepetition {
+	item = anEo;
+	list = storiesForCurrentSprint;
+}
+
+Repetition2: WORepetition {
+	item = anEo;
+	list = personTopic.bugItem.allOpenItems;
+}
+
+Repetition3: WORepetition {
+	item = anEo;
+	list = personTopic.bugItem.allClosedItems;
+}
+
+Repetition4: WORepetition {
+	item = anEo;
+	list = personTopic.taskItem.allOpenItems;
+}
+
+Repetition5: WORepetition {
+	item = anEo;
+	list = personTopic.taskItem.allResolvedItems;
+}
+
+Repetition6: WORepetition {
+	item = anEo;
+	list = personTopic.taskItem.allClosedItems;
+}
+
+Repetition7: WORepetition {
+	item = anItem;
+	list = anEo.parentStories;
+}
+
+Repetition8: WORepetition {
+	item = anItem;
+	list = anEo.parentStories;
+}
+
+Repetition9: WORepetition {
+	item = anItem;
+	list = anEo.parentStories;
+}
+
+String1: WOString {
+	value = anEo.bugId;
+}
+
+String10: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String11: WOString {
+	value = anEo.type;
+}
+
+String12: WOString {
+	value = anEo.priority;
+}
+
+String13: WOString {
+	value = anEo.bugSeverity;
+}
+
+String14: WOString {
+	value = anEo.assignee.realname;
+}
+
+String15: WOString {
+	value = anEo.bugStatus;
+}
+
+String16: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String17: WOString {
+	value = anEo.bugSeverity;
+}
+
+String18: WOString {
+	value = anEo.priority;
+}
+
+String19: WOString {
+	value = anEo.bugStatus;
+}
+
+String2: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String20: WOString {
+	value = anEo.assignee.realname;
+}
+
+String21: WOString {
+	value = anEo.type;
+}
+
+String22: WOString {
+	value = anEo.bugId;
+}
+
+String23: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String24: WOString {
+	value = anEo.shortDesc;
+}
+
+String25: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String26: WOString {
+	value = anEo.bugSeverity;
+}
+
+String27: WOString {
+	value = anEo.priority;
+}
+
+String28: WOString {
+	value = anEo.bugStatus;
+}
+
+String29: WOString {
+	value = anEo.assignee.realname;
+}
+
+String3: WOString {
+	value = anEo.shortDesc;
+}
+
+String30: WOString {
+	value = anEo.type;
+}
+
+String31: WOString {
+	value = anEo.type;
+}
+
+String32: WOString {
+	value = anEo.bugId;
+}
+
+String33: WOString {
+	value = anEo.shortDesc;
+}
+
+String34: WOString {
+	value = anEo.bugId;
+}
+
+String35: WOString {
+	value = anEo.shortDesc;
+}
+
+String36: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String37: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String38: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String39: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String4: WOString {
+	value = anEo.assignee.realname;
+}
+
+String40: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String41: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String42: WOString {
+	value = anEo.bugStatus;
+}
+
+String43: WOString {
+	value = anEo.assignee.realname;
+}
+
+String44: WOString {
+	value = anEo.type;
+}
+
+String45: WOString {
+	value = anEo.bugId;
+}
+
+String46: WOString {
+	value = anEo.shortDesc;
+}
+
+String47: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String48: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String49: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String5: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String50: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String51: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String52: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String53: WOString {
+	value = anEo.bugStatus;
+}
+
+String54: WOString {
+	value = anEo.assignee.realname;
+}
+
+String55: WOString {
+	value = anEo.type;
+}
+
+String56: WOString {
+	value = anEo.bugId;
+}
+
+String57: WOString {
+	value = anEo.shortDesc;
+}
+
+String58: WOString {
+	value = selectedProject;
+}
+
+String59: WOString {
+	value = labelForSprint;
+}
+
+String6: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String60: WOString {
+	value = personTopic.topicName;
+}
+
+String61: WOString {
+	value = anEo.lastModified;
+}
+
+String62: WOString {
+	value = anEo.lastModified;
+}
+
+String63: WOString {
+	value = anEo.lastModified;
+}
+
+String64: WOString {
+	value = anEo.lastModified;
+}
+
+String65: WOString {
+	value = anEo.lastModified;
+}
+
+String66: WOString {
+	value = anEo.lastModified;
+}
+
+String67: WOString {
+	value = anEo.priority;
+}
+
+String68: WOString {
+	value = anEo.priority;
+}
+
+String69: WOString {
+	value = anEo.priority;
+}
+
+String7: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String70: WOString {
+	value = personTopic.allItem.origEstimateHoursAll;
+}
+
+String71: WOString {
+	value = personTopic.allItem.currentEstimateHoursAll;
+}
+
+String72: WOString {
+	value = personTopic.allItem.hoursWorkedAll;
+}
+
+String73: WOString {
+	value = personTopic.allItem.remainingHoursOpen;
+}
+
+String74: WOString {
+	value = percentComplete;
+}
+
+String75: WOString {
+	value = weekdaysRemainingInSprint;
+}
+
+String76: WOString {
+	value = daysRemainingInSprint;
+}
+
+String77: WOString {
+	value = anItem.bugId;
+}
+
+String78: WOString {
+	value = anItem.type;
+}
+
+String79: WOString {
+	value = anItem.bugId;
+}
+
+String8: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String80: WOString {
+	value = anItem.type;
+}
+
+String81: WOString {
+	value = anItem.bugId;
+}
+
+String82: WOString {
+	value = anItem.type;
+}
+
+String83: WOString {
+	value = labelForSprintKey;
+}
+
+String84: WOString {
+	value = selectedProject;
+}
+
+String85: WOString {
+	value = anEo.shortDesc;
+}
+
+String86: WOString {
+	value = selectedProject;
+}
+
+String87: WOString {
+	value = selectedProject;
+}
+
+String9: WOString {
+	value = anEo.bugStatus;
+}

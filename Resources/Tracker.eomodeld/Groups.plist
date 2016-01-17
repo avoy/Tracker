@@ -1,0 +1,71 @@
+{
+    attributes = (
+        {
+            columnName = description; 
+            externalType = text; 
+            name = groupsDescription; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 65535; 
+        }, 
+        {
+            columnName = id; 
+            externalType = mediumint; 
+            name = id; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = isactive; 
+            externalType = tinyint; 
+            name = isactive; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = isbuggroup; 
+            externalType = tinyint; 
+            name = isbuggroup; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "last_changed"; 
+            externalType = datetime; 
+            name = lastChanged; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = name; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 255; 
+        }, 
+        {
+            columnName = userregexp; 
+            externalType = tinytext; 
+            name = userregexp; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 255; 
+        }
+    ); 
+    attributesUsedForLocking = (lastChanged, isbuggroup, isactive, name, userregexp, groupsDescription, id); 
+    className = EOGenericRecord; 
+    classProperties = (lastChanged, isbuggroup, isactive, name, userregexp, groupsDescription); 
+    externalName = groups; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (lastChanged, isbuggroup, isactive, name, userregexp, groupsDescription); 
+        uniqueID = 196630655; 
+    }; 
+    name = Groups; 
+    primaryKeyAttributes = (id); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

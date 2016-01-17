@@ -1,0 +1,40 @@
+{
+    attributes = (
+        {
+            columnName = "default_value"; 
+            externalType = varchar; 
+            name = defaultValue; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 32; 
+        }, 
+        {
+            columnName = "is_enabled"; 
+            externalType = tinyint; 
+            name = isEnabled; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = name; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 32; 
+        }
+    ); 
+    attributesUsedForLocking = (defaultValue, name, isEnabled); 
+    className = EOGenericRecord; 
+    classProperties = (defaultValue, isEnabled); 
+    externalName = setting; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (defaultValue, isEnabled); 
+        uniqueID = 196630514; 
+    }; 
+    name = Setting; 
+    primaryKeyAttributes = (name); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

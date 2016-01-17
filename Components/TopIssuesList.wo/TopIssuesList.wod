@@ -1,0 +1,156 @@
+BatchNavigationBar: WOBatchNavigationBar { 	displayGroup = itemDisplayGroup;
+}
+
+Conditional1: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional10: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional6: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = isItems;
+}
+
+Conditional8: WOConditional {
+	condition = isItems;
+	negate = true;
+}
+
+Conditional9: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Hyperlink1: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Image1: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Repetition1: WORepetition {
+	item = anItem;
+	list = itemDisplayGroup.displayedObjects;
+}
+
+SortOrder: WOSortOrder { 	key = "bugId";
+	displayKey = "ID";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder2: WOSortOrder { 	key = "priority";
+	displayKey = "Priority";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder3: WOSortOrder { 	key = "assignee.realname";
+	displayKey = "Assignee";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder4: WOSortOrder { 	key = "component.componentName";
+	displayKey = "Component";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder5: WOSortOrder { 	key = "bugStatus";
+	displayKey = "Status";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder6: WOSortOrder { 	key = "bugSeverity";
+	displayKey = "Severity";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder7: WOSortOrder { 	key = "product.productName";
+	displayKey = "Product";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder8: WOSortOrder { 	key = "targetMilestone";
+	displayKey = "Milestone";
+	displayGroup = itemDisplayGroup;
+}
+
+String1: WOString {
+	value = anItem.bugId;
+}
+
+String10: WOString {
+	value = anItem.targetMilestone;
+}
+
+String11: WOString {
+	value = title;
+}
+
+String12: WOString {
+	value = queryDesc;
+	escapeHTML = false;
+}
+
+String2: WOString {
+	value = anItem.priority;
+}
+
+String3: WOString {
+	value = anItem.bugSeverity;
+}
+
+String4: WOString {
+	value = anItem.component.componentName;
+}
+
+String5: WOString {
+	value = anItem.bugStatus;
+}
+
+String6: WOString {
+	value = anItem.assignee.realname;
+}
+
+String7: WOString {
+	value = anItem.shortDesc;
+}
+
+String8: WOString {
+	dateformat = "%b %d, %Y %I:%M:%S %p";
+	value = today;
+}
+
+String9: WOString {
+	value = anItem.product.productName;
+}

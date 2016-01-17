@@ -1,0 +1,75 @@
+ActiveImage1: WOActiveImage {
+	action = emailCurrentPage;
+	border = 0;
+	filename = "Email.gif";
+	framework = "app";
+}
+
+Conditional1: WOConditional {
+	condition = isList;
+}
+
+Conditional2: WOConditional {
+	condition = isReport;
+}
+
+Conditional3: WOConditional {
+	condition = isEstimate;
+}
+
+Conditional4: WOConditional {
+	condition = isListEmpty;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = isListEmpty;
+}
+
+Conditional6: WOConditional {
+	condition = isToolBar;
+}
+
+ESTIMATEACTUAL: EstimateActual {
+    displayGroup = displayGroup;
+}
+
+ExclamationImage : WOImage {
+	border = "0";
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+};
+
+FontContainer : WOGenericContainer {
+	color = "000000";
+	elementName = "font";
+};
+
+Hyperlink1: WOHyperlink {
+	action = showReport;
+}
+
+Hyperlink3: WOHyperlink {
+	action = showList;
+}
+
+LIST: ItemList {
+    itemDisplayGroup = displayGroup;
+	commentsFlag = commentsFlag;
+	releaseFlag = releaseFlag;
+
+}
+
+Report: ReportGenerator {
+	showReport = true;
+    hideReportSpecifier = false;
+	selectedRow = aRow;
+	selectedColumn = aColumn;
+    needUpdate = needUpdate;
+    displayGroup = displayGroup;
+
+}
+
+String3: WOString {
+	value = label;
+}

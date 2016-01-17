@@ -1,0 +1,17 @@
+{
+    milestoneDates = {
+        class = EOFetchSpecification; 
+        entityName = MilestoneDates; 
+        fetchLimit = 0; 
+        qualifier = {
+            class = EOKeyValueQualifier; 
+            key = releaseName; 
+            selectorName = "isEqualTo:"; 
+            value = {"_key" = version; class = EOQualifierVariable; }; 
+        }; 
+        refreshesRefetchedObjects = YES; 
+        sortOrderings = (
+            {class = EOSortOrdering; key = startDate; selectorName = "compareAscending:"; }
+        ); 
+    }; 
+}

@@ -1,0 +1,364 @@
+BurnDown2: BurnDown {
+	chartType = "hours";
+	itemsToGraph = tasksForCurrentSprint;
+}
+
+CheckboxMatrix: WOCheckboxMatrix { 	
+	list = potentialInclusions;
+	item = aString;
+	selections = selectedInclusions;
+}
+
+Conditional20: WOConditional {
+	condition = isHoursInCurrentSprint;
+}
+
+Conditional32: WOConditional {
+	condition = isCurrentSprint;
+}
+
+Conditional4: WOConditional {
+	condition = anEo.isURL;
+	negate = true;
+}
+
+Conditional45: WOConditional {
+	condition = isStatusWhiteboard;
+}
+
+Conditional47: WOConditional {
+	condition = isStatusWhiteboard;
+	negate = true;
+}
+
+Conditional48: WOConditional {
+	condition = showBySprint;
+}
+
+Conditional49: WOConditional {
+	condition = anEo.children.@count;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = anEo.isURL;
+}
+
+Conditional50: WOConditional {
+	condition = isListEmpty;
+	negate = true;
+}
+
+Conditional51: WOConditional {
+	condition = anEo.children.@count;
+}
+
+Generic1: WOGenericContainer {
+	elementName = "tr";
+	id= labelForSprint;
+	style = downToggleStyle;
+
+}
+
+Hyperlink1: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+}
+
+Hyperlink12: WOHyperlink {
+	action = goSprintBugMetrics;
+	class = "useColorboxBurnDown";
+
+}
+
+Hyperlink16: WOHyperlink {
+	action = goBurnDown;
+	class = "useColorboxBurnDown";
+
+}
+
+Hyperlink17: WOHyperlink {
+	action = goTaskDetails;
+	class = "useColorboxLarge";
+	rel = anEo.targetMilestone;
+}
+
+Hyperlink18: WOHyperlink {
+	href = anEo.treeURL;
+	class="useColorboxMedium";
+}
+
+Hyperlink24: WOHyperlink {
+	href = anEo.bugFileLoc;
+}
+
+Hyperlink27: WOHyperlink {
+	action = goPunchListRatings;
+}
+
+Hyperlink28: WOHyperlink {
+	action = goReleaseSummary;
+}
+
+Hyperlink29: WOHyperlink {
+	?wosid = false;
+	actionClass = "DirectAction";
+	directActionName = "productCouncil";
+}
+
+Hyperlink3: WOHyperlink {
+	action = goDisplayComment;
+	class="useColorboxSmall";
+
+}
+
+Hyperlink30: WOHyperlink {
+	action = showReport;
+}
+
+Hyperlink31: WOHyperlink {
+	action = goNetOpsReport;
+}
+
+Hyperlink32: WOHyperlink {
+	href = anEo.treeURL;
+	class="useColorboxMedium";
+
+}
+
+Hyperlink33: WOHyperlink {
+	action = goOrphans;
+}
+
+Hyperlink34: WOHyperlink {
+	action = goTaskDetails;
+	class = colorBoxClass;
+	rel = anEo.targetMilestone;
+
+}
+
+Hyperlink35: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+}
+
+Hyperlink36: WOHyperlink {
+	action = goStatusReport;
+}
+
+Hyperlink37: WOHyperlink {
+	action = goReleaseSchedule;
+}
+
+Hyperlink38: WOHyperlink {
+
+	?wosid = false;
+	actionClass = "DirectAction";
+	?project = selectedProject;
+	directActionName = "featureReport";
+}
+
+Hyperlink39: WOHyperlink {
+	action = showList;
+}
+
+Image1: WOImage {
+	filename = "RightTriangle.gif";
+	framework = "JavaWOExtensions";
+	id = rightArrowName;
+	style = rightToggleStyle;
+}
+Image2: WOImage {
+	filename = "DownTriangle.gif";
+	framework = "JavaWOExtensions";
+	id = downArrowName;
+	style = downToggleStyle;
+}
+
+MILESTONE_DATES: MilestoneForProject {
+   selectedProject = selectedProject;
+}
+
+MilestoneForProject1: MilestoneForProject {
+  selectedProject = selectedProject;
+}
+
+Repetition1: WORepetition {
+	list = selectedProducts;
+	item = currentProduct;
+}
+
+Repetition4: WORepetition {
+	item = sprintKey;
+	list = sprintKeys;
+}
+
+Repetition5: WORepetition {
+	item = anEo;
+	list = storiesForCurrentSprint;
+}
+
+Repetition6: WORepetition {
+	item = topicString;
+	list = personStatus.topLevelTopics;
+}
+
+Repetition7: WORepetition {
+	item = sprintKey;
+	list = sprintKeys;
+}
+
+Repetition8: WORepetition {
+	item = anEo;
+	list = storiesForCurrentSprint;
+}
+
+StateTD: WOGenericContainer {
+	align = "center";
+	bgcolor = bgColorForState;
+	elementName = "td";
+}
+
+String1: WOString {
+	value = anEo.bugId;
+}
+
+String10: WOString {
+	value = aString;
+}
+
+String2: WOString {
+	value = selectedProject;
+}
+
+String20: WOString {
+	value = anEo.percentCompleteHoursAllChildren;
+}
+
+String21: WOString {
+	value = anEo.allChildrenCurrentEstimate;
+}
+
+String23: WOString {
+	value = anEo.allChildren.@count;
+}
+
+String25: WOString {
+	value = anEo.percentCompleteCountChildren;
+}
+
+String29: WOString {
+	value = labelForSprint;
+}
+
+String3: WOString {
+	value = anEo.shortDesc;
+}
+
+String30: WOString {
+	value = storiesForCurrentSprint.@count;
+}
+
+String31: WOString {
+	value = startDateForCurrentSprint;
+	dateformat = "%b %d, %Y";
+}
+
+String32: WOString {
+	value = endDateForCurrentSprint;
+	dateformat = "%b %d, %Y";
+}
+
+String33: WOString {
+	value = percentCompleteChildrenForCurrentSprint;
+}
+
+String34: WOString {
+	value = anEo.state;
+}
+
+String4: WOString {
+	value = anEo.allClosedChildren.@count;
+}
+
+String42: WOString {
+	value = weekdaysRemainingInSprint;
+}
+
+String43: WOString {
+	value = daysRemainingInSprint;
+}
+
+String44: WOString {
+	value = anEo.shortDesc;
+}
+
+String55: WOString {
+	value = anEo.state;
+}
+
+String56: WOString {
+	value = anEo.bugId;
+}
+
+String57: WOString {
+	value = selectedProject;
+}
+
+String58: WOString {
+	value = labelForSprint;
+}
+
+String59: WOString {
+	value = anEo.percentCompleteCountChildren;
+}
+
+String6: WOString {
+	value = anEo.allChildrenHoursWorked;
+}
+
+String60: WOString {
+	value = anEo.shortDesc;
+}
+
+String61: WOString {
+	value = anEo.assignee.realname;
+}
+
+String62: WOString {
+	value = selectedProject;
+}
+
+String63: WOString {
+	value = anEo.children.@count;
+}
+
+String64: WOString {
+	value = anEo.shortDesc;
+}
+
+String65: WOString {
+	value = selectedProject;
+}
+
+String66: WOString {
+	value = anEo.children.@count;
+}
+
+String67: WOString {
+	value = topicString;
+}
+
+String7: WOString {
+	value = currentProduct;
+}
+
+String8: WOString {
+	value = sprint;
+}
+
+String9: WOString {
+	dateformat = "%b %d, %Y  %I:%M %p";
+	value = now;
+}

@@ -1,0 +1,98 @@
+{
+    attributes = (
+        {
+            columnName = category; 
+            externalType = smallint; 
+            name = category; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = creator; 
+            externalType = mediumint; 
+            name = creator; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = frequency; 
+            externalType = smallint; 
+            name = frequency; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "is_public"; 
+            externalType = tinyint; 
+            name = isPublic; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "last_viewed"; 
+            externalType = datetime; 
+            name = lastViewed; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = name; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = query; 
+            externalType = mediumtext; 
+            name = query; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            columnName = "series_id"; 
+            externalType = mediumint; 
+            name = seriesId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = subcategory; 
+            externalType = smallint; 
+            name = subcategory; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }
+    ); 
+    attributesUsedForLocking = (
+        category, 
+        frequency, 
+        subcategory, 
+        isPublic, 
+        lastViewed, 
+        seriesId, 
+        creator, 
+        query, 
+        name
+    ); 
+    className = EOGenericRecord; 
+    classProperties = (category, frequency, subcategory, isPublic, lastViewed, creator, query, name); 
+    externalName = series; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (category, frequency, subcategory, isPublic, lastViewed, creator, query, name); 
+        uniqueID = 196630720; 
+    }; 
+    name = Series; 
+    primaryKeyAttributes = (seriesId); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

@@ -1,0 +1,40 @@
+Conditional1: WOConditional {
+	condition = isUser;
+}
+
+Conditional2: WOConditional {
+	condition = isUser;
+	negate = true;
+}
+
+Form1: WOForm {
+method = "get";
+}
+Login1: Login {
+	errorMessage = notLoggedIn;
+}
+
+PopUpButton1: WOPopUpButton {
+	item = session.aString;
+	list = potentialProjects;
+	selection = selectedProject;
+}
+
+ReportListWrapper: ReportListWrapper {
+    displayGroup = displayGroup;
+    aRow = aRow;
+    aColumn = aColumn;
+	isReport = isReport;
+	isList = isList;
+    needUpdate = needUpdate;
+	releaseFlag = releaseFlag;    
+}
+
+String1: WOString {
+	value = session.user.realname;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = resetDisplayedBugs;
+	value = "Update";
+}

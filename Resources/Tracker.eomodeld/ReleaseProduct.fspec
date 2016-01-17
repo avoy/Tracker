@@ -1,0 +1,25 @@
+{
+    productForRelease = {
+        class = EOFetchSpecification; 
+        entityName = ReleaseProduct; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = "release.releaseName"; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = release; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = productName; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = product; class = EOQualifierVariable; }; 
+                }
+            ); 
+        }; 
+    }; 
+}

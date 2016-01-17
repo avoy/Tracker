@@ -1,0 +1,90 @@
+Banner : WOImage {
+	filename = "EditMetalBan.gif";
+	border = "0";
+	framework = "JavaDirectToWeb";
+};
+
+Browser2: WOPopUpButton {
+	item = aString;
+	list = potentialProducts;
+	selection = selectedProduct;
+	name = "product";
+	onChange = "submit();";
+}
+
+CancelButton : WOImage {
+	width = "88";
+	height = "31";
+	alt = "Reverts your changes";
+	filename = "CancelMetalBtn.gif";
+	name = "Reverts your changes";
+	border = "0";
+	framework = "JavaDirectToWeb";
+};
+
+CancelLink : WOHyperlink {
+	action = goCancel;
+};
+
+EditingForm : WOForm {
+	multipleSubmit = true;
+};
+
+ErrorMessage : WOString {
+	escapeHTML = "NO";
+	value = errorMessage;
+};
+
+ErrorPanel : WOConditional {
+	condition = errorMessage.length;
+};
+
+ErrorTable : WOGenericContainer {
+	elementName = "table";
+	border = "1";
+	cellpadding = "2";
+	bgColor = "FF0000";
+};
+
+FontContainer : WOGenericContainer {
+	color = "#000000";
+	elementName = "font";
+};
+
+PageWrapper : PageWrapper {
+};
+
+PopUpButton1: WOPopUpButton {
+	item = aString;
+	list = potentialReleases;
+	selection = story.version;
+}
+
+PopUpButton2: WOPopUpButton {
+	item = aMilestone;
+	list = sprintKeys;
+	selection = story.milestone;
+}
+
+String1: WOString {
+	value = assigneeSelectString;
+	escapeHTML = false;
+}
+
+
+
+SubmitChanges : WOImageButton {
+	width = "88";
+	filename = "SaveMetalBtn.gif";
+	alt = "Saves your changes";
+	name = "Saves your changes";
+	border = "0";
+	action = goSave;
+	height = "31";
+	framework = "JavaDirectToWeb";
+};
+
+TextField1: WOTextField {
+	size = 80;
+	value = story.summary;
+}

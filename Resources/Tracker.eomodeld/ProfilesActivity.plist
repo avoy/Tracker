@@ -1,0 +1,65 @@
+{
+    attributes = (
+        {
+            columnName = fieldid; 
+            externalType = mediumint; 
+            name = fieldid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = newvalue; 
+            externalType = tinytext; 
+            name = newvalue; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 255; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = oldvalue; 
+            externalType = tinytext; 
+            name = oldvalue; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 255; 
+        }, 
+        {
+            columnName = "profiles_when"; 
+            externalType = datetime; 
+            name = profilesWhen; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = userid; 
+            externalType = mediumint; 
+            name = userid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = who; 
+            externalType = mediumint; 
+            name = who; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (profilesWhen, newvalue, fieldid, userid, who, oldvalue); 
+    className = EOGenericRecord; 
+    classProperties = (profilesWhen, newvalue, fieldid, userid, who, oldvalue); 
+    externalName = "profiles_activity"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (profilesWhen, newvalue, fieldid, userid, who, oldvalue); 
+        uniqueID = 196630714; 
+    }; 
+    name = ProfilesActivity; 
+    primaryKeyAttributes = (profilesWhen, userid); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

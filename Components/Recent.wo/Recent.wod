@@ -1,0 +1,30 @@
+Form1: WOForm {
+method = "get";
+}
+PageWrapper: PageWrapper {
+}
+
+PopUpButton1: WOPopUpButton {
+	item = aProject;
+	list = potentialProjects;
+	selection = selectedProject;
+}
+
+ReportListWrapper: ReportListWrapper {
+    displayGroup = displayGroup;
+    aRow = aRow;
+    aColumn = aColumn;
+	isReport = isReport;
+	isList = isList;
+    needUpdate = needUpdate;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = resetDisplayedBugs;
+	value = "Update";
+}
+TextField1: WOTextField {
+	value = numDays;
+	numberformat = "0";
+	size = 4;
+}

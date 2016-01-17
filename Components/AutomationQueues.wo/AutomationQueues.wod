@@ -1,0 +1,875 @@
+BatchNavigationBar: WOBatchNavigationBar { 	displayGroup = testDevDisplayGroup;
+}
+
+BatchNavigationBar2: WOBatchNavigationBar { 	displayGroup = testExecutionDisplayGroup;
+}
+
+BatchNavigationBar3: WOBatchNavigationBar { 	
+	displayGroup = labDisplayGroup;
+}
+
+CheckBox1: WOCheckboxMatrix {
+	list = potentialQueues;
+	item = aQueue;
+	selections = selectedQueues;
+	maxColumns = 3;	
+}
+
+Conditional1: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional10: WOConditional {
+	condition = isTestDev;
+}
+
+Conditional11: WOConditional {
+	condition = testExecutionDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional12: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional13: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional15: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional16: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional17: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional18: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional19: WOConditional {
+	condition = testExecutionDisplayGroup.allObjects.@count;
+}
+
+Conditional2: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional20: WOConditional {
+	condition = isTestExecution;
+}
+
+Conditional21: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional22: WOConditional {
+	condition = anItem.isHot;
+}
+
+Conditional23: WOConditional {
+	condition = anItem.isHot;
+	negate = true;
+}
+
+Conditional24: WOConditional {
+	condition = anItem.isHot;
+}
+
+Conditional25: WOConditional {
+	condition = anItem.isHot;
+	negate = true;
+}
+
+Conditional26: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional27: WOConditional {
+	condition = anItem.isHot;
+	negate = true;
+}
+
+Conditional28: WOConditional {
+	condition = anItem.isHot;
+}
+
+Conditional29: WOConditional {
+	condition = anItem.isHot;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional30: WOConditional {
+	condition = anItem.isHot;
+}
+
+Conditional31: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional33: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional34: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional35: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional36: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional37: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional38: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional39: WOConditional {
+	condition = labDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional40: WOConditional {
+	condition = anItem.isHot;
+	negate = true;
+}
+
+Conditional41: WOConditional {
+	condition = anItem.isHot;
+}
+
+Conditional42: WOConditional {
+	condition = anItem.isHot;
+	negate = true;
+}
+
+Conditional43: WOConditional {
+	condition = anItem.isHot;
+}
+
+Conditional44: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional45: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional46: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional47: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional48: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional50: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional51: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional52: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional53: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional54: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional55: WOConditional {
+	condition = labDisplayGroup.allObjects.@count;
+}
+
+Conditional56: WOConditional {
+	condition = isLab;
+}
+
+Conditional57: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional6: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = testDevDisplayGroup.allObjects.@count;
+}
+
+Conditional8: WOConditional {
+	condition = testDevDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional9: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Form1: WOForm {
+}
+
+Hyperlink1: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink2: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink3: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink4: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink6: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink7: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Image1: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image10: WOImage {
+	filename = "CheckboxOn.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image11: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image12: WOImage {
+	filename = "CheckboxOff.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image13: WOImage {
+	filename = "CheckboxOn.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image14: WOImage {
+	filename = "CheckboxOff.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image15: WOImage {
+	filename = "CheckboxOn.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image2: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image3: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image4: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image5: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image6: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image7: WOImage {
+	filename = "CheckboxOff.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image8: WOImage {
+	filename = "CheckboxOn.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image9: WOImage {
+	filename = "CheckboxOff.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Repetition1: WORepetition {
+	item = anItem;
+	list = testDevDisplayGroup.displayedObjects;
+}
+
+Repetition2: WORepetition {
+	item = anItem;
+	list = testExecutionDisplayGroup.displayedObjects;
+}
+
+Repetition3: WORepetition {
+	item = anItem;
+	list = testExecutionResolvedItems;
+}
+
+Repetition4: WORepetition {
+	item = anItem;
+	list = testDevResolvedItems;
+}
+
+Repetition5: WORepetition {
+	item = anItem;
+	list = labResolvedItems;
+}
+
+Repetition6: WORepetition {
+	item = anItem;
+	list = labDisplayGroup.displayedObjects;
+}
+
+SortOrder: WOSortOrder { 	
+	key = "bugId";
+	displayKey = "ID";
+	displayGroup = testDevDisplayGroup;
+}
+
+SortOrder11: WOSortOrder { 	
+	key = "version";
+	displayKey = "Release";
+	displayGroup = testExecutionDisplayGroup;
+}
+
+SortOrder12: WOSortOrder { 	
+	displayGroup = testExecutionDisplayGroup;
+	key = "priority";
+	displayKey = "Priority";
+}
+
+SortOrder13: WOSortOrder { 	
+	key = "bugSeverity";
+	displayKey = "Severity";
+	displayGroup = testExecutionDisplayGroup;
+}
+
+SortOrder14: WOSortOrder { 	
+	displayGroup = testExecutionDisplayGroup;
+	key = "bugId";
+	displayKey = "ID";
+}
+
+SortOrder15: WOSortOrder { 	
+	key = "hot";
+	displayKey = "Hot";
+	displayGroup = testDevDisplayGroup;
+}
+
+SortOrder16: WOSortOrder { 	
+	displayGroup = testExecutionDisplayGroup;
+	key = "hot";
+	displayKey = "hot";
+}
+
+SortOrder17: WOSortOrder { 	
+	key = "lastdiffed";
+	displayKey = "Last Modified";
+	displayGroup = testDevDisplayGroup;
+}
+
+SortOrder18: WOSortOrder { 	
+	key = "reporter.realname";
+	displayKey = "Reporter";
+	displayGroup = testDevDisplayGroup;
+}
+
+SortOrder19: WOSortOrder { 	
+	key = "creationTs";
+	displayKey = "opened";
+	displayGroup = testDevDisplayGroup;
+}
+
+SortOrder20: WOSortOrder { 	
+	key = "reporter.realname";
+	displayKey = "Reporter";
+	displayGroup = testExecutionDisplayGroup;
+}
+
+SortOrder21: WOSortOrder { 	
+	key = "lastdiffed";
+	displayKey = "Last Modified";
+	displayGroup = testExecutionDisplayGroup;
+}
+
+SortOrder22: WOSortOrder { 	
+	key = "creationTs";
+	displayKey = "Created";
+	displayGroup = testExecutionDisplayGroup;
+}
+
+SortOrder23: WOSortOrder { 	
+	key = "creationTs";
+	displayKey = "Created";
+	displayGroup = labDisplayGroup;
+}
+
+SortOrder24: WOSortOrder { 	
+	key = "lastdiffed";
+	displayKey = "Last Modified";
+	displayGroup = labDisplayGroup;
+}
+
+SortOrder25: WOSortOrder { 	
+	key = "reporter.realname";
+	displayKey = "Reporter";
+	displayGroup = labDisplayGroup;
+}
+
+SortOrder26: WOSortOrder { 	
+	displayGroup = labDisplayGroup;
+	key = "assignee.realname";
+	displayKey = "Assignee";
+}
+
+SortOrder27: WOSortOrder { 	
+	displayGroup = labDisplayGroup;
+	key = "bugStatus";
+	displayKey = "Status";
+}
+
+SortOrder29: WOSortOrder { 	
+	key = "version";
+	displayKey = "Release";
+	displayGroup = labDisplayGroup;
+}
+
+SortOrder3: WOSortOrder { 	
+	key = "assignee.realname";
+	displayKey = "Assignee";
+	displayGroup = testDevDisplayGroup;
+}
+
+SortOrder30: WOSortOrder { 	
+	displayGroup = labDisplayGroup;
+	key = "priority";
+	displayKey = "Priority";
+}
+
+SortOrder31: WOSortOrder { 	
+	key = "bugSeverity";
+	displayKey = "Severity";
+	displayGroup = labDisplayGroup;
+}
+
+SortOrder32: WOSortOrder { 	
+	displayGroup = labDisplayGroup;
+	key = "bugId";
+	displayKey = "ID";
+}
+
+SortOrder33: WOSortOrder { 	
+	displayGroup = labDisplayGroup;
+	key = "hot";
+	displayKey = "Hot";
+}
+
+SortOrder34: WOSortOrder { 	
+	key = "type";
+	displayKey = "Type";
+	displayGroup = testDevDisplayGroup;
+}
+
+SortOrder35: WOSortOrder { 	
+	key = "bugSeverity";
+	displayKey = "Severity";
+	displayGroup = testDevDisplayGroup;
+}
+
+SortOrder5: WOSortOrder { 	
+	key = "bugStatus";
+	displayKey = "Status";
+	displayGroup = testDevDisplayGroup;
+}
+
+SortOrder6: WOSortOrder { 	
+	key = "priority";
+	displayKey = "Priority";
+	displayGroup = testDevDisplayGroup;
+}
+
+SortOrder7: WOSortOrder { 	
+	key = "version";
+	displayKey = "Release";
+	displayGroup = testDevDisplayGroup;
+}
+
+SortOrder8: WOSortOrder { 	
+	displayGroup = testExecutionDisplayGroup;
+	key = "assignee.realname";
+	displayKey = "Assignee";
+}
+
+SortOrder9: WOSortOrder { 	
+	displayGroup = testExecutionDisplayGroup;
+	key = "bugStatus";
+	displayKey = "Status";
+}
+
+String1: WOString {
+	value = anItem.bugId;
+}
+
+String10: WOString {
+	value = anItem.shortDesc;
+}
+
+String11: WOString {
+	value = anItem.assignee.realname;
+}
+
+String12: WOString {
+	value = anItem.bugStatus;
+}
+
+String14: WOString {
+	value = anItem.version;
+}
+
+String15: WOString {
+	value = anItem.bugSeverity;
+}
+
+String16: WOString {
+	value = anItem.priority;
+}
+
+String17: WOString {
+	value = anItem.bugId;
+}
+
+String18: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String19: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String2: WOString {
+	value = anItem.priority;
+}
+
+String20: WOString {
+	value = anItem.bugId;
+}
+
+String21: WOString {
+	value = anItem.priority;
+}
+
+String22: WOString {
+	value = anItem.bugSeverity;
+}
+
+String23: WOString {
+	value = anItem.version;
+}
+
+String25: WOString {
+	value = aQueue;
+}
+
+String26: WOString {
+	value = anItem.bugStatus;
+}
+
+String27: WOString {
+	value = anItem.assignee.realname;
+}
+
+String28: WOString {
+	value = anItem.shortDesc;
+}
+
+String29: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String3: WOString {
+	value = anItem.bugSeverity;
+}
+
+String30: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String31: WOString {
+	value = anItem.shortDesc;
+}
+
+String32: WOString {
+	value = anItem.assignee.realname;
+}
+
+String33: WOString {
+	value = anItem.bugStatus;
+}
+
+String35: WOString {
+	value = anItem.version;
+}
+
+String36: WOString {
+	value = anItem.bugSeverity;
+}
+
+String37: WOString {
+	value = anItem.priority;
+}
+
+String38: WOString {
+	value = anItem.bugId;
+}
+
+String39: WOString {
+	value = anItem.reporter.realname;
+}
+
+String40: WOString {
+	value = anItem.reporter.realname;
+}
+
+String41: WOString {
+	value = timeSinceModified;
+}
+
+String42: WOString {
+	value = anItem.reporter.realname;
+}
+
+String43: WOString {
+	value = timeSinceModified;
+}
+
+String44: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String45: WOString {
+	value = timeSinceOpened;
+}
+
+String46: WOString {
+	value = timeSinceOpened;
+}
+
+String47: WOString {
+	value = anItem.reporter.realname;
+}
+
+String48: WOString {
+	value = timeSinceModified;
+}
+
+String49: WOString {
+	value = timeSinceModified;
+}
+
+String5: WOString {
+	value = anItem.bugStatus;
+}
+
+String50: WOString {
+	value = timeSinceOpened;
+}
+
+String51: WOString {
+	value = timeSinceOpened;
+}
+
+String52: WOString {
+	value = anItem.shortDesc;
+}
+
+String53: WOString {
+	value = timeSinceOpened;
+}
+
+String54: WOString {
+	value = timeSinceModified;
+}
+
+String55: WOString {
+	value = anItem.reporter.realname;
+}
+
+String56: WOString {
+	value = anItem.assignee.realname;
+}
+
+String57: WOString {
+	value = anItem.bugStatus;
+}
+
+String59: WOString {
+	value = anItem.version;
+}
+
+String6: WOString {
+	value = anItem.assignee.realname;
+}
+
+String60: WOString {
+	value = anItem.priority;
+}
+
+String61: WOString {
+	value = anItem.bugSeverity;
+}
+
+String62: WOString {
+	value = anItem.bugId;
+}
+
+String63: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String64: WOString {
+	value = anItem.shortDesc;
+}
+
+String65: WOString {
+	value = timeSinceOpened;
+}
+
+String66: WOString {
+	value = timeSinceModified;
+}
+
+String67: WOString {
+	value = anItem.reporter.realname;
+}
+
+String68: WOString {
+	value = anItem.assignee.realname;
+}
+
+String69: WOString {
+	value = anItem.bugStatus;
+}
+
+String7: WOString {
+	value = anItem.shortDesc;
+}
+
+String71: WOString {
+	value = anItem.version;
+}
+
+String72: WOString {
+	value = anItem.priority;
+}
+
+String73: WOString {
+	value = anItem.bugSeverity;
+}
+
+String74: WOString {
+	value = anItem.bugId;
+}
+
+String75: WOString {
+	value = anItem.type;
+}
+
+String76: WOString {
+	value = anItem.type;
+}
+
+String8: WOString {
+	dateformat = "%b %d, %Y %I:%M:%S %p";
+	value = today;
+}
+
+String9: WOString {
+	value = anItem.version;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = goUpdate;
+	value = "Update";
+}

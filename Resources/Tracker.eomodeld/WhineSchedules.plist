@@ -1,0 +1,74 @@
+{
+    attributes = (
+        {
+            columnName = eventid; 
+            externalType = mediumint; 
+            name = eventid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = id; 
+            externalType = mediumint; 
+            name = id; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = mailto; 
+            externalType = mediumint; 
+            name = mailto; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "mailto_type"; 
+            externalType = smallint; 
+            name = mailtoType; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "run_day"; 
+            externalType = varchar; 
+            name = runDay; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 32; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "run_next"; 
+            externalType = datetime; 
+            name = runNext; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "run_time"; 
+            externalType = varchar; 
+            name = runTime; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 32; 
+        }
+    ); 
+    attributesUsedForLocking = (runDay, runNext, mailtoType, mailto, eventid, runTime, id); 
+    className = EOGenericRecord; 
+    classProperties = (runDay, runNext, mailtoType, mailto, eventid, runTime); 
+    externalName = "whine_schedules"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (runDay, runNext, mailtoType, mailto, eventid, runTime); 
+        uniqueID = 196630550; 
+    }; 
+    name = WhineSchedules; 
+    primaryKeyAttributes = (id); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

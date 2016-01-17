@@ -1,0 +1,128 @@
+<webobject name="PageWrapper">
+<script type='text/javascript' src='/scw.js'></script>
+
+<script type="text/javascript" language="javascript">
+	String.prototype.startsWith = function(str) {return (this.match("^"+str)==str)}
+
+
+
+	function toggleDates(pVal) { 
+		var milestones = document.getElementById('milestoneDates'); 
+		var sprintDates = document.getElementById('sprintDates'); 
+
+    	if(pVal.startsWith('S') == true) {
+			if ( sprintDates.style.display == 'none' ) {
+				 sprintDates.style.display =''; 
+				 milestones.style.display ='none'; 
+			} 
+
+    	}	
+    	else {
+			if ( milestones.style.display == 'none' ) {
+				 milestones.style.display =''; 
+				 sprintDates.style.display ='none'; 
+			} 
+    	}	
+
+	} 
+
+</script>
+
+
+    <table cellspacing="1" border="0" cellpadding="1">
+        <webobject name="ErrorPanel">
+            <tr valign="top">
+                <td align="center">
+                    <webobject name="ErrorTable">
+                        <tr>
+                            <td><b><webobject name="ErrorMessage"></webobject></b></td>
+                        </tr>
+                    </webobject>
+                    <br>
+                </td>
+            </tr>
+        </webobject>
+        <tr>
+            <td><webobject name="EditingForm">
+                    <table>
+                        <tr valign="top">
+                            <td valign="top" align="right"><table cellspacing="1" border="0" cellpadding="1">
+                                    <tr>
+                                        <td align="center" colspan="3">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td>
+                                                        <webobject name="Banner"></webobject>
+                                                    </td>
+                                                </tr>
+                                                <tr bgcolor="#eeeeee">
+                                                    <td align="left" colspan="3"><webobject name="FontContainer"><b>MilestoneDates</b></webobject></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" align="center">
+                                            <table border="0" cellpadding="2" cellspacing="2">
+                                                <tr bgcolor="#eeeeee">
+													<td align="right" width=100><font size="-1"><strong>Type</strong></font></td>
+													<td align="left"><webobject name="Conditional5"><webobject name="PopUpButton3"></webobject></webobject><webobject name="Conditional6">---</webobject></td></tr>
+												<tr bgcolor="#eeeeee">
+													<td align="right"><font size="-1"><strong>Release</strong></font></td>
+													<td align="left"><webobject name="Conditional3"><webobject name="PopUpButton2"></webobject></webobject><webobject name="Conditional4"><webobject name="String2"></webobject></webobject></td></tr>
+												<tr bgcolor="#eeeeee">
+                                                    <td align="right"><font size="-1"><strong>Milestone</strong></font></td>
+                                                    <td align="left">
+                                                        <webobject name="Conditional1"><webobject name="PopUpButton1"></webobject></webobject><webobject name="Conditional2"><webobject name="String1"></webobject></webobject></td>
+                                                </tr>
+
+
+                                                <webobject name="SprintDatesTR"><td colspan=2><table width=100%>
+
+												<tr bgcolor="#eeeeee">
+                                                    <td align="right" width=100><font size="-1"><strong>Start Date</strong></font></td>
+                                                    <td align="left"><p></p>
+                                                        <webobject name="EditDate"></webobject>
+                                                        <webobject name="Image1"></webobject><font size="-1" color="#777777"><i>  Format: 16 Feb 2011</i></font><br><p></p></td>
+                                                </tr><tr bgcolor="#eeeeee">
+													<td align="right"><font size="-1"><strong>End Date</strong></font></td>
+													<td align="left"><p></p><webobject name="EditDate2"></webobject>
+														<webobject name="Image2"></webobject><font color="#777777" size="-1"><i> Format: 16 Feb 2011</i></font><br><p></p></td>
+													</tr>
+												</table></td></webobject><webobject name="MilestoneDatesTR"><td colspan=2><table width=100%>
+
+<tr bgcolor="#eeeeee"><td align="right" width=100><font size="-1"><strong>Planned Date<br></strong></font></td><td align="left"><p></p><webobject name="EditDate5"></webobject> <webobject name="Image5"></webobject><font color="#777777" size="-1"><i> Format: 16 Feb 2011</i></font><br><p></p></td></tr><tr bgcolor="#eeeeee"><td align="right"><font size="-1"><strong>Forecast Date</strong></font></td><td align="left"><p></p><webobject name="EditDate4"></webobject> <webobject name="Image4"></webobject><font color="#777777" size="-1"><i> Format: 16 Feb 2011</i></font><br><p></p></td></tr><tr bgcolor="#eeeeee"><td align="right"><font size="-1"><strong>Actual Date<br></strong></font></td><td align="left"><p></p><webobject name="EditDate3"></webobject> <webobject name="Image3"></webobject><font color="#777777" size="-1"><i> Format: 16 Feb 2011</i></font><p></p></td></tr>
+</table></td></webobject><tr bgcolor="#eeeeee">
+<td align="right"><font size="-1"><strong>Comment</strong></font></td><td align="left"><webobject name="Text1"></webobject></td></tr>
+												
+
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="3">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="center">
+                                            <webobject name="CancelLink"><webobject name="CancelButton"></webobject></webobject>
+                                        </td>
+                                        <td align="right">
+                                            <webobject name="DeleteLink"><webobject name="DeleteButton"></webobject></webobject>
+                                        </td>
+                                        <td align="left">
+                                            <webobject name="SubmitChanges"></webobject>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </webobject>
+            </td>
+        </tr>
+    </table>
+</webobject>
+

@@ -1,0 +1,40 @@
+{
+    attributes = (
+        {
+            columnName = "setting_name"; 
+            externalType = varchar; 
+            name = settingName; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 32; 
+        }, 
+        {
+            columnName = "setting_value"; 
+            externalType = varchar; 
+            name = settingValue; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 32; 
+        }, 
+        {
+            columnName = "user_id"; 
+            externalType = mediumint; 
+            name = userId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (settingName, userId, settingValue); 
+    className = EOGenericRecord; 
+    classProperties = (settingName, userId, settingValue); 
+    externalName = "profile_setting"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (settingName, userId, settingValue); 
+        uniqueID = 196630478; 
+    }; 
+    name = ProfileSetting; 
+    primaryKeyAttributes = (settingName, userId); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

@@ -1,0 +1,39 @@
+{
+    attributes = (
+        {
+            columnName = "series_date"; 
+            externalType = datetime; 
+            name = seriesDate; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = "series_id"; 
+            externalType = mediumint; 
+            name = seriesId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "series_value"; 
+            externalType = mediumint; 
+            name = seriesValue; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (seriesDate, seriesValue); 
+    className = EOGenericRecord; 
+    classProperties = (seriesDate, seriesValue); 
+    externalName = "series_data"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (seriesDate, seriesValue); 
+        uniqueID = 196630483; 
+    }; 
+    name = SeriesData; 
+    primaryKeyAttributes = (seriesDate, seriesId); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

@@ -1,0 +1,50 @@
+<style type="text/css">
+.handcursor{cursor:hand;cursor:pointer;}
+</style>
+<script type="text/javascript"> 
+		function toggleWhatsNew(obj) { 
+			var el = document.getElementById(obj); 
+			var el3 = document.getElementById("showhide"); 
+
+
+			if ( el.style.display != 'none' ) { 
+				el.style.display ='none'; 
+				el3.value = 'Show';
+			} 
+			else { 
+				el.style.display = ''; 
+				el3.value = 'Hide';
+			} 
+		}
+		function toggleView(obj) {
+			var el = document.getElementById(obj);
+			var rightImage = document.getElementById(obj+"-RightImage");
+			var downImage = document.getElementById(obj+"-DownImage");
+			if ( el.style.display != 'none' ) {
+				el.style.display ='none';
+				rightImage.style.display ='';
+				downImage.style.display ='none';
+			}
+			else {
+				el.style.display = '';
+				rightImage.style.display = 'none';
+				downImage.style.display = '';
+			}
+		}
+
+</script>
+
+		<table border=0 align=CENTER bgcolor="#d0d0d0"  Width=90%>
+			<tr><td align="CENTER" bgcolor="#cccccc"><font size="4">What's in this Release</font><font size="1"><br>(Epics and Top-level Stories)</font></td><td align="center" width="5%"><input onclick="toggleWhatsNew('whatsnew')" id="showhide" value="Hide" type="button"></input></td></tr>
+																																				
+			<webobject name="Conditional3">
+			<tr id="whatsnew" bgcolor="#ffffff"  style="display:'';">
+				<td align="center" colspan="3"><webobject name="NestedItems3"></webobject></td>
+			</tr>
+			</webobject>
+		<webobject name="Conditional1"></webobject><webobject name="Conditional4">
+			<tr><td align="center" colspan="3"><i>--- No Stories in this Release -----</i></td></tr>
+		</webobject>
+	</table> 
+
+<p></p><p></p>

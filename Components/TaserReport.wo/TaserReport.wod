@@ -1,0 +1,374 @@
+ActiveImage1: WOActiveImage {
+	action = emailCurrentPage;
+	border = 0;
+	filename = "Email.gif";
+	framework = "app";
+}
+
+Conditional1: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional10: WOConditional {
+	condition = isTaser;
+}
+
+Conditional11: WOConditional {
+	condition = aTaser.children.@count;
+	negate = true;
+}
+
+Conditional12: WOConditional {
+	condition = isP1;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = isMultiple;
+}
+
+Conditional22: WOConditional {
+	condition = anItem.isHot;
+}
+
+Conditional23: WOConditional {
+	condition = anItem.isHot;
+	negate = true;
+}
+
+Conditional24: WOConditional {
+	condition = anItem.isHot;
+}
+
+Conditional25: WOConditional {
+	condition = anItem.isHot;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = emailFlag;
+}
+
+Conditional31: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = aTaser.children.@count;
+}
+
+Conditional5: WOConditional {
+	condition = isP1;
+}
+
+Conditional6: WOConditional {
+	condition = anItem.isHot;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = taserDisplayGroup.allObjects.@count;
+}
+
+Conditional8: WOConditional {
+	condition = taserDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional9: WOConditional {
+	condition = anItem.isHot;
+}
+
+Form1: WOForm {
+}
+
+Hyperlink1: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink2: WOHyperlink {
+	href = aTaser.bugURL;
+}
+
+Hyperlink4: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink5: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink6: WOHyperlink {
+	href = aTaser.bugURL;
+}
+
+Image1: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image3: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image4: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image5: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image6: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image8: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image9: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+RadioButton1: WORadioButtonMatrix {
+	list = potentialQueues;
+	item = aQueue;
+	selection = selectedQueue;
+	maxColumns = 2;
+}
+
+Repetition1: WORepetition {
+	item = anItem;
+	list = sortedOpenChildren;
+}
+
+Repetition2: WORepetition {
+	item = aTaser;
+	list = taserDisplayGroup.allObjects;
+}
+
+
+Repetition4: WORepetition {
+	item = anItem;
+	list = aTaser.closedChildren;
+}
+
+Repetition5: WORepetition {
+	item = anItem;
+	list = taserIssues;
+}
+
+Repetition6: WORepetition {
+	item = aTaser;
+	list = topMostTaserParents;
+}
+
+String1: WOString {
+	value = anItem.bugId;
+}
+
+String10: WOString {
+	value = aTaser.bugId;
+}
+
+String11: WOString {
+	value = selectedQueue;
+}
+
+String12: WOString {
+	value = aTaser.priority;
+}
+
+String13: WOString {
+	value = aTaser.priority;
+}
+
+String14: WOString {
+	value = aTaser.allOpenChildren.@count;
+}
+
+String15: WOString {
+	value = aTaser.closedChildren.@count;
+}
+
+String16: WOString {
+	value = aTaser.allChildren.@count;
+}
+
+String17: WOString {
+	escapeHTML = false;
+	value = aTaser.statusWhiteboard;
+}
+
+String18: WOString {
+	value = anItem.statusWhiteboard;
+	escapeHTML = false;
+}
+
+String2: WOString {
+	value = anItem.priority;
+}
+
+String24: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String25: WOString {
+	value = aQueue;
+}
+
+String26: WOString {
+	value = anItem.shortDesc;
+}
+
+String27: WOString {
+	value = timeSinceOpened;
+}
+
+String28: WOString {
+	value = timeSinceModified;
+}
+
+String29: WOString {
+	value = anItem.reporter.realname;
+}
+
+String3: WOString {
+	value = anItem.bugSeverity;
+}
+
+String30: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String31: WOString {
+	value = anItem.shortDesc;
+}
+
+String32: WOString {
+	value = anItem.assignee.realname;
+}
+
+String33: WOString {
+	value = anItem.bugStatus;
+}
+
+String34: WOString {
+	value = anItem.assignee.realname;
+}
+
+String35: WOString {
+	value = anItem.version;
+}
+
+String36: WOString {
+	value = anItem.bugSeverity;
+}
+
+String37: WOString {
+	value = anItem.priority;
+}
+
+String38: WOString {
+	value = anItem.bugId;
+}
+
+String39: WOString {
+	value = anItem.bugStatus;
+}
+
+String4: WOString {
+	value = aTaser.shortDesc;
+}
+
+String40: WOString {
+	value = anItem.reporter.realname;
+}
+
+String41: WOString {
+	value = timeSinceModified;
+}
+
+String42: WOString {
+	value = anItem.reporter.realname;
+}
+
+String43: WOString {
+	value = timeSinceModified;
+}
+
+String44: WOString {
+	value = anItem.version;
+}
+
+String45: WOString {
+	value = timeSinceOpened;
+}
+
+String46: WOString {
+	value = timeSinceOpened;
+}
+
+String47: WOString {
+	value = anItem.bugSeverity;
+}
+
+String48: WOString {
+	value = anItem.priority;
+}
+
+String49: WOString {
+	value = anItem.type;
+}
+
+String5: WOString {
+	value = anItem.bugStatus;
+}
+
+String50: WOString {
+	value = anItem.bugId;
+}
+
+String51: WOString {
+	value = aTaser.bugId;
+}
+
+String52: WOString {
+	value = aTaser.shortDesc;
+}
+
+String6: WOString {
+	value = anItem.assignee.realname;
+}
+
+String7: WOString {
+	value = anItem.shortDesc;
+}
+
+String75: WOString {
+	value = anItem.type;
+}
+
+String76: WOString {
+	value = anItem.type;
+}
+
+String8: WOString {
+	dateformat = "%b %d, %Y %I:%M:%S %p";
+	value = today;
+}
+
+String9: WOString {
+	value = anItem.version;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = goUpdate;
+	value = "Update";
+}

@@ -1,0 +1,166 @@
+{
+    closedActivities = {
+        class = EOFetchSpecification; 
+        entityName = BugsActivity; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = bugId; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = bugId; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = added; 
+                    selectorName = "isEqualTo:"; 
+                    value = VERIFIED; 
+                }
+            ); 
+        }; 
+    }; 
+    estimatedTime = {
+        class = EOFetchSpecification; 
+        entityName = BugsActivity; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = bugId; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = bugId; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = fieldid; 
+                    selectorName = "isEqualTo:"; 
+                    value = {class = NSNumber; value = 43; }; 
+                }
+            ); 
+        }; 
+        sortOrderings = ({class = EOSortOrdering; key = bugWhen; selectorName = "compareAscending:"; }); 
+    }; 
+    hoursWorked = {
+        class = EOFetchSpecification; 
+        entityName = BugsActivity; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = bugId; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = bugId; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = fieldid; 
+                    selectorName = "isEqualTo:"; 
+                    value = {class = NSNumber; value = 50; }; 
+                }
+            ); 
+        }; 
+    }; 
+    remainingHours = {
+        class = EOFetchSpecification; 
+        entityName = BugsActivity; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = bugId; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = bugId; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = fieldid; 
+                    selectorName = "isEqualTo:"; 
+                    value = {class = NSNumber; value = 44; }; 
+                }
+            ); 
+        }; 
+        sortOrderings = ({class = EOSortOrdering; key = bugWhen; selectorName = "compareAscending:"; }); 
+    }; 
+    resolvedActivities = {
+        class = EOFetchSpecification; 
+        entityName = BugsActivity; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = bugId; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = bugId; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = added; 
+                    selectorName = "isEqualTo:"; 
+                    value = RESOLVED; 
+                }
+            ); 
+        }; 
+    }; 
+    verifiedActivities = {
+        class = EOFetchSpecification; 
+        entityName = BugsActivity; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = bugId; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = bugId; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = added; 
+                    selectorName = "isEqualTo:"; 
+                    value = VERIFIED; 
+                }
+            ); 
+        }; 
+    }; 
+    versions = {
+        class = EOFetchSpecification; 
+        entityName = BugsActivity; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = bugId; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = bugId; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = fieldid; 
+                    selectorName = "isEqualTo:"; 
+                    value = {class = NSNumber; value = 5; }; 
+                }
+            ); 
+        }; 
+        sortOrderings = ({class = EOSortOrdering; key = bugWhen; selectorName = "compareAscending:"; }); 
+    }; 
+}

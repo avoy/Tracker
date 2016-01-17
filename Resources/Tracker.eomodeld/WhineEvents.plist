@@ -1,0 +1,50 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = body; 
+            externalType = mediumtext; 
+            name = body; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            columnName = id; 
+            externalType = mediumint; 
+            name = id; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "owner_userid"; 
+            externalType = mediumint; 
+            name = ownerUserid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = subject; 
+            externalType = varchar; 
+            name = subject; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 128; 
+        }
+    ); 
+    attributesUsedForLocking = (id, body, ownerUserid, subject); 
+    className = EOGenericRecord; 
+    classProperties = (body, ownerUserid, subject); 
+    externalName = "whine_events"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (body, ownerUserid, subject); 
+        uniqueID = 196630592; 
+    }; 
+    name = WhineEvents; 
+    primaryKeyAttributes = (id); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

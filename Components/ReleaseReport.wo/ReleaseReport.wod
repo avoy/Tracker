@@ -1,0 +1,133 @@
+Conditional1: WOConditional {
+	condition = releaseDateForRelease;
+}
+
+Conditional10: WOConditional {
+	condition = isFullDate;
+}
+
+Conditional16: WOConditional {
+	condition = isReleased;
+}
+
+Conditional17: WOConditional {
+	condition = isReleased;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = releaseDateForRelease;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = productStoriesForRelease.@count;
+}
+
+Conditional4: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = isEmail;
+}
+
+Conditional8: WOConditional {
+	condition = logicalStoriesForRelease.@count;
+}
+
+Conditional9: WOConditional {
+	condition = isFullDate;
+	negate = true;
+}
+
+Form1: WOForm {
+}
+
+Hyperlink3: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "projects";
+}
+
+Hyperlink5: WOHyperlink {
+	?release = currentRelease;
+	actionClass = "DirectAction";
+	directActionName = "releasePlan";
+}
+
+Hyperlink6: WOHyperlink {
+	action = toggleView;
+}
+
+NestedItems: NestedItems2 {
+	itemList = productStoriesForRelease;
+	level = 0;
+}
+
+
+Repetition1: WORepetition {
+	item = currentRelease;
+	list = currentReleases;
+}
+
+Repetition2: WORepetition {
+	item = aProduct;
+	list = products;
+}
+
+String1: WOString {
+	value = filteredRelease;
+}
+
+String10: WOString {
+	value = today;
+	dateformat = "%B %d, %Y  %I:%M:%S %p";
+}
+
+String11: WOString {
+	dateformat = "%b %d, %Y";
+	value = releaseDateForRelease;
+}
+String12: WOString {
+	value = header;
+}
+
+String13: WOString {
+	value = percentCompleteCountChildren;
+}
+
+String2: WOString {
+	value = today;
+	dateformat = "%B %d, %Y  %I:%M:%S %p";
+}
+
+String3: WOString {
+	value = aProduct;
+}
+
+String4: WOString {
+	dateformat = "%B - %Y";
+	value = releaseDateForRelease;
+}
+
+String7: WOString {
+	value = header;
+}
+
+String8: WOString {
+	value = header;
+}
+
+String9: WOString {
+	value = linkText;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = goUpdate;
+	value = "Update";
+}
+
+colorTD: Unknown {
+}
+

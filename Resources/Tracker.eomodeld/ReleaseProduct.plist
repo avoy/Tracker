@@ -1,0 +1,96 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = "PLAN_OF_RECORD_URL"; 
+            externalType = VARCHAR; 
+            name = planOfRecordURL; 
+            userInfo = {modificationDate = "2004-04-09 01:09:39 +0000"; }; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 100; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "PRODUCT_COMMENT"; 
+            externalType = VARCHAR; 
+            name = productComment; 
+            userInfo = {modificationDate = "2004-04-09 01:09:39 +0000"; }; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 256; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "PRODUCT_NAME"; 
+            externalType = VARCHAR; 
+            name = productName; 
+            userInfo = {modificationDate = "2004-04-09 01:09:39 +0000"; }; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 35; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "PRODUCT_STATUS"; 
+            externalType = VARCHAR; 
+            name = productStatus; 
+            userInfo = {modificationDate = "2004-04-09 01:09:39 +0000"; }; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 15; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "PRODUCT_VERSION"; 
+            externalType = VARCHAR; 
+            name = productVersion; 
+            userInfo = {modificationDate = "2004-04-09 01:09:39 +0000"; }; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 10; 
+        }, 
+        {
+            columnName = "RELEASE_PRODUCT_UID"; 
+            externalType = INTEGER; 
+            name = releaseProductUid; 
+            precision = 9; 
+            userInfo = {modificationDate = "2004-04-08 23:22:42 +0000"; }; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "RELEASE_UID_FK"; 
+            externalType = INTEGER; 
+            name = releaseUidFK; 
+            precision = 9; 
+            userInfo = {modificationDate = "2004-04-08 23:22:42 +0000"; }; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (releaseProductUid); 
+    className = EOGenericRecord; 
+    classProperties = (
+        productName, 
+        productStatus, 
+        productVersion, 
+        productComment, 
+        release, 
+        planOfRecordURL
+    ); 
+    externalName = "RELEASE_PRODUCT"; 
+    name = ReleaseProduct; 
+    primaryKeyAttributes = (releaseProductUid); 
+    relationships = (
+        {
+            destination = Release; 
+            internalInfo = {"_nameInObjectStore" = releases; }; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = releaseUid; sourceAttribute = releaseUidFK; }); 
+            name = release; 
+        }
+    ); 
+}

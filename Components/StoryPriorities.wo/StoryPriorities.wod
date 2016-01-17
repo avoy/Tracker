@@ -1,0 +1,307 @@
+BatchNavigationBar: WOBatchNavigationBar { 	displayGroup = displayGroup;
+}
+
+Conditional1: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional12: WOConditional {
+	condition = isSortMode;
+}
+
+Conditional13: WOConditional {
+	condition = isSortMode;
+}
+
+Conditional16: WOConditional {
+	condition = isSortAdmin;
+}
+
+Conditional17: WOConditional {
+	condition = isSortMode;
+}
+
+Conditional2: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional21: WOConditional {
+	condition = isSortMode;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = isSortMode;
+}
+
+Conditional31: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional33: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional34: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional35: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = isSortMode;
+}
+
+Conditional6: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = openItemsForSelectedProduct.@count;
+}
+
+Conditional8: WOConditional {
+	condition = displayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional9: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Form1: WOForm {
+	multipleSubmit = true;
+}
+
+Form2: WOForm {
+	multipleSubmit = true;
+}
+
+Hyperlink1: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink4: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink5: WOHyperlink {
+	action = goTurnSortModeOff;
+}
+
+Hyperlink6: WOHyperlink {
+	action = goTurnSortModeOn;
+}
+
+Image1: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+RadioButton1: WORadioButtonMatrix {
+	list = potentialQueues;
+	item = aQueue;
+	selection = selectedQueue;
+	maxColumns = 4;
+}
+
+Repetition1: WORepetition {
+	item = anItem;
+	list = displayGroup.displayedObjects;
+	index = index;
+}
+
+Repetition4: WORepetition {
+	item = anItem;
+	list = resolvedAndClosedItemsSelectedProduct;
+}
+
+SortOrder: WOSortOrder { 	
+	key = "bugId";
+	displayKey = "ID";
+	displayGroup = displayGroup;
+}
+
+SortOrder17: WOSortOrder { 	
+	key = "lastdiffed";
+	displayKey = "Last Modified";
+	displayGroup = displayGroup;
+}
+
+SortOrder18: WOSortOrder { 	
+	key = "reporter.realname";
+	displayKey = "Reporter";
+	displayGroup = displayGroup;
+}
+
+SortOrder19: WOSortOrder { 	
+	key = "creationTs";
+	displayKey = "opened";
+	displayGroup = displayGroup;
+}
+
+SortOrder2: WOSortOrder { 	
+	key = "rank";
+	displayKey = "Rank";
+	displayGroup = displayGroup;
+}
+
+SortOrder3: WOSortOrder { 	
+	key = "assignee.realname";
+	displayKey = "Assignee";
+	displayGroup = displayGroup;
+}
+
+SortOrder34: WOSortOrder { 	
+	key = "type";
+	displayKey = "Type";
+	displayGroup = displayGroup;
+}
+
+SortOrder7: WOSortOrder { 	
+	key = "version";
+	displayKey = "Release";
+	displayGroup = displayGroup;
+}
+
+String1: WOString {
+	value = anItem.bugId;
+}
+
+String13: WOString {
+	value = filteredRank;
+}
+
+String18: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String2: WOString {
+	value = displaySelectedQueue;
+}
+
+String25: WOString {
+	value = displayPotentialQueue;
+}
+
+String30: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String31: WOString {
+	value = anItem.shortDesc;
+}
+
+String32: WOString {
+	value = anItem.assignee.realname;
+}
+
+String35: WOString {
+	value = anItem.version;
+}
+
+String38: WOString {
+	value = anItem.bugId;
+}
+
+String4: WOString {
+	value = filteredRank;
+}
+
+String40: WOString {
+	value = anItem.reporter.realname;
+}
+
+String41: WOString {
+	value = timeSinceModified;
+}
+
+String42: WOString {
+	value = anItem.reporter.realname;
+}
+
+String43: WOString {
+	value = timeSinceModified;
+}
+
+String45: WOString {
+	value = timeSinceOpened;
+}
+
+String46: WOString {
+	value = timeSinceOpened;
+}
+
+String6: WOString {
+	value = anItem.assignee.realname;
+}
+
+String7: WOString {
+	value = anItem.shortDesc;
+}
+
+String75: WOString {
+	value = anItem.type;
+}
+
+String76: WOString {
+	value = anItem.type;
+}
+
+String8: WOString {
+	dateformat = "%b %d, %Y %I:%M:%S %p";
+	value = today;
+}
+
+String9: WOString {
+	value = anItem.version;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = goUpdate;
+	value = "Update";
+}
+
+SubmitButton2: WOSubmitButton {
+	onClick = "displaySummaryOfChanges();";
+	id = "Save Changes";
+	value = "Save Changes";
+	style = "display:none;";
+	
+	action = doSave;
+}
+
+SubmitButton3: WOSubmitButton {
+	action = doNothing;
+	id = "Cancel";
+	value = "Cancel";
+	style = "display:none;";
+
+}
+
+TableRow: WOGenericContainer {
+	elementName = "tr";
+	bgcolor = "#ffffff";
+	index = indexOneBase;
+	id = anItem.bugId;
+	name = "sort";
+	origPriority = anItem.rank;
+
+}

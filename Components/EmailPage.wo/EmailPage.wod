@@ -1,0 +1,16 @@
+Form1: WOForm {
+	multipleSubmit = true;
+}
+
+PageWrapper : PageWrapper {
+};
+
+SubmitButton1: WOSubmitButton {
+	action = sendPage;
+}
+
+TextField1: WOTextField {
+	maxlength = 35;
+	size = 35;
+	value = emailAddress;
+}

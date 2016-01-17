@@ -1,0 +1,804 @@
+BatchNavigationBar: WOBatchNavigationBar { 	displayGroup = trustedAccessDisplayGroup;
+}
+
+BatchNavigationBar2: WOBatchNavigationBar { 	displayGroup = secureStorageDisplayGroup;
+}
+
+BatchNavigationBar3: WOBatchNavigationBar { 	displayGroup = serviceDisplayGroup;
+}
+
+Conditional1: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional10: WOConditional {
+	condition = isTrustedAccess;
+}
+
+Conditional11: WOConditional {
+	condition = secureStorageDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional12: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional13: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional14: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional15: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional16: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional17: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional18: WOConditional {
+	condition = serviceDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional19: WOConditional {
+	condition = secureStorageDisplayGroup.allObjects.@count;
+}
+
+Conditional2: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional20: WOConditional {
+	condition = isSecureStorage;
+}
+
+Conditional21: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional22: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional23: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional24: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional25: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional26: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional27: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional28: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional29: WOConditional {
+	condition = serviceDisplayGroup.allObjects.@count;
+}
+
+Conditional3: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional30: WOConditional {
+	condition = isServices;
+}
+
+Conditional31: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional32: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional33: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional34: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional35: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional36: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional37: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional38: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional39: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional40: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional6: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = openSecurityIssuesForTrustedAccess.@count;
+}
+
+Conditional8: WOConditional {
+	condition = trustedAccessDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional9: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Form1: WOForm {
+}
+
+Hyperlink1: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink2: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink3: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink4: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink5: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink6: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Image1: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image2: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image3: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+RadioButton1: WORadioButtonMatrix {
+	list = potentialQueues;
+	item = aQueue;
+	selection = selectedQueue;
+	maxColumns = 3;
+}
+
+Repetition1: WORepetition {
+	item = anItem;
+	list = trustedAccessDisplayGroup.displayedObjects;
+	index = index;
+}
+
+Repetition2: WORepetition {
+	item = anItem;
+	list = secureStorageResolvedAndClosedItems;
+	index = index;
+}
+
+Repetition3: WORepetition {
+	item = anItem;
+	list = secureStorageDisplayGroup.allObjects;
+	index = index;
+}
+
+Repetition4: WORepetition {
+	item = anItem;
+	list = trustedAccessResolvedAndClosedItems;
+}
+
+Repetition5: WORepetition {
+	item = anItem;
+	list = serviceResolvedAndClosedItems;
+	index = index;
+}
+
+Repetition6: WORepetition {
+	item = anItem;
+	list = serviceDisplayGroup.allObjects;
+	index = index;
+}
+
+SortOrder: WOSortOrder { 	
+	key = "bugId";
+	displayKey = "ID";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder10: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "bugStatus";
+	displayKey = "Status";
+}
+
+SortOrder11: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "type";
+	displayKey = "Type";
+}
+
+SortOrder12: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "bugId";
+	displayKey = "ID";
+}
+
+SortOrder13: WOSortOrder { 	
+	displayGroup = serviceDisplayGroup;
+	key = "creationTs";
+	displayKey = "Created";
+}
+
+SortOrder14: WOSortOrder { 	
+	displayGroup = serviceDisplayGroup;
+	key = "lastdiffed";
+	displayKey = "Modified";
+}
+
+SortOrder15: WOSortOrder { 	
+	displayGroup = serviceDisplayGroup;
+	key = "reporter.realname";
+	displayKey = "Reporter";
+}
+
+SortOrder16: WOSortOrder { 	
+	displayGroup = serviceDisplayGroup;
+	key = "assignee.realname";
+	displayKey = "Assignee";
+}
+
+SortOrder17: WOSortOrder { 	
+	key = "lastdiffed";
+	displayKey = "Last Modified";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder18: WOSortOrder { 	
+	key = "reporter.realname";
+	displayKey = "Reporter";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder19: WOSortOrder { 	
+	key = "creationTs";
+	displayKey = "opened";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder2: WOSortOrder { 	
+	key = "bugStatus";
+	displayKey = "Status";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder20: WOSortOrder { 	
+	displayGroup = serviceDisplayGroup;
+	key = "version";
+	displayKey = "Release";
+}
+
+SortOrder21: WOSortOrder { 	
+	displayGroup = serviceDisplayGroup;
+	key = "bugStatus";
+	displayKey = "Status";
+}
+
+SortOrder22: WOSortOrder { 	
+	displayGroup = serviceDisplayGroup;
+	key = "type";
+	displayKey = "Type";
+}
+
+SortOrder23: WOSortOrder { 	
+	displayGroup = serviceDisplayGroup;
+	key = "bugId";
+	displayKey = "ID";
+}
+
+SortOrder24: WOSortOrder { 	
+	key = "bugSeverity";
+	displayKey = "Severity";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder25: WOSortOrder { 	
+	key = "priority";
+	displayKey = "Priority";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder26: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "priority";
+	displayKey = "Priority";
+}
+
+SortOrder27: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "bugSeverity";
+	displayKey = "Severity";
+}
+
+SortOrder28: WOSortOrder { 	
+	displayGroup = serviceDisplayGroup;
+	key = "bugSeverity";
+	displayKey = "Severity";
+}
+
+SortOrder29: WOSortOrder { 	
+	displayGroup = serviceDisplayGroup;
+	key = "priority";
+	displayKey = "Priority";
+}
+
+SortOrder3: WOSortOrder { 	
+	key = "assignee.realname";
+	displayKey = "Assignee";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder34: WOSortOrder { 	
+	key = "type";
+	displayKey = "Type";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder4: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "creationTs";
+	displayKey = "Creation Date";
+}
+
+SortOrder5: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "lastdiffed";
+	displayKey = "Last Modified";
+}
+
+SortOrder6: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "reporter.realname";
+	displayKey = "Reporter";
+}
+
+SortOrder7: WOSortOrder { 	
+	key = "version";
+	displayKey = "Release";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder8: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "assignee.realname";
+	displayKey = "Assignee";
+}
+
+SortOrder9: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "version";
+	displayKey = "Release";
+}
+
+String1: WOString {
+	value = anItem.bugId;
+}
+
+String10: WOString {
+	value = timeSinceModified;
+}
+
+String11: WOString {
+	value = anItem.reporter.realname;
+}
+
+String12: WOString {
+	value = anItem.assignee.realname;
+}
+
+String13: WOString {
+	value = anItem.bugStatus;
+}
+
+String14: WOString {
+	value = anItem.version;
+}
+
+String15: WOString {
+	value = anItem.bugStatus;
+}
+
+String16: WOString {
+	value = anItem.type;
+}
+
+String17: WOString {
+	value = anItem.bugId;
+}
+
+String18: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String19: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String2: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String20: WOString {
+	value = anItem.shortDesc;
+}
+
+String21: WOString {
+	value = timeSinceOpened;
+}
+
+String22: WOString {
+	value = timeSinceModified;
+}
+
+String23: WOString {
+	value = anItem.reporter.realname;
+}
+
+String24: WOString {
+	value = anItem.assignee.realname;
+}
+
+String25: WOString {
+	value = aQueue;
+}
+
+String26: WOString {
+	value = anItem.version;
+}
+
+String27: WOString {
+	value = anItem.bugStatus;
+}
+
+String28: WOString {
+	value = anItem.type;
+}
+
+String29: WOString {
+	value = anItem.bugId;
+}
+
+String3: WOString {
+	value = anItem.shortDesc;
+}
+
+String30: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String31: WOString {
+	value = anItem.shortDesc;
+}
+
+String32: WOString {
+	value = anItem.assignee.realname;
+}
+
+String33: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String34: WOString {
+	value = anItem.shortDesc;
+}
+
+String35: WOString {
+	value = anItem.version;
+}
+
+String36: WOString {
+	value = timeSinceOpened;
+}
+
+String37: WOString {
+	value = timeSinceModified;
+}
+
+String38: WOString {
+	value = anItem.bugId;
+}
+
+String39: WOString {
+	value = anItem.reporter.realname;
+}
+
+String4: WOString {
+	value = anItem.bugStatus;
+}
+
+String40: WOString {
+	value = anItem.reporter.realname;
+}
+
+String41: WOString {
+	value = timeSinceModified;
+}
+
+String42: WOString {
+	value = anItem.reporter.realname;
+}
+
+String43: WOString {
+	value = timeSinceModified;
+}
+
+String44: WOString {
+	value = anItem.assignee.realname;
+}
+
+String45: WOString {
+	value = timeSinceOpened;
+}
+
+String46: WOString {
+	value = timeSinceOpened;
+}
+
+String47: WOString {
+	value = anItem.version;
+}
+
+String48: WOString {
+	value = anItem.bugStatus;
+}
+
+String49: WOString {
+	value = anItem.type;
+}
+
+String5: WOString {
+	value = timeSinceOpened;
+}
+
+String50: WOString {
+	value = anItem.bugId;
+}
+
+String51: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String52: WOString {
+	value = anItem.shortDesc;
+}
+
+String53: WOString {
+	value = timeSinceOpened;
+}
+
+String54: WOString {
+	value = timeSinceModified;
+}
+
+String55: WOString {
+	value = anItem.reporter.realname;
+}
+
+String56: WOString {
+	value = anItem.assignee.realname;
+}
+
+String57: WOString {
+	value = anItem.version;
+}
+
+String58: WOString {
+	value = anItem.bugStatus;
+}
+
+String59: WOString {
+	value = anItem.type;
+}
+
+String6: WOString {
+	value = anItem.assignee.realname;
+}
+
+String60: WOString {
+	value = anItem.bugId;
+}
+
+String61: WOString {
+	value = anItem.priority;
+}
+
+String62: WOString {
+	value = anItem.bugSeverity;
+}
+
+String63: WOString {
+	value = anItem.priority;
+}
+
+String64: WOString {
+	value = anItem.bugSeverity;
+}
+
+String65: WOString {
+	value = anItem.priority;
+}
+
+String66: WOString {
+	value = anItem.bugSeverity;
+}
+
+String67: WOString {
+	value = anItem.priority;
+}
+
+String68: WOString {
+	value = anItem.bugSeverity;
+}
+
+String69: WOString {
+	value = anItem.priority;
+}
+
+String7: WOString {
+	value = anItem.shortDesc;
+}
+
+String70: WOString {
+	value = anItem.bugSeverity;
+}
+
+String71: WOString {
+	value = anItem.priority;
+}
+
+String72: WOString {
+	value = anItem.bugSeverity;
+}
+
+String75: WOString {
+	value = anItem.type;
+}
+
+String76: WOString {
+	value = anItem.type;
+}
+
+String8: WOString {
+	dateformat = "%b %d, %Y %I:%M:%S %p";
+	value = today;
+}
+
+String9: WOString {
+	value = anItem.version;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = goUpdate;
+	value = "Update";
+}
+
+TableRow: WOGenericContainer {
+	elementName = "tr";
+	bgcolor = "#ffffff";
+	index = indexOneBase;
+	id = anItem.bugId;
+	name = "sort";
+	origPriority = anItem.priority;
+
+}
+
+TableRow2: WOGenericContainer {
+	elementName = "tr";
+	bgcolor = "#ffffff";
+	index = indexOneBase;
+	id = anItem.bugId;
+	name = "sort";
+	origPriority = anItem.priority;
+
+}
+
+TableRow3: WOGenericContainer {
+	elementName = "tr";
+	bgcolor = "#ffffff";
+	index = indexOneBase;
+	id = anItem.bugId;
+	name = "sort";
+	origPriority = anItem.priority;
+
+}

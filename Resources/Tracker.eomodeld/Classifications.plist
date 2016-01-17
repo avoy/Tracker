@@ -1,0 +1,41 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = description; 
+            externalType = mediumtext; 
+            name = classificationDescription; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            columnName = id; 
+            externalType = smallint; 
+            name = id; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = name; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }
+    ); 
+    attributesUsedForLocking = (id, name, classificationDescription); 
+    className = EOGenericRecord; 
+    classProperties = (name, classificationDescription); 
+    externalName = classifications; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (name, classificationDescription); 
+        uniqueID = 196630662; 
+    }; 
+    name = Classifications; 
+    primaryKeyAttributes = (id); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

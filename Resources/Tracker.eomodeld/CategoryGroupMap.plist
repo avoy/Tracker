@@ -1,0 +1,28 @@
+{
+    attributes = (
+        {
+            columnName = "category_id"; 
+            externalType = smallint; 
+            name = categoryId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "group_id"; 
+            externalType = mediumint; 
+            name = groupId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (groupId, categoryId); 
+    className = EOGenericRecord; 
+    externalName = "category_group_map"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {"_clientClassPropertyNames" = (); uniqueID = 196630501; }; 
+    name = CategoryGroupMap; 
+    primaryKeyAttributes = (groupId, categoryId); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

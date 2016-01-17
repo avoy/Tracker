@@ -1,0 +1,515 @@
+ActiveImage1: WOActiveImage {
+	action = emailCurrentPage;
+	border = 0;
+	filename = "Email.gif";
+	framework = "app";
+}
+
+Conditional1: WOConditional {
+	condition = isProductionRelease;
+	negate = true;
+}
+
+Conditional10: WOConditional {
+	condition = isProductionRelease;
+}
+
+Conditional11: WOConditional {
+	condition = isProductionRelease;
+	negate = true;
+}
+
+Conditional12: WOConditional {
+	condition = countForOpenForCurrentPatch;
+}
+
+Conditional13: WOConditional {
+	condition = countForOpenForCurrentPatch;
+	negate = true;
+}
+
+Conditional14: WOConditional {
+	condition = countForResolvedForCurrentPatch;
+	negate = true;
+}
+
+Conditional15: WOConditional {
+	condition = countForResolvedForCurrentPatch;
+}
+
+Conditional16: WOConditional {
+	condition = countForClosedForCurrentPatch;
+}
+
+Conditional17: WOConditional {
+	condition = countForClosedForCurrentPatch;
+	negate = true;
+}
+
+Conditional18: WOConditional {
+	condition = countForTotalForCurrentPatch;
+}
+
+Conditional19: WOConditional {
+	condition = countForTotalForCurrentPatch;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = isProductionRelease;
+	negate = true;
+}
+
+Conditional20: WOConditional {
+	condition = itemsInTriageForSelectedProject;
+}
+
+Conditional21: WOConditional {
+	condition = itemsInTriageForSelectedProject;
+	negate = true;
+}
+
+Conditional22: WOConditional {
+	condition = itemsInTriageForSelectedProject;
+}
+
+Conditional23: WOConditional {
+	condition = itemsInTriageForSelectedProject;
+	negate = true;
+}
+
+Conditional26: WOConditional {
+	condition = countForResolvedForCurrentPatch;
+}
+
+Conditional27: WOConditional {
+	condition = countForOpenForCurrentPatch;
+	negate = true;
+}
+
+Conditional28: WOConditional {
+	condition = countForOpenForCurrentPatch;
+}
+
+Conditional3: WOConditional {
+	condition = countForTotalForCurrentPatch;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = isProductionRelease;
+}
+
+Conditional5: WOConditional {
+	condition = isProductionRelease;
+}
+
+Conditional6: WOConditional {
+	condition = countForTotalForCurrentPatch;
+}
+
+Conditional7: WOConditional {
+	condition = countForClosedForCurrentPatch;
+	negate = true;
+}
+
+Conditional8: WOConditional {
+	condition = countForClosedForCurrentPatch;
+}
+
+Conditional9: WOConditional {
+	condition = countForResolvedForCurrentPatch;
+	negate = true;
+}
+
+Hyperlink1: WOHyperlink {
+	href = triageURL;
+}
+
+Hyperlink10: WOHyperlink {
+	href = triageURL;
+}
+
+Hyperlink11: WOHyperlink {
+	actionClass = "DirectAction";
+	?version = selectedProject;
+
+	directActionName = "listItems";
+	?status = "RESOLVED";
+
+
+	?wosid = false;
+	?severity = "enhancement";
+}
+
+Hyperlink12: WOHyperlink {
+	?wosid = false;
+	actionClass = "DirectAction";
+	directActionName = "supportItems";
+	?project = selectedProject;
+	?status = "open";
+	?type = "Enhancements";
+}
+
+Hyperlink13: WOHyperlink {
+	?wosid = false;
+	directActionName = "supportItems";
+	actionClass = "DirectAction";
+	?project = selectedProject;
+	?status = "closed";
+	?type = "Enhancements";
+}
+
+Hyperlink14: WOHyperlink {
+	?wosid = false;
+	directActionName = "supportItems";
+	actionClass = "DirectAction";
+	?project = selectedProject;
+	?status = "resolved";
+	?type = "Enhancements";
+}
+
+Hyperlink15: WOHyperlink {
+	?wosid = false;
+	directActionName = "supportItems";
+	actionClass = "DirectAction";
+	?project = selectedProject;
+	?status = "resolved";
+	?type = "Defects";
+}
+
+Hyperlink16: WOHyperlink {
+	actionClass = "DirectAction";
+	?version = selectedProject;
+
+	directActionName = "listItems";
+	?status = "NEW,ASSIGNED,REOPENED";
+
+
+	?wosid = false;
+	?severity = "blocker,critical,major,normal,minor,trivial";
+}
+
+Hyperlink17: WOHyperlink {
+	actionClass = "DirectAction";
+	?version = selectedProject;
+
+	directActionName = "listItems";
+	?status = "NEW,ASSIGNED,REOPENED";
+
+
+	?wosid = false;
+	?severity = "enhancement";
+}
+
+Hyperlink18: WOHyperlink {
+	?milestone = aPatch;
+	?project = selectedProject;
+	?status = "resolved";
+	?wosid = "false";
+	actionClass = "DirectAction";
+	directActionName = "listForMilestoneInProject";
+}
+
+Hyperlink19: WOHyperlink {
+	?milestone = aPatch;
+	?project = selectedProject;
+	?status = "open";
+	?wosid = "false";
+	actionClass = "DirectAction";
+	directActionName = "listForMilestoneInProject";
+}
+
+Hyperlink2: WOHyperlink {
+	actionClass = "DirectAction";
+	?version = selectedProject;
+
+	directActionName = "listItems";
+	?status = "RESOLVED";
+
+
+	?wosid = false;
+}
+
+Hyperlink21: WOHyperlink {
+	?milestone = aPatch;
+	?project = selectedProject;
+	?status = "open";
+	?wosid = false;
+	actionClass = "DirectAction";
+	directActionName = "listForMilestoneInProject";
+}
+
+Hyperlink22: WOHyperlink {
+	?milestone = aPatch;
+	?project = selectedProject;
+	?status = "resolved";
+	?wosid = false;
+	actionClass = "DirectAction";
+	directActionName = "listForMilestoneInProject";
+}
+
+Hyperlink23: WOHyperlink {
+	?milestone = aPatch;
+	?project = selectedProject;
+	?status = "closed";
+	?wosid = false;
+	actionClass = "DirectAction";
+	directActionName = "listForMilestoneInProject";
+}
+
+Hyperlink24: WOHyperlink {
+	?milestone = aPatch;
+	?project = selectedProject;
+	?status = "total";
+	?wosid = false;
+	actionClass = "DirectAction";
+	directActionName = "listForMilestoneInProject";
+}
+
+Hyperlink3: WOHyperlink {
+	?milestone = aPatch;
+	?project = selectedProject;
+	?status = "total";
+	?wosid = "false";
+	actionClass = "DirectAction";
+	directActionName = "listForMilestoneInProject";
+}
+
+Hyperlink4: WOHyperlink {
+	actionClass = "DirectAction";
+	?version = selectedProject;
+
+	directActionName = "listItems";
+	?status = "NEW,ASSIGNED,REOPENED";
+
+
+	?wosid = false;
+}
+
+Hyperlink5: WOHyperlink {
+	?milestone = aPatch;
+	?project = selectedProject;
+	?status = "closed";
+	?wosid = "false";
+	actionClass = "DirectAction";
+	directActionName = "listForMilestoneInProject";
+}
+
+Hyperlink7: WOHyperlink {
+	actionClass = "DirectAction";
+	?version = selectedProject;
+
+	directActionName = "listItems";
+	?status = "RESOLVED";
+
+
+	?wosid = false;
+}
+
+Hyperlink8: WOHyperlink {
+	?wosid = false;
+	directActionName = "supportItems";
+	actionClass = "DirectAction";
+	?project = selectedProject;
+	?status = "open";
+	?type = "Defects";
+}
+
+Hyperlink9: WOHyperlink {
+	?wosid = false;
+	directActionName = "supportItems";
+	actionClass = "DirectAction";
+	?project = selectedProject;
+	?status = "closed";
+	?type = "Defects";
+}
+
+Repetition1: WORepetition {
+	item = selectedProject;
+	list = projects;
+}
+
+Repetition3: WORepetition {
+	item = aPatch;
+	list = milestoneCountsForSelectedProject;
+}
+
+Repetition4: WORepetition {
+	item = aPatch;
+	list = patchReleasesForSelectedProject;
+}
+
+String1: WOString {
+	value = selectedProject;
+}
+
+String11: WOString {
+	value = percentWorkItemsCompleteForSelectedProject;
+	numberformat = "0";
+}
+
+String12: WOString {
+	value = percentQATasksCompleteForSelectedProject;
+	numberformat = "0";
+}
+
+String13: WOString {
+	value = resolvedBugsForSelectedProject;
+}
+
+String14: WOString {
+	value = countForTotalForCurrentPatch;
+}
+
+String15: WOString {
+	value = bugsOpenForSelectedProject;
+}
+
+String16: WOString {
+	value = itemsInTriageForSelectedProject;
+}
+
+String17: WOString {
+	value = supportEnhResolvedForSelectedProject;
+}
+
+String18: WOString {
+	value = supportBugsOpenForSelectedProject;
+}
+
+String19: WOString {
+	value = supportBugsClosedForSelectedProject;
+}
+
+String2: WOString {
+	value = today;
+	dateformat = "%B %d, %Y  %I:%M:%S %p";
+}
+
+String20: WOString {
+	value = supportEnhOpenForSelectedProject;
+}
+
+String21: WOString {
+	value = supportEnhClosedForSelectedProject;
+}
+
+String22: WOString {
+	value = supportBugsResolvedForSelectedProject;
+}
+
+String23: WOString {
+	value = workItemsOpenForSelectedProject;
+}
+
+String24: WOString {
+	value = countForClosedForCurrentPatch;
+}
+
+String25: WOString {
+	value = countForClosedForCurrentPatch;
+}
+
+String26: WOString {
+	value = countForResolvedForCurrentPatch;
+}
+
+String27: WOString {
+	value = countForResolvedForCurrentPatch;
+}
+
+String28: WOString {
+	value = countForOpenForCurrentPatch;
+}
+
+String29: WOString {
+	value = countForOpenForCurrentPatch;
+}
+
+String3: WOString {
+	value = countForTotalForCurrentPatch;
+}
+
+String30: WOString {
+	value = dateForCurrentPatch;
+	dateformat = "%b %d, %Y";
+}
+
+String31: WOString {
+	value = aPatch;
+}
+
+String34: WOString {
+	value = aPatch;
+}
+
+String35: WOString {
+	value = dateForCurrentPatch;
+	dateformat = "%b %d, %Y";
+}
+
+String36: WOString {
+	value = countForResolvedForCurrentPatch;
+}
+
+String37: WOString {
+	value = countForClosedForCurrentPatch;
+}
+
+String38: WOString {
+	value = countForTotalForCurrentPatch;
+}
+
+String39: WOString {
+	value = countForOpenForCurrentPatch;
+}
+
+String4: WOString {
+	value = resolvedBugsForSelectedProject;
+}
+
+String40: WOString {
+	value = selectedProject;
+}
+
+String41: WOString {
+	value = countForOpenForCurrentPatch;
+}
+
+String42: WOString {
+	value = countForResolvedForCurrentPatch;
+}
+
+String43: WOString {
+	value = countForClosedForCurrentPatch;
+}
+
+String44: WOString {
+	value = countForTotalForCurrentPatch;
+}
+
+String45: WOString {
+	value = itemsInTriageForSelectedProject;
+}
+
+String46: WOString {
+	value = itemsInTriageForSelectedProject;
+}
+
+String5: WOString {
+	value = resolvedEnhancementsForSelectedProject;
+}
+
+String6: WOString {
+	value = itemsInTriageForSelectedProject;
+}
+
+String7: WOString {
+	value = bugsOpenForSelectedProject;
+}
+
+String8: WOString {
+	value = enhancementsOpenForSelectedProject;
+}
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta name="generator" content="WebObjects 5.3.2">
+        <title>Story Prioritization</title>
+
+
+  <STYLE>
+
+	</STYLE>
+			<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/base/jquery-ui.css" type="text/css" media="all" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+			<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js" type="text/javascript"></script>
+
+<script language="JavaScript">
+
+	function displaySummaryOfChanges() { 
+			 var elements = document.getElementsByTagName('tr');
+			 var sortableArray = new Array();
+			 var changedArray = new Array();
+			 var summary = "";
+
+			for(i = 0; i < elements.length; i++) {
+				if (elements[i].getAttribute('name') == "sort") {
+					sortableArray.push(elements[i]);
+				}
+			
+			}
+
+			for(i = 0; i < sortableArray.length; i++) {
+					var n = i+1;
+					var index = sortableArray[i].getAttribute('index'); 
+					var dbPriority = sortableArray[i].getAttribute('origPriority'); 
+					var id = sortableArray[i].getAttribute('id'); 
+					if((n != dbPriority) || (dbPriority == 99999)) {
+							//alert( n +":"+ dbPriority);
+
+                         var item=new Object();
+						 item.bugId = id;
+						 item.newPriority = n;
+						 item.originalPriority = n;
+						 item.dbPriority = dbPriority;
+						 changedArray.push(item);  
+					}
+
+			}
+			var loc = window.location;
+			var hostname = loc.hostname;
+			var path = "/Tracker/WebObjects/Tracker.woa/wa/saveStoryPriority";
+			if(hostname == "kevin-avoys-computer.local") {
+				path =  ":2222/cgi-bin/WebObjects/Tracker.woa/wa/saveStoryPriority";
+			}
+
+			var action =  loc.protocol + "//" + hostname + path;
+			//"http://qaapp1.hq.ironkey.com/Tracker/WebObjects/Tracker.woa/wa/saveStoryPriority";
+			//alert( "action - "+ action);
+			//alert( "loc.protocol - "+ loc.protocol);
+
+			var request= "changes=";
+			for(i = 0; i < changedArray.length; i++) {
+					request =request + changedArray[i].bugId + ":" +   changedArray[i].newPriority + ",";
+					summary =summary + changedArray[i].bugId + " - " +   changedArray[i].newPriority + "/" + changedArray[i].originalPriority  + "/" + changedArray[i].dbPriority + "\n";
+			}
+//saveChanges();
+		//alert( request);
+        var xmlhttp;
+		if (window.XMLHttpRequest)
+		{// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{// code for IE6, IE5
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+    	xmlhttp.open("GET", action+"?"+request, false);
+    	xmlhttp.send();
+
+			//alert( action+"?"+request);
+	} 
+
+    function saveChanges() {
+		var xmlhttp = new XMLHttpRequest();
+    	xmlhttp.open("GET", "http://localhost:2222/cgi-bin/WebObjects/Tracker.woa/wa/ajax?id=12345,12346", false);
+    	xmlhttp.send();
+    }
+
+	function isChanges() { 
+			 var elements = document.getElementsByTagName('tr');
+			 var sortableArray = new Array();
+
+			
+			for(i = 0; i < elements.length; i++) {
+				if (elements[i].getAttribute('name') == "sort") {
+					sortableArray.push(elements[i]);
+				}
+			
+			}
+			
+			for(i = 0; i < sortableArray.length; i++) {
+					var n = i+1;
+					var index = sortableArray[i].getAttribute('index'); 
+					if(index != n) {
+						return true;	
+						break;
+					}
+
+			}
+			return false;
+	} 
+
+	function displaySaveChanges() {
+		var saveChanges = document.getElementById("Save Changes"); 
+		var cancel = document.getElementById("Cancel"); 
+ 	    saveChanges.style.display = ''; 
+ 	    cancel.style.display = ''; 
+	}
+	function hideSaveChanges() {
+		var saveChanges = document.getElementById("Save Changes"); 
+		var cancel = document.getElementById("Cancel"); 
+
+ 	    saveChanges.style.display = 'none'; 
+ 	    cancel.style.display = 'none'; 
+	}
+        
+
+	$(document).ready(function(){
+		$( "#sortable tbody.content" ).sortable( {
+			//handle : '#sorter',
+            stop:function(e,ui) {
+    			 if(isChanges() == true) {
+					displaySaveChanges();
+				}
+				else {
+					hideSaveChanges();
+				}
+
+			}
+		});
+
+		$( "#sortable tbody.content" ).disableSelection();
+	});
+	
+
+
+	</script>
+
+
+    </head>
+    <body><center><font size="6">Story Prioritization</font> <webobject name="Conditional16"><font size="2"><br>(Sort Mode is<webobject name="Conditional17"> On - Turn <webobject name="Hyperlink5">Off</webobject></webobject><webobject name="Conditional21"> Off - Turn <webobject name="Hyperlink6">On</webobject></webobject>)</font></webobject></center><p align="center"><webobject name="String8"></webobject></p>
+        <p></p><center><webobject name="Conditional31"><webobject name="Form1"><webobject name="RadioButton1"><webobject name="String25"></webobject>&nbsp;&nbsp;&nbsp;</webobject>&nbsp;&nbsp;<webobject name="SubmitButton1"></webobject></webobject></webobject></center><webobject name="Conditional3"><webobject name="Form2"><table border="0"><tr><td><webobject name="SubmitButton2"></webobject></td><td><webobject name="SubmitButton3"></webobject></td></tr></table></webobject></webobject><p></p><p align="center"><font size="5"><webobject name="String2"></webobject></font></p>
+<p align="left"></p><hr><webobject name="Conditional7">
+<webobject name="BatchNavigationBar"></webobject>
+
+<table id=sortable bgcolor="#dddddd" cellspacing="2" cellpadding="4" width="100%">
+	<tbody class=content>
+	<tr bgcolor="#dddddd">
+		<webobject name="Conditional5"><th>Sort</th></webobject><th><table border="0" width="100%"><tr><th>Id</th><td><webobject name="Conditional1"><webobject name="SortOrder"></webobject></webobject></td></tr></table></th>
+		<th><table border="0" width="100%"><tr><th>Type</th><td><webobject name="Conditional2"><webobject name="SortOrder34"></webobject></webobject></td></tr></table></th>
+		<th><table border="0" width="100%"><tr><th>Rank</th><td><webobject name="Conditional4"><webobject name="SortOrder2"></webobject></webobject></td></tr></table></th><th><table border="0" width="100%"><tr><th>Release</th><td><webobject name="Conditional9"><webobject name="SortOrder7"></webobject></webobject></td></tr></table></th>
+		<th><table border="0" width="100%"><tr><th>Assignee</th><td><webobject name="Conditional6"><webobject name="SortOrder3"></webobject></webobject></td></tr></table></th>
+		<th><table border="0" width="100%"><tr><th>Reporter</th><td><webobject name="Conditional34"><webobject name="SortOrder18"></webobject></webobject></td></tr></table></th><th><table border="0" width="100%"><tr><th>Last Modified</th><td><webobject name="Conditional33"><webobject name="SortOrder17"></webobject></webobject></td></tr></table></th><th><table border="0" width="100%"><tr><th>Created</th><td><webobject name="Conditional35"><webobject name="SortOrder19"></webobject></webobject></td></tr></table></th><th>Description</th><th>Comments</th>
+	</tr>
+	<webobject name="Repetition1">
+
+
+	<!--<tr bgcolor="#ffffff" index="<webobject name=String1></webobject>" name="sort">-->
+<webobject name="TableRow">
+		<webobject name="Conditional12"><td align="center"><span id="sorter" class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+</td></webobject><td align="center"><font size="2"><webobject name="Hyperlink1"><webobject name="String1"></webobject></webobject></font></td>
+		<td align="center"><font size="2"><webobject name="String75"></webobject></font></td>
+		<td align="center"><font size="2"><webobject name="String4"></webobject></font></td><td align="center"><font size="2"><webobject name="String9"></webobject></font></td>
+		<td><font size="2"><webobject name="String6"></webobject></font></td>
+		<td><font size="2"><webobject name="String40"></webobject></font></td><td align="center"><font size="2"><webobject name="String41"></webobject></font></td><td align="center"><font size="2"><webobject name="String45"></webobject></font></td><td><font size="2"><webobject name="String7"></webobject></font></td><td><font size="2"><webobject name="String18"></webobject></font></td>
+</webobject>
+	</webobject><webobject name="Repetition4"><tr bgcolor="#eeeeee"><webobject name="Conditional13"><td align="center"><font size="2">---</font></td></webobject><td align="center"><font size="2"><webobject name="Hyperlink4"><webobject name="String38"></webobject></webobject></font></td><td align="center"><font size="2"><webobject name="String76"></webobject></font></td><td align="center"><font size="2"><webobject name="String13"></webobject></font></td><td align="center"><font size="2"><webobject name="String35"></webobject></font></td><td><font size="2"><webobject name="String32"></webobject></font></td><td><font size="2"><webobject name="String42"></webobject></font></td><td align="center"><font size="2"><webobject name="String43"></webobject></font></td><td align="center"><font size="2"><webobject name="String46"></webobject></font></td><td><font size="2"><webobject name="String31"></webobject></font></td><td><font size="2"><webobject name="String30"></webobject></font></td></tr></webobject>
+	</tbody>
+</table>
+</webobject>
+<webobject name="Conditional8"><webobject name="Image1"></webobject>
+            &nbsp;&nbsp;&nbsp;<font size="5">No Items Found</font>
+</webobject><p></p>
+</body>
+</html>

@@ -1,0 +1,143 @@
+BatchNavigationBar: WOBatchNavigationBar { 	displayGroup = itemDisplayGroup;
+}
+
+Conditional1: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional10: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+Conditional11: WOConditional {
+	condition = releaseFlag;
+}
+
+Conditional2: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional6: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = commentsFlag;
+}
+
+Conditional8: WOConditional {
+	condition = commentsFlag;
+}
+
+Conditional9: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Hyperlink1: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Repetition1: WORepetition {
+	item = anItem;
+	list = itemDisplayGroup.displayedObjects;
+}
+
+SortOrder: WOSortOrder { 	key = "bugId";
+	displayKey = "ID";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder2: WOSortOrder { 	key = "priority";
+	displayKey = "Priority";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder3: WOSortOrder { 	key = "assignee.realname";
+	displayKey = "Assignee";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder4: WOSortOrder { 	key = "component.componentName";
+	displayKey = "Component";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder5: WOSortOrder { 	key = "bugStatus";
+	displayKey = "Status";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder6: WOSortOrder { 	key = "bugSeverity";
+	displayKey = "Severity";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder7: WOSortOrder { 	key = "version";
+	displayKey = "Version";
+	displayGroup = itemDisplayGroup;
+}
+
+SortOrder8: WOSortOrder { 	key = "targetMilestone";
+	displayKey = "Sprint";
+	displayGroup = itemDisplayGroup;
+}
+
+String1: WOString {
+	value = anItem.bugId;
+}
+
+String10: WOString {
+	value = anItem.targetMilestone;
+}
+
+String2: WOString {
+	value = anItem.priority;
+}
+
+String3: WOString {
+	value = anItem.bugSeverity;
+}
+
+String4: WOString {
+	value = anItem.component.componentName;
+}
+
+String5: WOString {
+	value = anItem.bugStatus;
+}
+
+String6: WOString {
+	value = anItem.assignee.realname;
+}
+
+String7: WOString {
+	value = anItem.shortDesc;
+}
+
+String8: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String9: WOString {
+	value = anItem.version;
+}

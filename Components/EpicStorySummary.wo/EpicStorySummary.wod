@@ -1,0 +1,24 @@
+Conditional1: WOConditional {
+	condition = otherBugs.@count;
+}
+
+Conditional3: WOConditional {
+	condition = storiesForRelease.@count;
+}
+
+Conditional4: WOConditional {
+	condition = storiesForRelease.@count;
+	negate = true;
+}
+
+NestedItems3: NestedItems3 {
+	itemList = storiesPlusOther;
+	items = itemsForNonEOs;
+	level = 0;
+}
+
+String19: WOString {
+	value = aStory.targetMilestone;
+}
+
+

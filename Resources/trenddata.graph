@@ -1,0 +1,47 @@
+{
+    SizeInPixels = (400,300);		// (width, height)
+    AxisColor = (128, 128, 128); 
+    AxisFlag = BOTH; 
+    BackgroundColor = (255, 255, 255); 
+    BarWidthInPixels = 50.; 
+    BorderColor = (0, 0, 0); 
+    BorderFlag = YES; 
+    BorderWidthInPixels = 0; 
+    BoxFlag = NO; 
+    Color = (200, 200, 200); 
+    DataFormat = DOUBLE; 
+    DateFormat = "%d/%m/%Y"; 
+    Fit = YES; 
+    GridColor = (200, 200, 200); 
+    GridFlag = YES; 
+    LegendFlag = YES; 
+    LegendFont = small; 
+    LegendPositionPercents = (5,90); 
+    LegendTitle = "Severity"; 
+    NoDataYet = "No Data Yet"; 
+    NumberColor = (0, 0, 0); 
+    NumberFont = tiny; 
+    NumberFormat = "%1.0f"; 
+    TicColor = (170., 225., 170); 
+    Title = "Trend Over Time"; 
+    TitleColor = (0, 0, 0); 
+    TitleFont = giant; 
+    Type = LINE; 
+    Unit = ""; 
+   // oxFlag = YES; 
+     XAxis = {
+	AxisFlag = MAIN; 
+	DataFormat = DATE; 
+	TitleFont = small; 
+	Unit = Date; 
+     }; 
+	
+	YAxis = {
+            AxisFlag = MAIN; 
+            //Max = 20.0; 
+           // NumbersDeltaAbs = 50.; 
+           // TicsDeltaAbs = 25; 
+            TitleFont = small; 
+            Unit = "Number of Open Items"; 	
+	};
+ }

@@ -1,0 +1,50 @@
+CheckBox1: WOCheckBox {
+	checked = isDistinct;
+}
+
+Form1: WOForm {
+method = "get";
+}
+
+PageWrapper: PageWrapper {
+}
+
+RadioButtonMatrix: WORadioButtonMatrix { 	
+	selection = selectedValues;
+	maxColumns = 3;
+	list = allOrRecent;
+	item = aValue;
+}
+
+ReportListWrapper: ReportListWrapper {
+    displayGroup = displayGroup;
+    aRow = aRow;
+    aColumn = aColumn;
+	isReport = isReport;
+	isList = isList;
+    needUpdate = needUpdate;
+}
+
+String1: WOString {
+	value = aValue;
+}
+
+String2: WOString {
+	value = selectedProject;
+}
+
+String3: WOString {
+	dateformat = "%b %d, %Y %I:%M:%S %p";
+	value = now;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = resetDisplayedBugs;
+	value = "Update";
+}
+
+TextField1: WOTextField {
+	value = numDays;
+	numberformat = "0";
+	size = 4;
+}

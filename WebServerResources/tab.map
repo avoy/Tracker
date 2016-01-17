@@ -1,0 +1,5 @@
+rect goMyBugs 6,0 72,24
+rect goProject 90,0 153,24
+rect goTriage 174,0 234,24
+rect goReleasePlan 255,0 331,24
+rect goUsability 331,0 407,24

@@ -1,0 +1,17 @@
+{
+	"components" = {
+		"PageWrapperReportList" = {
+			"editors" = (
+				"backgroundColorForTable",
+				"showBanner",
+				"readOnly",
+				"batchSize"
+			);
+			"page" = "yes";
+			"inspectionInformation" = "A simple list page, listing entries in a table.";
+			"supports" = (
+				"justification"
+			);
+		};
+	};
+}

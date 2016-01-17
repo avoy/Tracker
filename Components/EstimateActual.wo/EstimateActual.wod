@@ -1,0 +1,144 @@
+BackLink : WOHyperlink {
+	action = viewAllBugs;
+};
+
+Conditional1: WOConditional {
+	condition = isSelected;
+}
+
+Conditional2: WOConditional {
+	condition = isSelected;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = showLinks;
+}
+
+Conditional4: WOConditional {
+	condition = showLinks;
+	negate = true;
+}
+
+EntityRepetition : WORepetition {
+	item = anEo;
+	list = selectedBugStat.allBugs;
+};
+
+Hyperlink1: WOHyperlink {
+	action = viewBugsForSelected;
+}
+
+Hyperlink2: WOHyperlink {
+	href = bugURL;
+}
+
+Hyperlink3: WOHyperlink {
+	href = bugListURL;
+}
+
+Number : WOString {
+	valueWhenEmpty = "&nbsp;";
+	numberformat = "0";
+	value = anEo.bugId;
+};
+
+Repetition1: WORepetition {
+	item = aBugStat;
+	list = bugStats;
+}
+
+ReturnButton : WOImage {
+	filename = "ReturnMetalBtn.gif";
+	framework = "JavaDirectToWeb";
+	name = "Returns to the previous page";
+	alt = "Returns to the previous page";
+	border = "0";
+};
+
+String : WOString {
+	value = anEo.bugStatus;
+	valueWhenEmpty = "&nbsp;";
+};
+
+String1: WOString {
+	value = aBugStat.label;
+}
+
+String10: WOString {
+	value = selectedBugStat.label;
+}
+
+String11: WOString {
+	value = estimateTotal;
+	numberformat = "###,##0.##";
+
+}
+
+String12: WOString {
+	value = actualTotal;
+	numberformat = "###,##0.##";
+
+}
+
+String13: WOString {
+	value = countTotal;
+}
+
+String14: WOString {
+	value = noEstTotal;
+}
+
+String15: WOString {
+	value = noActTotal;
+}
+
+String16: WOString {
+	value = aBugStat.label;
+}
+
+String17: WOString {
+	value = aBugStat.estimate;
+}
+
+String18: WOString {
+	value = aBugStat.actual;
+}
+
+String2: WOString {
+	value = aBugStat.allBugs.count;
+
+}
+
+String3: WOString {
+	value = aBugStat.estimate;
+	numberformat = "###,##0.##";
+}
+
+String4: WOString {
+	numberformat = "###,##0.##";
+	value = aBugStat.actual;
+}
+
+String5: WOString {
+	value = aBugStat.numNotEstimated;
+}
+
+String6 : WOString {
+	value = anEo.remainingTime;
+	valueWhenEmpty = "&nbsp;";
+};
+
+String7 : WOString {
+	value = anEo.estimatedTime;
+	valueWhenEmpty = "&nbsp;";
+};
+
+String8: WOString {
+	value = aBugStat.numNotActual;
+}
+
+String9 : WOString {
+	value = anEo.shortDesc;
+	valueWhenEmpty = "&nbsp;";
+};

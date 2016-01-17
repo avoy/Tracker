@@ -1,0 +1,29 @@
+{
+    attributes = (
+        {
+            columnName = id; 
+            externalType = smallint; 
+            name = id; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = name; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }
+    ); 
+    attributesUsedForLocking = (id, name); 
+    className = EOGenericRecord; 
+    classProperties = (name); 
+    externalName = "series_categories"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {"_clientClassPropertyNames" = (name); uniqueID = 196630705; }; 
+    name = SeriesCategories; 
+    primaryKeyAttributes = (id); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

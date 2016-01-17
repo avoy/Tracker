@@ -1,0 +1,129 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = "attach_id"; 
+            externalType = mediumint; 
+            name = attachId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "bug_id"; 
+            externalType = mediumint; 
+            name = bugId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "creation_date"; 
+            externalType = datetime; 
+            name = creationDate; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = id; 
+            externalType = mediumint; 
+            name = id; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "is_active"; 
+            externalType = tinyint; 
+            name = isActive; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "modification_date"; 
+            externalType = datetime; 
+            name = modificationDate; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "requestee_id"; 
+            externalType = mediumint; 
+            name = requesteeId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "setter_id"; 
+            externalType = mediumint; 
+            name = setterId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = status; 
+            externalType = char; 
+            name = status; 
+            valueClassName = NSString; 
+            valueType = c; 
+            width = 1; 
+        }, 
+        {
+            columnName = "type_id"; 
+            externalType = smallint; 
+            name = typeId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }
+    ); 
+    attributesUsedForLocking = (
+        id, 
+        attachId, 
+        creationDate, 
+        modificationDate, 
+        setterId, 
+        isActive, 
+        requesteeId, 
+        typeId, 
+        status, 
+        bugId
+    ); 
+    className = EOGenericRecord; 
+    classProperties = (
+        attachId, 
+        creationDate, 
+        modificationDate, 
+        setterId, 
+        isActive, 
+        requesteeId, 
+        typeId, 
+        status, 
+        bugId
+    ); 
+    externalName = flags; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (
+            attachId, 
+            creationDate, 
+            modificationDate, 
+            setterId, 
+            isActive, 
+            requesteeId, 
+            typeId, 
+            status, 
+            bugId
+        ); 
+        uniqueID = 196630413; 
+    }; 
+    name = Flags; 
+    primaryKeyAttributes = (id); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

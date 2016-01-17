@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta name="generator" content="WebObjects 5.3.2">
+		<title>Release Plan</title>
+<style type="text/css">
+.handcursor{cursor:hand;cursor:pointer;}
+</style>
+	<link media="screen" rel="stylesheet" href="/colorbox.css" />
+ 	<script type='text/JavaScript' src='/jquery-1.4.4.min.js'></script>
+ 	<script type='text/JavaScript' src='/jquery.colorbox-min.js'></script>
+ 	<script> 
+		$(document).ready(function(){ 
+			$(".useColorboxBurnDown").colorbox({width:"50%", height:"70%", iframe:true}); 
+			$(".useColorboxMilestones").colorbox({width:"70%", height:"70%", iframe:true}); 
+			$(".useColorboxSmall").colorbox({width:"55%", height:"40%", iframe:true, current:"{current} of {total}"}); 
+			$(".useColorboxMedium").colorbox({width:"85%", height:"90%", iframe:true, current:"{current} of {total}"}); 
+			$(".useColorboxLarge").colorbox({width:"85%", height:"100%", iframe:true, current:"{current} of {total}"}); }); 
+	</script>
+ 	<script type="text/javascript"> 
+		function toggleSprint(obj) { 
+			var el = document.getElementById(obj); 
+			var rightImage = document.getElementById(obj+"RightImage"); 
+			var downImage = document.getElementById(obj+"DownImage"); 
+			if ( el.style.display != 'none' ) {
+					 el.style.display ='none'; 
+					 rightImage.style.display =''; 
+					 downImage.style.display ='none';
+			} 
+			else {
+ 	    		el.style.display = ''; 
+ 	    		rightImage.style.display = 'none'; 
+ 	    		downImage.style.display = ''; 
+			} 
+		} 
+
+	 </script>
+</head>
+<body>
+<center><font size="5"><webobject name="String2"></webobject></font><p><font size="3"><b>Sprint:</b> <webobject name="String8"></webobject></font><br></br><webobject name="String9"></webobject><br></p><hr><br><webobject name="Repetition1"><table bgcolor="#d0d0d0" border="0" width="90%">
+ 	                    
+							<tr bgcolor=#ffffff><td align="left"><font size="4"><a name="sprint_info"><b>Product:</b> <webobject name="String7"></webobject></a></font></td></tr>
+							<tr><td align="CENTER" bgcolor="#cccccc"><font size="4"><a name="sprint_info">Sprint Information</a></font></td></tr>
+ 	                    
+ 	                        <tr bgcolor=#d0d0d0>
+ 	                            <td><table width="100%" border=0 cellspacing=1 cellpadding=0 bgcolor=#d0d0d0>
+ 	                                    <tr bgcolor=#ffffff>
+ 	                                        <th bgcolor="#a5a5a5" width="40%"><font size="2">Sprint</font></th>
+ 	                                        <th bgcolor="#a5a5a5"><font size="2"># Stories</font></th>
+ 	                                        <th bgcolor="#a5a5a5"><font size="2">% Complete</font></th>
+ 	                                        <th bgcolor="#a5a5a5"><font size="2">Start Date</font></th>
+ 	                                        <th bgcolor="#a5a5a5"><font size="2">End Date</font></th>
+ 	                                        <th bgcolor="#a5a5a5"><font size="2">Remaining</font><br><font size="2">weekdays/days</font></th><th bgcolor="#a5a5a5"><font size="2">---</font></th>
+ 	                                    </tr>
+ 	                                    
+ 	                                       <tr>
+ 	                                            <td  class="handcursor" onclick="toggleSprint('<webobject name=String29></webobject>')" align="left" bgcolor="#ffffff"><font size="2">&nbsp;&nbsp;<webobject name="Image1"></webobject><webobject name="Image2"></webobject> &nbsp;<webobject name="String29"></webobject></font></td>
+ 	                                            <td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String30"></webobject></font></td>
+ 	                                            <td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String33"></webobject></font></td><td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String31"></webobject></font></td>
+ 	                                            <td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String32"></webobject></font></td>
+ 	                                            <td align="center" bgcolor="#ffffff"><webobject name="Conditional32"><font size="2"><webobject name="String42"></webobject> </font><font size="2">/ <webobject name="String43"></webobject></font></webobject></td><td align="center" bgcolor="#ffffff"><font size="2"><webobject name="Hyperlink12">Bug Metrics</webobject></font><font size="2"><webobject name="Conditional20"> / <webobject name="Hyperlink16">BurnDown</webobject></webobject></font></td>
+ 	                                        </tr>
+ 	                                       <!-- <tr  id="<webobject name=String29></webobject>">-->
+											<webobject name=Generic1>
+
+ 	                                            <td colspan="7">
+													
+
+ 	                                                <table bgcolor="#d0d0d0" width="100%" cellspacing=1 cellpadding=0>
+
+ 	                                                <tr bgcolor=#ffffff>
+ 	                                                    <td align="center" bgcolor="#d0d0d0">&nbsp;</td>
+ 	                                                    <th bgcolor=#e5e5e5 width="60%" rowspan=2><font size="2">Story</font></th>
+ 	                                                    <th bgcolor="#e5e5e5" rowspan=2><font size="2">Status</font></th><th bgcolor="#e5e5e5" colspan="4"><font size="2">Tasks and Bugs</font></th>
+														
+ 	                                                </tr>
+ 	                                                <tr>
+ 	                                                    <td align="center" bgcolor="#d0d0d0">&nbsp;</td>
+														<th bgcolor="#e5e5e5"><font size="1">count</font><br><font size="1">closed&nbsp;&nbsp;/&nbsp;total</font><font size="2"></font></th>
+														<th bgcolor="#e5e5e5"><font size="1">count</font><br><font size="1">%&nbsp;complete</font></th>
+														<th bgcolor="#e5e5e5"><font size="1">hours <br>worked&nbsp;/&nbsp;total</font></th>
+														<th bgcolor="#e5e5e5"><font size="1">hours</font><br><font size="1">%&nbsp;complete</font></th>
+														
+													</tr>
+
+
+ 	                                                    <webobject name="Repetition5">
+ 	                                                    <tr>
+ 	                                                        <td width="20" align="center" bgcolor="#d0d0d0"></td>
+ 	                                                        <td align="left" bgcolor="#ffffff">
+ 	                                                            <font size="2">&nbsp;&nbsp;<webobject name="Conditional5"><webobject name="Hyperlink24"><webobject name="String44"></webobject></webobject></webobject><webobject name="Conditional4"><webobject name="String3"></webobject></webobject>&nbsp;&nbsp;&nbsp;(<webobject name="Hyperlink1"><webobject name="String1"></webobject></webobject>)</font>
+ 	                                                        </td>
+ 	                                                        <webobject name="StateTD"><font size="2"><webobject name="Conditional45"><webobject name="Hyperlink3"><webobject name="String34"></webobject></webobject></webobject></font><font size="2"><webobject name="Conditional47"><webobject name="String55"></webobject></webobject></font><font size="2"></font></webobject><td align="center" bgcolor="#ffffff"><font size="2"><webobject name="Hyperlink17"><webobject name="String4"></webobject>&nbsp;/&nbsp;<webobject name="String23"></webobject></webobject></font></td>
+															<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String25"></webobject></font></td>
+															<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String6"></webobject>&nbsp;/&nbsp;<webobject name="String21"></webobject></font></td>
+															<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String20"></webobject></font></td>
+															
+ 	                                                    </tr>
+ 	                                                    </webobject>
+ 	                                                    <tr bgcolor="#e5e5e5">
+ 	                                                        <td align="center" bgcolor="#d0d0d0"></td>
+ 	                                                        <td bgcolor="#d0d0d0" colspan="5">&nbsp;</td>
+ 	                                                    </tr>
+ 	                                                </table>
+ 	                  							 	<!-- By Person -->
+
+                                          </td>
+                                      </webobject>
+                                  
+                              </table>
+                          </td>
+                      </tr>
+
+
+
+						
+ 	                </table><p></p><br><br></webobject></center>
+
+</body>
+</html>

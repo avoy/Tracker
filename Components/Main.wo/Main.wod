@@ -1,0 +1,38 @@
+AssistantConditional: WOConditional {
+	condition = isAssistantCheckboxVisible;
+}
+
+BodyContainer: WOBody {
+	filename = "Background.gif";
+	framework = "app";
+}
+
+LoginButton: WOActiveImage {
+	action = defaultPage;
+	alt = "Login";
+	border = "0";
+	filename = "LoginMetalBtn.gif";
+	framework = "JavaDirectToWeb";
+	height = "31";
+	name = "Login";
+	width = "88";
+}
+
+LoginForm: WOForm {
+	multipleSubmit = true;
+}
+
+PasswordField: WOPasswordField {
+	value = password;
+	width = "16";
+}
+
+String1: WOString {
+	value = errorMessage;
+}
+
+UsernameField: WOTextField {
+	value = username;
+	width = "16";
+}
+

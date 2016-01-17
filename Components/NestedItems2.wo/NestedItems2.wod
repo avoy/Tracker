@@ -1,0 +1,141 @@
+CollapsibleComponentContent: WOCollapsibleComponentContent { 	
+	openedLabel = cleanDescription;
+	closedLabel = cleanDescription;
+}
+
+Conditional1: WOConditional {
+	condition = anEo.hasChildren;
+}
+
+Conditional10: WOConditional {
+	condition = isListEmpty;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = anEo.hasChildren;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = isChild;
+	negate = true;
+}
+Conditional4: WOConditional {
+	condition = isChild;
+}
+
+Conditional5: WOConditional {
+	condition = anEo.isURL;
+	negate = true;
+}
+
+Conditional6: WOConditional {
+	condition = anEo.isURL;
+}
+
+Conditional7: WOConditional {
+	condition = anEo.isURL;
+	negate = true;
+}
+
+Conditional8: WOConditional {
+	condition = anEo.isURL;
+}
+
+Hyperlink1: WOHyperlink {
+	href = anEo.bugURL;
+}
+
+Hyperlink2: WOHyperlink {
+	href = anEo.bugFileLoc;
+}
+
+Hyperlink3: WOHyperlink {
+ onClick=toggleString;
+	href = "#";
+}
+
+Hyperlink4: WOHyperlink {
+	href = anEo.bugFileLoc;
+}
+
+Image1: WOImage {
+	filename = "RightTriangle.gif";
+	framework = "JavaWOExtensions";
+	id = rightArrowName;
+	onClick=toggleString;
+
+}
+Image2: WOImage {
+	filename = "DownTriangle.gif";
+	framework = "JavaWOExtensions";
+	id = downArrowName;
+	style="display:none";
+	onClick=toggleString;
+
+}
+
+
+
+NestedItems2: NestedItems2 {
+	itemList = anEo.children;
+	isChild = true;
+	level = level;
+}
+
+Repetition1: WORepetition {
+	item = anEo;
+	list = itemList;
+}
+
+
+Repetition5: WORepetition {
+	item = sprintKey;
+	list = sprintKeys;
+}
+
+Repetition6: WORepetition {
+	item = anEo;
+	list = storiesForCurrentSprint;
+}
+
+String1: WOString {
+	value = child.shortDesc;
+}
+
+String2: WOString {
+	value = anEo.bugId;
+}
+
+String3: WOString {
+	value = anEo.percentCompleteCountChildren;
+}
+
+String4: WOString {
+	value = anEo.state;
+}
+
+String5: WOString {
+	value = cleanDescription;
+}
+
+String6: WOString {
+	value = cleanDescription;
+}
+
+String7: WOString {
+	value = cleanDescription;
+}
+
+String8: WOString {
+	value = cleanDescription;
+}
+String9: WOString {
+	value = uniqueID;
+}
+TRToggle: WOGenericContainer {
+	elementName = "tr";
+	id=uniqueID;
+	style="display:none";
+}

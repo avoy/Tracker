@@ -1,0 +1,40 @@
+{
+    attributes = (
+        {
+            columnName = "grant_type"; 
+            externalType = tinyint; 
+            name = grantType; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "grantor_id"; 
+            externalType = mediumint; 
+            name = grantorId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "member_id"; 
+            externalType = mediumint; 
+            name = memberId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (grantorId, memberId, grantType); 
+    className = EOGenericRecord; 
+    classProperties = (grantorId, memberId, grantType); 
+    externalName = "group_group_map"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (grantorId, memberId, grantType); 
+        uniqueID = 196630489; 
+    }; 
+    name = GroupGroupMap; 
+    primaryKeyAttributes = (grantorId, memberId, grantType); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

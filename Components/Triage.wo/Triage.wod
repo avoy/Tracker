@@ -1,0 +1,24 @@
+Form1: WOForm {
+method = "get";
+}
+
+PopUpButton1: WOPopUpButton {
+	item = session.aString;
+	list = potentialProjects;
+	selection = selectedProject;
+}
+
+ReportListWrapper: ReportListWrapper {
+    displayGroup = displayGroup;
+    aRow = aRow;
+    aColumn = aColumn;
+	isReport = isReport;
+	isList = isList;
+	needUpdate = needUpdate;
+
+}
+
+SubmitButton1: WOSubmitButton {
+	action = resetDisplayedBugs;
+	value = "Update";
+}

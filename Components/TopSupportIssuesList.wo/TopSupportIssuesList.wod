@@ -1,0 +1,722 @@
+BatchNavigationBar: WOBatchNavigationBar { 	displayGroup = trustedAccessDisplayGroup;
+}
+
+BatchNavigationBar2: WOBatchNavigationBar { 	displayGroup = secureStorageDisplayGroup;
+}
+BurnDown1: BurnDown {
+	startDate = startDate;
+	chartType = "count";
+	itemsToGraph = trustedAccessItems;
+}
+
+CheckBox1: WOCheckboxMatrix {
+	list = potentialProducts;
+	item = aProduct;
+	selections = selectedProducts;
+	maxColumns = 5;
+	
+}
+
+CheckBox2: WOCheckboxMatrix {
+	list = potentialTypes;
+	item = aType;
+	selections = selectedTypes;
+	maxColumns = 2;
+}
+
+Conditional1: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional10: WOConditional {
+	condition = isTA;
+}
+
+Conditional11: WOConditional {
+	condition = secureStorageDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional12: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional13: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional14: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional15: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional16: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional17: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional18: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional19: WOConditional {
+	condition = secureStorageDisplayGroup.allObjects.@count;
+}
+
+Conditional2: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional20: WOConditional {
+	condition = isSS;
+}
+
+Conditional21: WOConditional {
+	condition = collapseFlag;
+	negate = true;
+}
+
+Conditional22: WOConditional {
+	condition = collapseFlag;
+	negate = true;
+}
+
+Conditional23: WOConditional {
+	condition = collapseFlag;
+	negate = true;
+}
+
+Conditional24: WOConditional {
+	condition = collapseFlag;
+	negate = true;
+}
+
+Conditional25: WOConditional {
+	condition = collapseFlag;
+	negate = true;
+}
+
+Conditional26: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional27: WOConditional {
+	condition = anItem.isHot;
+	negate = true;
+}
+
+Conditional28: WOConditional {
+	condition = anItem.isHot;
+}
+
+Conditional29: WOConditional {
+	condition = anItem.isHot;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional30: WOConditional {
+	condition = anItem.isHot;
+}
+
+Conditional31: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional32: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional33: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional34: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional35: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional36: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional37: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional38: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional39: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional40: WOConditional {
+	condition = collapseFlag;
+	negate = true;
+}
+
+Conditional41: WOConditional {
+	condition = collapseFlag;
+	negate = true;
+}
+
+Conditional42: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional43: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = collapseFlag;
+}
+
+Conditional57: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional6: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = trustedAccessDisplayGroup.allObjects.@count;
+}
+
+Conditional8: WOConditional {
+	condition = trustedAccessDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Conditional9: WOConditional {
+	condition = emailFlag;
+}
+
+Form1: WOForm {
+}
+
+Hyperlink1: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink2: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink3: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink4: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink5: WOHyperlink {
+	href = listURLForOpenTA;
+}
+
+Hyperlink6: WOHyperlink {
+	action = toggleCollapseFlag;
+}
+
+Hyperlink7: WOHyperlink {
+	action = toggleCollapseFlag;
+}
+
+Hyperlink8: WOHyperlink {
+	href = urlForCase;
+	target = "_blank";
+}
+
+Hyperlink9: WOHyperlink {
+	href = urlForCase;
+	target = "_blank";
+}
+
+Image1: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image10: WOImage {
+	filename = "CheckboxOn.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image2: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image7: WOImage {
+	filename = "CheckboxOff.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image8: WOImage {
+	filename = "CheckboxOn.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Image9: WOImage {
+	filename = "CheckboxOff.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Repetition1: WORepetition {
+	item = anItem;
+	list = trustedAccessDisplayGroup.displayedObjects;
+}
+
+Repetition2: WORepetition {
+	item = anItem;
+	list = secureStorageDisplayGroup.displayedObjects;
+}
+
+Repetition3: WORepetition {
+	item = anItem;
+	list = secureStorageResolvedItems;
+}
+
+Repetition4: WORepetition {
+	item = anItem;
+	list = trustedAccessResolvedItems;
+}
+
+Repetition5: WORepetition {
+	item = aCase;
+	list = anItem.salesforceCases;
+}
+
+Repetition6: WORepetition {
+	item = aCase;
+	list = anItem.salesforceCases;
+}
+
+SortOrder: WOSortOrder { 	
+	key = "bugId";
+	displayKey = "ID";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder10: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "component.componentName";
+	displayKey = "Component";
+}
+
+SortOrder11: WOSortOrder { 	
+	key = "version";
+	displayKey = "Release";
+	displayGroup = secureStorageDisplayGroup;
+}
+
+SortOrder12: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "priority";
+	displayKey = "Priority";
+}
+
+SortOrder13: WOSortOrder { 	
+	key = "bugSeverity";
+	displayKey = "Severity";
+	displayGroup = secureStorageDisplayGroup;
+}
+
+SortOrder14: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "bugId";
+	displayKey = "ID";
+}
+
+SortOrder16: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "hot";
+	displayKey = "hot";
+}
+
+SortOrder17: WOSortOrder { 	
+	key = "lastdiffed";
+	displayKey = "Last Modified";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder18: WOSortOrder { 	
+	key = "reporter.realname";
+	displayKey = "Reporter";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder19: WOSortOrder { 	
+	key = "creationTs";
+	displayKey = "opened";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder2: WOSortOrder { 	
+	key = "type";
+	displayKey = "Type";
+	displayGroup = secureStorageDisplayGroup;
+}
+
+SortOrder20: WOSortOrder { 	
+	key = "reporter.realname";
+	displayKey = "Reporter";
+	displayGroup = secureStorageDisplayGroup;
+}
+
+SortOrder21: WOSortOrder { 	
+	key = "lastdiffed";
+	displayKey = "Last Modified";
+	displayGroup = secureStorageDisplayGroup;
+}
+
+SortOrder22: WOSortOrder { 	
+	key = "creationTs";
+	displayKey = "Created";
+	displayGroup = secureStorageDisplayGroup;
+}
+
+SortOrder23: WOSortOrder { 	
+	key = "product.productname";
+	displayKey = "Product";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder3: WOSortOrder { 	
+	key = "assignee.realname";
+	displayKey = "Assignee";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder34: WOSortOrder { 	
+	key = "type";
+	displayKey = "Type";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder35: WOSortOrder { 	
+	key = "bugSeverity";
+	displayKey = "Severity";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder4: WOSortOrder { 	
+	key = "component.componentName";
+	displayKey = "Component";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder6: WOSortOrder { 	
+	key = "priority";
+	displayKey = "Priority";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder7: WOSortOrder { 	
+	key = "version";
+	displayKey = "Release";
+	displayGroup = trustedAccessDisplayGroup;
+}
+
+SortOrder8: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "assignee.realname";
+	displayKey = "Assignee";
+}
+
+SortOrder9: WOSortOrder { 	
+	displayGroup = secureStorageDisplayGroup;
+	key = "bugStatus";
+	displayKey = "Status";
+}
+
+String1: WOString {
+	value = anItem.bugId;
+}
+
+String10: WOString {
+	value = anItem.shortDesc;
+}
+
+String11: WOString {
+	value = anItem.assignee.realname;
+}
+
+String12: WOString {
+	value = anItem.bugStatus;
+}
+
+String13: WOString {
+	value = anItem.component.componentName;
+}
+
+String14: WOString {
+	value = anItem.version;
+}
+
+String15: WOString {
+	value = anItem.bugSeverity;
+}
+
+String16: WOString {
+	value = anItem.priority;
+}
+
+String17: WOString {
+	value = anItem.bugId;
+}
+
+String18: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String19: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String2: WOString {
+	value = anItem.priority;
+}
+
+String20: WOString {
+	value = anItem.bugId;
+}
+
+String21: WOString {
+	value = anItem.priority;
+}
+
+String22: WOString {
+	value = anItem.bugSeverity;
+}
+
+String23: WOString {
+	value = anItem.version;
+}
+
+String24: WOString {
+	value = anItem.component.componentName;
+}
+
+String25: WOString {
+	value = aProduct;
+}
+
+String26: WOString {
+	value = anItem.bugStatus;
+}
+
+String27: WOString {
+	value = anItem.assignee.realname;
+}
+
+String28: WOString {
+	value = anItem.shortDesc;
+}
+
+String29: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String3: WOString {
+	value = anItem.bugSeverity;
+}
+
+String30: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String31: WOString {
+	value = anItem.shortDesc;
+}
+
+String32: WOString {
+	value = anItem.assignee.realname;
+}
+
+String33: WOString {
+	value = aCase;
+}
+
+String34: WOString {
+	value = anItem.component.componentName;
+}
+
+String35: WOString {
+	value = anItem.version;
+}
+
+String36: WOString {
+	value = anItem.bugSeverity;
+}
+
+String37: WOString {
+	value = anItem.priority;
+}
+
+String38: WOString {
+	value = anItem.bugId;
+}
+
+String39: WOString {
+	value = anItem.reporter.realname;
+}
+
+String4: WOString {
+	value = anItem.component.componentName;
+}
+
+String40: WOString {
+	value = anItem.reporter.realname;
+}
+
+String41: WOString {
+	value = timeSinceModified;
+}
+
+String42: WOString {
+	value = anItem.reporter.realname;
+}
+
+String43: WOString {
+	value = timeSinceModified;
+}
+
+String44: WOString {
+	value = anItem.type;
+}
+
+String45: WOString {
+	value = timeSinceOpened;
+}
+
+String46: WOString {
+	value = timeSinceOpened;
+}
+
+String47: WOString {
+	value = anItem.reporter.realname;
+}
+
+String48: WOString {
+	value = timeSinceModified;
+}
+
+String49: WOString {
+	value = timeSinceModified;
+}
+
+String5: WOString {
+	value = aCase;
+}
+
+String50: WOString {
+	value = timeSinceOpened;
+}
+
+String51: WOString {
+	value = timeSinceOpened;
+}
+
+String52: WOString {
+	value = anItem.type;
+}
+
+String53: WOString {
+	value = aType;
+}
+
+String54: WOString {
+	value = anItem.targetMilestone;
+}
+
+String55: WOString {
+	value = anItem.productShort;
+}
+
+String56: WOString {
+	value = anItem.productShort;
+}
+
+String57: WOString {
+	value = anItem.targetMilestone;
+}
+
+String6: WOString {
+	value = anItem.assignee.realname;
+}
+
+String7: WOString {
+	value = anItem.shortDesc;
+}
+
+String75: WOString {
+	value = anItem.type;
+}
+
+String76: WOString {
+	value = anItem.type;
+}
+
+String8: WOString {
+	dateformat = "%b %d, %Y %I:%M:%S %p";
+	value = today;
+}
+
+String9: WOString {
+	value = anItem.version;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = goUpdate;
+	value = "Update";
+}

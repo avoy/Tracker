@@ -1,0 +1,44 @@
+CheckboxMatrix: WOCheckboxMatrix{ 
+	item = aStatus;	
+	list = session.potentialStatus;
+	selections = selectedStatus;
+	maxColumns = 6;
+}
+
+Form1: WOForm {
+method = "get";
+}
+
+PopUpButton1: WOPopUpButton {
+	item = session.aString;
+	list = potentialProjects;
+	selection = selectedProject;
+}
+
+PopUpButton2: WOPopUpButton {
+	item = aKeyword;
+	list = session.potentialKeywords;
+	selection = selectedKeyword;
+}
+
+ReportListWrapper: ReportListWrapper {
+    displayGroup = displayGroup;
+    aRow = aRow;
+    aColumn = aColumn;
+	isReport = isReport;
+	isList = isList;
+	commentsFlag = commentsFlag;
+	releaseFlag = releaseFlag;
+    needUpdate = needUpdate;
+
+
+}
+
+String1: WOString {
+	value = aStatus;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = resetDisplayedBugs;
+	value = "Update";
+}

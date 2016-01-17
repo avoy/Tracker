@@ -1,0 +1,40 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = "RELEASE_COMMENT"; 
+            externalType = VARCHAR; 
+            name = releaseComment; 
+            userInfo = {modificationDate = "2004-04-09 01:09:39 +0000"; }; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 256; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "RELEASE_NAME"; 
+            externalType = VARCHAR; 
+            name = releaseName; 
+            userInfo = {modificationDate = "2004-04-09 01:09:39 +0000"; }; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = "RELEASE_UID"; 
+            externalType = INTEGER; 
+            name = releaseUid; 
+            precision = 9; 
+            userInfo = {modificationDate = "2004-04-08 23:22:42 +0000"; }; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (releaseUid, releaseName, releaseComment); 
+    className = EOGenericRecord; 
+    classProperties = (releaseName, releaseComment); 
+    externalName = "RELEASE_INFO"; 
+    fetchSpecificationDictionary = {}; 
+    name = Release; 
+    primaryKeyAttributes = (releaseUid); 
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta name="generator" content="WebObjects 5.3.2">
+		<title>Release Plan</title>
+<style type="text/css">
+.handcursor{cursor:hand;cursor:pointer;}
+</style>
+	<link media="screen" rel="stylesheet" href="/colorbox.css" />
+ 	<script type='text/JavaScript' src='/jquery-1.4.4.min.js'></script>
+ 	<script type='text/JavaScript' src='/jquery.colorbox-min.js'></script>
+ 	<script> 
+		$(document).ready(function(){ 
+			$(".useColorboxBurnDown").colorbox({width:"50%", height:"70%", iframe:true}); 
+			$(".useColorboxMilestones").colorbox({width:"70%", height:"70%", iframe:true}); 
+			$(".useColorboxSmall").colorbox({width:"55%", height:"40%", iframe:true, current:"{current} of {total}"}); 
+			$(".useColorboxMedium").colorbox({width:"85%", height:"90%", iframe:true, current:"{current} of {total}"}); 
+			$(".useColorboxLarge").colorbox({width:"85%", height:"100%", iframe:true, current:"{current} of {total}"}); }); 
+	</script>
+ 	<script type="text/javascript"> 
+		function toggleSprint(obj) { 
+			var el = document.getElementById(obj); 
+			var rightImage = document.getElementById(obj+"RightImage"); 
+			var downImage = document.getElementById(obj+"DownImage"); 
+			if ( el.style.display != 'none' ) {
+					 el.style.display ='none'; 
+					 rightImage.style.display =''; 
+					 downImage.style.display ='none';
+			} 
+			else {
+ 	    		el.style.display = ''; 
+ 	    		rightImage.style.display = 'none'; 
+ 	    		downImage.style.display = ''; 
+			} 
+		} 
+
+	 </script>
+</head>
+<body>
+
+ 	<webobject name="Form1">
+ 	    <table border="0" width="100%">
+ 	        <tr>
+ 	            <td align="CENTER" valign="middle"> &nbsp;<webobject name="Browser2"></webobject>
+ 	                &nbsp;<webobject name="PopUpButton1"></webobject>
+ 	                &nbsp;<webobject name="SubmitButton1"></webobject>
+ 	                <br>
+						
+ 	            </td>
+ 	        </tr>
+ 	        <tr>
+ 	            <td align="CENTER" valign="middle">
+ 	                <table width="90%" border=0 align=CENTER bgcolor="#ffffff">
+ 	                    <!-- Release Information -->
+ 	                    <tr>
+ 	                    	<td align="CENTER" bgcolor="#cccccc" colspan="6"><font size="4">&nbsp;&nbsp;&nbsp;Release Information&nbsp;&nbsp;&nbsp;</font></td>
+ 	                    </tr>
+ 	                    <tr>
+ 	                    	<!--  Release Name -->
+ 	                    	<td align="Right" bgcolor="#ffffff"><font size="2"><b>Release Name:</b></font></td>
+ 	                     	<td align="left"><font size="2"><webobject name="String7"></webobject></font></td>
+ 	                     	<!-- Top Issues -->
+ 	                     	<td align="left"><font size="2"><webobject name="Hyperlink14">Top Issues</webobject></font><font size="2"><br></br>
+ 	                     	<!-- Release Notes -->
+ 	                     		</font><font size="2"><webobject name="Hyperlink23">Release Notes</webobject></font></td>
+ 	                     	<!--  All Bugs/enhancements -->
+ 	                     	<td align="Right" bgcolor="#ffffff"><font size="2"><b>All bugs/enhancements:</b></font></td>
+ 	                     	<td align="left">&nbsp;<webobject name="Hyperlink4"><font size="2"><webobject name="String8"></webobject></font></webobject></td>
+ 	                    </tr>
+ 	                    <tr>
+ 	                    	<!-- Release Date -->
+ 	                    	<td align="Right" bgcolor="#ffffff"><font size="2"><b>Release Date </b></font><webobject name="Conditional7"><b><font size="1">(<webobject name="String12"></webobject></font></b><font size="2"><b>)</b></font></webobject><font size="2"><b>:</b></font></td><td align="left"><font size="2"><webobject name="Conditional17"><webobject name="String27"></webobject></webobject><webobject name="Conditional18"><font size="2"><i>No Date Defined</i></font></webobject></font></td>
+ 	                        <!-- Support Escalations -->
+ 	                        <td align="left" width="15%"><font size="2"><webobject name="Conditional41"><webobject name="Hyperlink6">Support Escalations</webobject></webobject></font><font size="2"><webobject name="Conditional42">Support Escalations</webobject></font><font size="2"> (<webobject name="String51"></webobject>)</font></td>
+ 	                        <td align="Right" bgcolor="#ffffff"><font size="2"><b>Open:</b></font></td>
+ 	                        <td align="left"><font size="2">&nbsp;&nbsp;<webobject name="Hyperlink13"><webobject name="String26"></webobject></webobject> / <webobject name="String22"></webobject></font></td>
+ 	                   	</tr>
+ 	                   	<tr>
+ 	                   		<!-- RC1 Date -->
+ 	                   		<td align="Right" bgcolor="#ffffff"><font size="2"><b>RC1 Date </b></font><webobject name="Conditional39"><font size="2"><b>(</b></font><b><font size="1"><webobject name="String14"></webobject></font></b><font size="2"><b>)</b></font></webobject><font size="2"><b>:</b></font></td><td align="left"><font size="2"><webobject name="Conditional15"><webobject name="String28"></webobject></webobject></font><webobject name="Conditional16"><font size="2"><i>No Date Defined</i></font></webobject></td>
+ 	                     	<!-- Customer Reported -->
+ 	                     	<td align="left"><font size="2"><webobject name="Conditional43"><webobject name="Hyperlink7">Customer Reported</webobject></webobject></font><font size="2"><webobject name="Conditional44">Customer Reported</webobject></font><font size="2"> (<webobject name="String52"></webobject>)</font></td><td align="Right" bgcolor="#ffffff"><font size="2"><b>Resolved:</b></font></td><td align="left"><font size="2">&nbsp;&nbsp;<webobject name="Hyperlink5"><webobject name="String11"></webobject></webobject> / <webobject name="String9"></webobject></font></td></tr>
+ 	                    <tr>
+ 	                    	<!-- CC Date -->
+ 	                    	<td align="Right" bgcolor="#ffffff"><font size="2"><b>CC Date </b></font><webobject name="Conditional40"><font size="2"><b>(</b></font><b><font size="1"><webobject name="String50"></webobject></font></b><font size="2"><b>)</b></font></webobject><font size="2">:<br><webobject name="Hyperlink15">All Milestones</webobject></font></td><td align="left"><font size="2"><webobject name="Conditional38"><webobject name="String47"></webobject></webobject></font><webobject name="Conditional37"><font size="2"><i>No Date Defined</i></font></webobject></td><td align="left"><font size="2"><webobject name="Conditional12"><webobject name="Hyperlink21">OCMs</webobject><font size="2"> (<webobject name="String37"></webobject>)</font></webobject></font><font size="2"><webobject name="Conditional13">OCMs<font size="2"> (<webobject name="String38"></webobject>)</font></webobject></font><font size="2"></font><font size="2"></font></td><td align="Right" bgcolor="#ffffff"><font size="2"><b>Verified or Closed:</b></font></td><td align="left"><font size="2">&nbsp;&nbsp;<webobject name="Hyperlink26"><webobject name="String49"></webobject></webobject> / <webobject name="String48"></webobject></font></td></tr><td>&nbsp;</td>
+ 	                </table>
+ 	            </td>
+ 	        </tr>
+
+			<tr><td><webobject name="EpicStorySummary2"></webobject></td></tr>
+					<webobject name="Conditional48">
+					<tr><td>
+					<table width="90%" border=0 align=CENTER bgcolor="#d0d0d0">
+					  <tr><td align="CENTER" bgcolor="#cccccc"><font size="4">Issues</font></td></tr>
+                      <tr bgcolor=#d0d0d0>
+                          <td>
+								<table width="100%" border=0 cellspacing=1 cellpadding=0 bgcolor=#d0d0d0>
+                                  <tr bgcolor=#ffffff>
+                                      <th bgcolor="#a5a5a5"><font size="2">Id</font></th>
+                                      <th bgcolor="#a5a5a5"><font size="2">Last Modified</font></th><th bgcolor="#a5a5a5"><font size="2">Description</font></th>
+                                  </tr>
+                                  <webobject name="Repetition4"><tr bgcolor=#ffffff>
+                                      <td align="center" bgcolor="#ffffff"><font size="2"><webobject name="Hyperlink18"><webobject name="String2"></webobject></webobject></font></td>
+                                      <td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String1"></webobject></font></td><td align="left" bgcolor="#ffffff"><font size="2"><webobject name="String58"></webobject></font></td>
+                                  </tr></webobject>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			</webobject>
+			<tr>
+ 	            <td>
+ 	                <br><table width="90%" border=0 align=CENTER bgcolor="#d0d0d0">
+ 	                    
+						<tr><td align="CENTER" bgcolor="#cccccc"><font size="4"><a name="sprint_info">Sprint Information</a></font><font size="2"><webobject name="Conditional8">(By Story | <webobject name="Hyperlink19">By Person</webobject>)</webobject></font><font size="2"><webobject name="Conditional21">(<webobject name="Hyperlink22">By Story</webobject> | By Person)</webobject></font></td></tr>
+ 	                    
+ 	                        <tr bgcolor=#d0d0d0>
+ 	                            <td><webobject name="Conditional31"><table width="100%" border=0 cellspacing=1 cellpadding=0 bgcolor=#d0d0d0>
+ 	                                    <tr bgcolor=#ffffff>
+ 	                                        <th bgcolor="#a5a5a5" width="40%"><font size="2">Sprint</font></th>
+ 	                                        <th bgcolor="#a5a5a5"><font size="2"># Stories</font></th>
+ 	                                        <th bgcolor="#a5a5a5"><font size="2">% Complete</font></th>
+ 	                                        <th bgcolor="#a5a5a5"><font size="2">Start Date</font></th>
+ 	                                        <th bgcolor="#a5a5a5"><font size="2">End Date</font></th>
+ 	                                        <th bgcolor="#a5a5a5"><font size="2">Remaining</font><br><font size="2">weekdays/days</font></th><th bgcolor="#a5a5a5"><font size="2">---</font></th>
+ 	                                    </tr>
+ 	                                    <webobject name="Repetition2">
+ 	                                       <tr>
+ 	                                            <td  class="handcursor" onclick="toggleSprint('<webobject name=String29></webobject>')" align="left" bgcolor="#ffffff"><font size="2">&nbsp;&nbsp;<webobject name="Image1"></webobject><webobject name="Image2"></webobject> &nbsp;<webobject name="String29"></webobject></font></td>
+ 	                                            <td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String30"></webobject></font></td>
+ 	                                            <td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String33"></webobject></font></td><td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String31"></webobject></font></td>
+ 	                                            <td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String32"></webobject></font></td>
+ 	                                            <td align="center" bgcolor="#ffffff"><webobject name="Conditional32"><font size="2">~<webobject name="String42"></webobject> </font><font size="2">/ <webobject name="String43"></webobject></font></webobject></td><td align="center" bgcolor="#ffffff"><font size="2"><webobject name="Hyperlink12">Bug Metrics</webobject></font><font size="2"><webobject name="Conditional20"> / <webobject name="Hyperlink16">BurnDown</webobject></webobject></font></td>
+ 	                                        </tr>
+ 	                                       <!-- <tr  id="<webobject name=String29></webobject>">-->
+											<webobject name=Generic1>
+
+ 	                                            <td colspan="7">
+ 	                                            <!-- By Story -->
+													<webobject name="Conditional3">
+													 	   <!-- Headers -->
+															<table bgcolor="#d0d0d0" cellspacing="1" cellpadding="0" width="100%">
+																<tr bgcolor="#ffffff">
+																	<td align="center" bgcolor="#d0d0d0">&nbsp;</td>
+																	<th bgcolor="#e5e5e5" width="60%" rowspan="2"><font size="2">Story</font></th>
+																	<th bgcolor="#e5e5e5" rowspan=2><font size="2">Release</font></th>
+																	<th bgcolor="#e5e5e5" rowspan="2"><font size="2">Owner</font></th>
+																	<th bgcolor="#e5e5e5" rowspan="2"><font size="2">Status</font></th>
+																	<th bgcolor="#e5e5e5" rowspan="2"><font size="2">Last Modified</font></th>
+																	<th bgcolor="#e5e5e5" colspan="4"><font size="2">Tasks and Bugs</font></th>
+																</tr>
+																<tr>
+																	<td align="center" bgcolor="#d0d0d0">&nbsp;</td>
+																	<th bgcolor="#e5e5e5"><font size="1">count</font><br><font size="1">closed&nbsp;&nbsp;/&nbsp;total</font><font size="2"></font></th>
+																	<th bgcolor="#e5e5e5"><font size="1">count</font><br><font size="1">%&nbsp;complete</font></th>
+																	<th bgcolor="#e5e5e5"><font size="1">hours<br>worked&nbsp;/&nbsp;total</font></th>
+																	<th bgcolor="#e5e5e5"><font size="1">hours</font><br><font size="1">%&nbsp;complete</font></th>
+																</tr>
+																<!-- Sprint Data -->																
+															<webobject name="Repetition7">
+																<tr>
+																	<td align="center" bgcolor="#d0d0d0" width="20"></td>
+																	<!-- Sprint description -->
+																	<td align="left" bgcolor="#ffffff"><font size="2">&nbsp;&nbsp;<webobject name="Conditional51"><webobject name="Conditional50"><webobject name="Hyperlink30"><webobject name="String74"></webobject></webobject></webobject><webobject name="Conditional49"><webobject name="String73"></webobject></webobject>&nbsp;&nbsp;&nbsp;(<webobject name="Hyperlink29"><webobject name="String72"></webobject></webobject>)</webobject><webobject name="Conditional53"><webobject name="String64"></webobject></webobject></font></td>
+																	<!--  Release Number ?? -->
+																	<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String20"></webobject></font></td>
+																	<!-- Owner -->
+																	<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String3"></webobject></font></td>
+																	<!-- Status -->
+																	<webobject name="StateTD2"><webobject name="Conditional52"><font size="2"><webobject name="Conditional26"><webobject name="Hyperlink28"><webobject name="String71"></webobject></webobject></webobject></font><font size="2"><webobject name="Conditional25"><webobject name="String70"></webobject></webobject></font></webobject><font size="2"><webobject name="Conditional54"><webobject name="String65"></webobject></webobject></font><font size="2"></font></webobject>
+																	<!-- Last Modified -->
+																	<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String4"></webobject></font></td>
+																	<!-- Count -->
+																	<td align="center" bgcolor="#ffffff"><webobject name="Conditional55"><font size="2"><webobject name="Hyperlink27"><font size="2"><webobject name="String69"></webobject>&nbsp;/&nbsp;<webobject name="String68"></webobject></font></webobject></font></webobject><webobject name="Conditional56"><font size="2"><webobject name="Hyperlink31"><font size="2"><webobject name="String60"></webobject>&nbsp;/&nbsp;<webobject name="String39"></webobject></font></webobject></font></webobject></td>
+																	<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String67"></webobject></font></td>
+																	<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String62"></webobject>&nbsp;/&nbsp;<webobject name="String61"></webobject></font></td><td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String63"></webobject></font></td>
+																	<td></td></tr></webobject><tr bgcolor="#e5e5e5"><td align="center" bgcolor="#d0d0d0"></td>
+																	<td bgcolor="#d0d0d0" colspan="8">&nbsp;</td></tr></table></webobject>
+
+													<!-- By Person -->
+                         	                        <webobject name="Conditional14">
+													 	   <!-- Headers -->
+                                                              <table bgcolor="#d0d0d0" width="100%" cellspacing=1 cellpadding=0>
+                                                                  <tr bgcolor=#ffffff>
+                                                                      <td align="center" bgcolor="#d0d0d0">&nbsp;</td>
+                                                                      <th bgcolor=#e5e5e5 width="50%" rowspan=2><font size="2">Person</font></th>
+                                                                      <th bgcolor=#e5e5e5 rowspan=2><font size="2">Last Modified</font></th>
+                                                                      <th bgcolor="#e5e5e5" colspan="4"><font size="2">Tasks and Bugs</font></th>
+                                                                   </tr>
+                                                                  <tr>
+                                                                      <td align="center" bgcolor="#d0d0d0">&nbsp;</td>
+                            										 <th bgcolor="#e5e5e5"><font size="1">count</font><br><font size="1">closed&nbsp;&nbsp;/&nbsp;total</font><font size="2"></font></th><th bgcolor="#e5e5e5"><font size="1">count</font><br><font size="1">%&nbsp;complete</font></th>
+                            										 <th bgcolor="#e5e5e5"><font size="1">hours<br>worked&nbsp;/&nbsp;total</font></th>
+                            										 <th bgcolor="#e5e5e5"><font size="1">hours</font><br><font size="1">%&nbsp;complete</font></th>
+                            									</tr>
+																<!-- Person Data -->																
+                            									<webobject name="Repetition3">
+                            										<tr>
+                            											<td align="center" bgcolor="#d0d0d0" width="20"></td>
+                            											<td align="left" bgcolor="#ffffff"><font size="2">&nbsp;&nbsp;<webobject name="String45"></webobject><webobject name="Conditional33">*</webobject></font></td>
+                            											<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String6"></webobject></font></td>
+                            											<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="Conditional19"><webobject name="Hyperlink20"><webobject name="String35"></webobject> / <webobject name="String5"></webobject></webobject></webobject><webobject name="Conditional22">---</webobject>&nbsp;</font></td>
+                            											<td align="center" bgcolor="#ffffff"><font size="2">&nbsp;</font><font size="2"><webobject name="Conditional24"><font size="2"><webobject name="String36"></webobject></font></webobject><webobject name="Conditional23">---</webobject></font></td>
+                            											<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="Conditional30"><font size="2"><webobject name="String40"></webobject> / </font><font size="2"><webobject name="String24"></webobject></font></webobject><webobject name="Conditional29">---</webobject></font></td>
+                            											<td align="center" bgcolor="#ffffff"><font size="2"><webobject name="Conditional28"><webobject name="String41"></webobject></webobject><webobject name="Conditional27">---</webobject></font><font size="2"></font></td>
+                            										</tr>
+                            									</webobject>
+                            									</table>
+                         	                    </webobject>
+
+                                          </td>
+                                      </webobject>
+                                  </webobject>
+                              </table></webobject>
+                          </td>
+                      </tr>
+
+
+
+						<webobject name="Conditional9"><tr><td>
+ 	                                <table width="100%" border=0 cellspacing=3 cellpadding=3 bgcolor=#808080>
+ 	                                    <tr bgcolor=#ffffff>
+ 	                                        <th bgcolor=#d5d5d5 width="60%"><font size="2">Story</font></th>
+ 	                                        <th bgcolor="#d5d5d5"><font size="2">Sprint</font></th><th bgcolor="#d5d5d5"><font size="2">Tasks, Bugs,
+ 	                                                etc.</font></th><th bgcolor="#d5d5d5"><font size="2">%
+ 	                                                <br>
+ 	                                                Complete</font></th><th bgcolor="#d5d5d5"><font size="2">Owner</font></th>
+ 	                                    </tr><webobject name="Repetition1"><tr><td bgcolor="#ffffff"><font size="2"><webobject name="Conditional36"><webobject name="Hyperlink25"><webobject name="String46"></webobject></webobject></webobject><webobject name="Conditional35"><webobject name="String13"></webobject></webobject>
+ 	                                                    (<webobject name="Hyperlink10"><webobject name="String10"></webobject></webobject>
+ 	                                                    |
+ 	                                                    <webobject name="Hyperlink9">tree</webobject>)</font></td><td align="center" bgcolor="#ffffff"><font size="2"><webobject name="Conditional1"><webobject name="Hyperlink2"><webobject name="String19"></webobject></webobject></webobject></font><font size="2"><webobject name="Conditional2"><webobject name="String54"></webobject></webobject></font><font size="2"></font></td><td align="center" bgcolor="#ffffff"><font size="2"><webobject name="Conditional11"><webobject name="Hyperlink11"><webobject name="String16"></webobject></webobject></webobject><webobject name="Conditional10"><webobject name="String15"></webobject></webobject></font></td><td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String17"></webobject></font></td><td align="center" bgcolor="#ffffff"><font size="2"><webobject name="String18"></webobject></font></td></tr></webobject>
+ 	                                </table>
+ 	                            </td></tr></webobject>
+ 	                </table><p></p><p></p>
+ 	            </td>
+ 	            <!-- here -->
+ 	        </tr>
+ 	        <tr>
+ 	            <td align="CENTER">
+ 	                
+ 	            </td>
+ 	        </tr>
+ 	    </table>
+ 	</webobject>
+ 	
+ 	    <table align="center" border="0">
+ 	        <tr>
+ 	            <td align="CENTER" bgcolor="#cccccc" colspan=2><font size="4"><a name="Bugs_Enhancements">Bugs and Enhancements</a></font></td>
+ 	        </tr>
+ 	        <tr>
+ 	                        <td align="LEFT"><webobject name="Conditional34"><webobject name="componentState"></webobject><p></p><webobject name="Conditional6"> <webobject name="ActiveImage1"></webobject> </webobject></webobject></td>
+ 	                        <td align="RIGHT"><webobject name="BurnDown1"></webobject></td>
+ 	        </tr>
+ 	        
+ 	    </table>
+
+</body>
+</html>

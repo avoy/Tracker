@@ -1,0 +1,28 @@
+{
+    attributes = (
+        {
+            columnName = "product_id"; 
+            externalType = smallint; 
+            name = productId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = value; 
+            externalType = varchar; 
+            name = value; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }
+    ); 
+    className = EOGenericRecord; 
+    classProperties = (productId, value); 
+    externalName = versions; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {"_clientClassPropertyNames" = (productId, value); uniqueID = 196630428; }; 
+    name = Versions; 
+    primaryKeyAttributes = (productId, value); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

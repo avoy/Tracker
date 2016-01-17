@@ -1,0 +1,49 @@
+{
+    attributes = (
+        {
+            columnName = approved; 
+            externalType = tinyint; 
+            name = approved; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = quip; 
+            externalType = text; 
+            name = quip; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 65535; 
+        }, 
+        {
+            columnName = quipid; 
+            externalType = mediumint; 
+            name = quipid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = userid; 
+            externalType = mediumint; 
+            name = userid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (quip, approved, quipid, userid); 
+    className = EOGenericRecord; 
+    classProperties = (quip, approved, userid); 
+    externalName = quips; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (quip, approved, userid); 
+        uniqueID = 196630575; 
+    }; 
+    name = Quips; 
+    primaryKeyAttributes = (quipid); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

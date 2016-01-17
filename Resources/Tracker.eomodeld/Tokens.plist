@@ -1,0 +1,56 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = eventdata; 
+            externalType = tinytext; 
+            name = eventdata; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 255; 
+        }, 
+        {
+            columnName = issuedate; 
+            externalType = datetime; 
+            name = issuedate; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = token; 
+            externalType = varchar; 
+            name = token; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 16; 
+        }, 
+        {
+            columnName = tokentype; 
+            externalType = varchar; 
+            name = tokentype; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 8; 
+        }, 
+        {
+            columnName = userid; 
+            externalType = mediumint; 
+            name = userid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (userid, issuedate, eventdata, token, tokentype); 
+    className = EOGenericRecord; 
+    classProperties = (userid, issuedate, eventdata, tokentype); 
+    externalName = tokens; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (userid, issuedate, eventdata, tokentype); 
+        uniqueID = 196630462; 
+    }; 
+    name = Tokens; 
+    primaryKeyAttributes = (token); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

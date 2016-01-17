@@ -1,0 +1,37 @@
+{
+    attributes = (
+        {
+            columnName = event; 
+            externalType = tinyint; 
+            name = event; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = relationship; 
+            externalType = tinyint; 
+            name = relationship; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "user_id"; 
+            externalType = mediumint; 
+            name = userId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (relationship, event, userId); 
+    className = EOGenericRecord; 
+    classProperties = (relationship, event); 
+    externalName = "email_setting"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {"_clientClassPropertyNames" = (relationship, event); uniqueID = 196630691; }; 
+    name = EmailSetting; 
+    primaryKeyAttributes = (userId); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

@@ -1,0 +1,14 @@
+{
+    productsForVersion = {
+        class = EOFetchSpecification; 
+        entityName = Products; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOKeyValueQualifier; 
+            key = "versions.value"; 
+            selectorName = "isEqualTo:"; 
+            value = {"_key" = version; class = EOQualifierVariable; }; 
+        }; 
+    }; 
+}

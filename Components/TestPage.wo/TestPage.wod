@@ -1,0 +1,61 @@
+CollapsibleComponentContent: WOCollapsibleComponentContent { 	
+	openedLabel = anEo.shortDesc;
+	closedLabel = anEo.shortDesc;
+}
+
+Conditional1: WOConditional {
+	condition = anEo.hasChildren;
+}
+
+Conditional10: WOConditional {
+	condition = isListEmpty;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = anEo.hasChildren;
+	negate = true;
+}
+
+Repetition1: WORepetition {
+	item = anEo;
+	list = aList;
+}
+
+Repetition5: WORepetition {
+	item = sprintKey;
+	list = sprintKeys;
+}
+
+Repetition6: WORepetition {
+	item = anEo;
+	list = storiesForCurrentSprint;
+}
+
+String1: WOString {
+	value = anEo.shortDesc;
+}
+
+String45: WOString {
+	value = selectedProject;
+}
+
+String46: WOString {
+	value = selectedProject;
+}
+
+String47: WOString {
+	value = selectedProject;
+}
+
+String48: WOString {
+	value = labelForSprintKey;
+}
+
+String49: WOString {
+	value = anEo.shortDesc;
+}
+
+TestPage2: TestPage {
+	aList = anEo.children;
+}

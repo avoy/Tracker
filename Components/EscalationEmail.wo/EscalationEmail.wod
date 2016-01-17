@@ -1,0 +1,40 @@
+Conditional1: WOConditional {
+	condition = isHot;
+}
+
+Conditional2: WOConditional {
+	condition = isHot;
+	negate = true;
+}
+
+Hyperlink1: WOHyperlink {
+	href = bugURL;
+}
+
+String1: WOString {
+	value = priority;
+}
+
+String10: WOString {
+	value = aDescription;
+}
+
+String2: WOString {
+	value = comment;
+}
+
+String5: WOString {
+	value = bugNumber;
+}
+
+String6: WOString {
+	value = bugType;
+}
+
+String7: WOString {
+	value = severity;
+}
+
+String9: WOString {
+	value = summary;
+}

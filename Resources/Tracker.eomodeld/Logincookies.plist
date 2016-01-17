@@ -1,0 +1,47 @@
+{
+    attributes = (
+        {
+            columnName = cookie; 
+            externalType = varchar; 
+            name = cookie; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 16; 
+        }, 
+        {
+            columnName = ipaddr; 
+            externalType = varchar; 
+            name = ipaddr; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 40; 
+        }, 
+        {
+            columnName = lastused; 
+            externalType = datetime; 
+            name = lastused; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = userid; 
+            externalType = mediumint; 
+            name = userid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (cookie, lastused, ipaddr, userid); 
+    className = EOGenericRecord; 
+    classProperties = (lastused, ipaddr, userid); 
+    externalName = logincookies; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (lastused, ipaddr, userid); 
+        uniqueID = 196630680; 
+    }; 
+    name = Logincookies; 
+    primaryKeyAttributes = (cookie); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

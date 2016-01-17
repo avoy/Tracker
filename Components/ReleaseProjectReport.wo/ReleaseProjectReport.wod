@@ -1,0 +1,96 @@
+ActiveImage1: WOActiveImage {
+	action = emailCurrentPage;
+	border = 0;
+	filename = "Email.gif";
+	framework = "app";
+}
+
+Conditional1: WOConditional {
+	condition = releaseDateForRelease;
+}
+
+Conditional2: WOConditional {
+	condition = releaseDateForRelease;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = currentItem.hasChildren;
+}
+
+Conditional4: WOConditional {
+	condition = isEmail;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = isEmail;
+}
+
+Conditional6: WOConditional {
+	condition = currentItem.isURL;
+}
+
+Conditional7: WOConditional {
+	condition = currentItem.isURL;
+	negate = true;
+}
+
+Conditional8: WOConditional {
+	condition = projectsForRelease.@count;
+}
+
+Hyperlink1: WOHyperlink {
+	href = currentItem.bugURL;
+}
+
+Hyperlink2: WOHyperlink {
+	href = currentItem.treeURL;
+}
+
+Hyperlink3: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "projects";
+}
+
+Hyperlink4: WOHyperlink {
+	href = currentItem.bugFileLoc;
+}
+
+Repetition1: WORepetition {
+	item = currentRelease;
+	list = releases;
+}
+
+Repetition2: WORepetition {
+	item = currentItem;
+	list = projectsForRelease;
+}
+
+
+String1: WOString {
+	value = currentRelease;
+}
+
+String2: WOString {
+	value = today;
+	dateformat = "%B %d, %Y  %I:%M:%S %p";
+}
+
+String3: WOString {
+	value = currentItem.shortDesc;
+}
+
+String4: WOString {
+	dateformat = "%B - %Y";
+	value = releaseDateForRelease;
+}
+
+String5: WOString {
+	value = currentItem.bugId;
+}
+
+String6: WOString {
+	value = currentItem.shortDesc;
+}
+

@@ -1,0 +1,37 @@
+
+Conditional1: WOConditional {
+	condition = onlyOpen;
+	negate = true;
+}
+
+Form1: WOForm {
+method = "get";
+}
+
+OCMList: OCMIssuesList {
+    itemDisplayGroup = displayGroup;
+	emailFlag = emailFlag;
+}
+
+OCMList2: OCMIssuesList {
+    itemDisplayGroup = displayGroupResolved;
+	emailFlag = emailFlag;
+}
+
+OCMList3: OCMIssuesList {
+    itemDisplayGroup = displayGroupClosed;
+	emailFlag = emailFlag;
+}
+
+
+
+
+String1: WOString {
+	dateformat = "%A, %b %d, %Y  %I:%M %p";
+	value = weekAgo;
+}
+
+String2: WOString {
+	dateformat = "%A, %b %d, %Y  %I:%M %p";
+	value = now;
+}

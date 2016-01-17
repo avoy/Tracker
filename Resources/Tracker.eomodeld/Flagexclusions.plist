@@ -1,0 +1,38 @@
+{
+    attributes = (
+        {
+            columnName = "component_id"; 
+            externalType = smallint; 
+            name = componentId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "product_id"; 
+            externalType = smallint; 
+            name = productId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "type_id"; 
+            externalType = smallint; 
+            name = typeId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }
+    ); 
+    attributesUsedForLocking = (componentId, productId, typeId); 
+    className = EOGenericRecord; 
+    classProperties = (productId, typeId); 
+    externalName = flagexclusions; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {"_clientClassPropertyNames" = (productId, typeId); uniqueID = 196630651; }; 
+    name = Flagexclusions; 
+    primaryKeyAttributes = (componentId); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

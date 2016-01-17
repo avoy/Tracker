@@ -1,0 +1,48 @@
+{
+    attributes = (
+        {
+            columnName = id; 
+            externalType = smallint; 
+            name = id; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = isactive; 
+            externalType = tinyint; 
+            name = isactive; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = sortkey; 
+            externalType = smallint; 
+            name = sortkey; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = value; 
+            externalType = varchar; 
+            name = value; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }
+    ); 
+    attributesUsedForLocking = (id, value, isactive, sortkey); 
+    className = EOGenericRecord; 
+    classProperties = (value, isactive, sortkey); 
+    externalName = "op_sys"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (value, isactive, sortkey); 
+        uniqueID = 196630556; 
+    }; 
+    name = OpSys; 
+    primaryKeyAttributes = (id); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

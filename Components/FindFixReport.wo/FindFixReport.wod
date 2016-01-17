@@ -1,0 +1,32 @@
+ActiveImage1: WOActiveImage {
+	action = goExport;
+	border = 0;
+	filename = "DownArrow.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Conditional1: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = emailFlag;
+}
+
+Hyperlink1: WOHyperlink {
+	directActionName = "exportFindFix";
+	actionClass = "DirectAction";
+	?project = selectedProject;
+	?wosid = false;
+}
+
+Image1: WOImage {
+	data = imageData;
+	mimeType = imageType;
+	key = imageKey;
+	otherTagString = otherTagString;
+	height = 500;
+	width = 500;
+	border = 0;
+}

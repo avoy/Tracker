@@ -1,0 +1,341 @@
+ActiveImage1: WOActiveImage {
+	action = emailCurrentPage;
+	border = 0;
+	filename = "Email.gif";
+	framework = "app";
+}
+
+ActiveImage2: WOActiveImage {
+	action = goCustomerView;
+	border = 0;
+	filename = "BackMetalBtn.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Conditional1: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional10: WOConditional {
+	condition = isCustomerView;
+}
+
+Conditional11: WOConditional {
+	condition = anIssue.children.@count;
+	negate = true;
+}
+
+Conditional12: WOConditional {
+	condition = isP1;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = isCustomerView;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = emailFlag;
+}
+
+Conditional31: WOConditional {
+	condition = emailFlag;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = anIssue.children.@count;
+}
+
+Conditional5: WOConditional {
+	condition = isP1;
+}
+
+Conditional6: WOConditional {
+	condition = showProductSelector;
+}
+
+Conditional7: WOConditional {
+	condition = customerIssueDisplayGroup.allObjects.@count;
+}
+
+Conditional8: WOConditional {
+	condition = customerIssueDisplayGroup.allObjects.@count;
+	negate = true;
+}
+
+Form1: WOForm {
+}
+
+Hyperlink1: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink2: WOHyperlink {
+	href = anIssue.bugURL;
+}
+
+Hyperlink4: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink5: WOHyperlink {
+	href = bugURL;
+	target = "_blank";
+}
+
+Hyperlink6: WOHyperlink {
+	href = anIssue.bugURL;
+}
+
+Hyperlink7: WOHyperlink {
+	action = goIssueView;
+}
+
+Image1: WOImage {
+	filename = "exclamation.gif";
+	framework = "JavaDirectToWeb";
+}
+
+Repetition1: WORepetition {
+	item = anItem;
+	list = sortedOpenChildren;
+}
+
+Repetition2: WORepetition {
+	item = anIssue;
+	list = customerIssueDisplayGroup.allObjects;
+}
+
+
+Repetition4: WORepetition {
+	item = anItem;
+	list = sortedClosedChildren;
+}
+
+Repetition5: WORepetition {
+	item = anItem;
+	list = customerIssues;
+}
+
+Repetition6: WORepetition {
+	item = anIssue;
+	list = topMostTaserParents;
+}
+
+Repetition8: WORepetition {
+	item = aKeyword;
+	list = anItem.keywords;
+}
+
+String1: WOString {
+	value = anItem.bugId;
+}
+
+String10: WOString {
+	value = anIssue.bugId;
+}
+
+String11: WOString {
+	value = selectedQueue;
+}
+
+String12: WOString {
+	value = anIssue.priority;
+}
+
+String13: WOString {
+	value = anIssue.priority;
+}
+
+String14: WOString {
+	value = anIssue.allOpenChildren.@count;
+}
+
+String15: WOString {
+	value = anIssue.closedChildren.@count;
+}
+
+String16: WOString {
+	value = anIssue.allChildren.@count;
+}
+
+String17: WOString {
+	escapeHTML = false;
+	value = anIssue.statusWhiteboard;
+}
+
+String18: WOString {
+	value = anItem.statusWhiteboard;
+	escapeHTML = false;
+}
+
+String19: WOString {
+	value = aKeyword.keywordName;
+}
+
+String2: WOString {
+	value = anItem.priority;
+}
+
+String20: WOString {
+	value = anItem.targetMilestoneLabel;
+}
+
+String22: WOString {
+	value = anIssue.type;
+}
+
+String24: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String26: WOString {
+	value = anItem.shortDesc;
+}
+
+String27: WOString {
+	value = timeSinceOpened;
+}
+
+String28: WOString {
+	value = timeSinceModified;
+}
+
+String29: WOString {
+	value = anItem.reporter.realname;
+}
+
+String3: WOString {
+	value = anItem.bugSeverity;
+}
+
+String30: WOString {
+	value = anItem.statusWhiteboard;
+}
+
+String31: WOString {
+	value = anItem.shortDesc;
+}
+
+String33: WOString {
+	value = anItem.bugStatus;
+}
+
+String34: WOString {
+	value = anItem.assignee.realname;
+}
+
+String35: WOString {
+	value = anItem.version;
+}
+
+String36: WOString {
+	value = anItem.bugSeverity;
+}
+
+String37: WOString {
+	value = anItem.priority;
+}
+
+String38: WOString {
+	value = anItem.bugId;
+}
+
+String39: WOString {
+	value = anItem.bugStatus;
+}
+
+String4: WOString {
+	value = cleanDescription;
+}
+
+String40: WOString {
+	value = anItem.reporter.realname;
+}
+
+String41: WOString {
+	value = timeSinceModified;
+}
+
+String42: WOString {
+	value = anItem.reporter.realname;
+}
+
+String43: WOString {
+	value = timeSinceModified;
+}
+
+String44: WOString {
+	value = filteredRelease;
+}
+
+String45: WOString {
+	value = timeSinceOpened;
+}
+
+String46: WOString {
+	value = timeSinceOpened;
+}
+
+String47: WOString {
+	value = anItem.bugSeverity;
+}
+
+String48: WOString {
+	value = anItem.priority;
+}
+
+String49: WOString {
+	value = anItem.type;
+}
+
+String5: WOString {
+	value = anItem.bugStatus;
+}
+
+String50: WOString {
+	value = anItem.bugId;
+}
+
+String51: WOString {
+	value = anIssue.bugId;
+}
+
+String52: WOString {
+	value = cleanDescription;
+}
+
+String6: WOString {
+	value = anItem.targetMilestoneLabel;
+}
+
+String7: WOString {
+	value = anItem.shortDesc;
+}
+
+String75: WOString {
+	value = anItem.type;
+}
+
+String76: WOString {
+	value = anItem.type;
+}
+
+String8: WOString {
+	dateformat = "%b %d, %Y %I:%M:%S %p";
+	value = today;
+}
+
+String9: WOString {
+	value = filteredRelease;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = goUpdate;
+	value = "Update";
+}

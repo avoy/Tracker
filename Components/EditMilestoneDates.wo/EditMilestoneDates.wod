@@ -1,0 +1,223 @@
+Banner : WOImage {
+	filename = "EditMetalBan.gif";
+	border = "0";
+	framework = "JavaDirectToWeb";
+};
+
+CancelButton : WOImage {
+	width = "88";
+	height = "31";
+	alt = "Reverts your changes";
+	filename = "CancelMetalBtn.gif";
+	name = "Reverts your changes";
+	border = "0";
+	framework = "JavaDirectToWeb";
+};
+
+CancelLink : WOHyperlink {
+	action = cancelAction;
+};
+
+Conditional1: WOConditional {
+	condition = isEditMode;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = isEditMode;
+}
+
+Conditional3: WOConditional {
+	condition = isEditMode;
+	negate = true;
+}
+
+Conditional4: WOConditional {
+	condition = isEditMode;
+}
+
+Conditional5: WOConditional {
+	condition = isEditMode;
+	negate = true;
+}
+
+Conditional6: WOConditional {
+	condition = isEditMode;
+}
+
+DeleteButton : WOImage {
+	width = "88";
+	height = "31";
+	alt = "Deletes this object";
+	filename = "DeleteMetalBtn.gif";
+	name = "Deletes this object";
+	border = "0";
+	framework = "JavaDirectToWeb";
+};
+
+DeleteLink : WOHyperlink {
+	action = deleteAction;
+};
+
+EditDate : WOTextField {
+	size = "20";
+	dateformat = "%d %b %Y";
+	value = milestoneDate;
+	id="edit_date";
+};
+
+EditDate2 : WOTextField {
+	size = 20;
+	dateformat = "%d %b %Y";
+	value = milestoneEndDate;
+	id="edit_date2";
+};
+
+EditDate3 : WOTextField {
+	size = 20;
+	dateformat = "%d %b %Y";
+	value = milestoneActualDate;
+	id="edit_date3";
+};
+
+EditDate4 : WOTextField {
+	size = 20;
+	dateformat = "%d %b %Y";
+	value = milestoneForecastDate;
+	id="edit_date5";
+};
+
+EditDate5 : WOTextField {
+	size = 20;
+	dateformat = "%d %b %Y";
+	value = milestonePlannedDate;
+	id="edit_date4";
+};
+
+EditingForm : WOForm {
+};
+
+ErrorMessage : WOString {
+	escapeHTML = "NO";
+	value = errorMessage;
+};
+
+ErrorPanel : WOConditional {
+	condition = errorMessage.length;
+};
+
+ErrorTable : WOGenericContainer {
+	elementName = "table";
+	border = "1";
+	cellpadding = "2";
+	bgColor = "FF0000";
+};
+
+FontContainer : WOGenericContainer {
+	color = "#000000";
+	elementName = "font";
+};
+
+MilestoneDatesTR: WOGenericContainer {
+	elementName = "tr";
+	id = "milestoneDates";
+	style = milestoneDatesDefault;
+}
+
+Image1: WOImage {
+	filename = "calendar.gif";
+	framework = "ERExtensions";
+	onclick= "scwShow (scwID('edit_date'), event);";
+
+}
+
+Image2: WOImage {
+	filename = "calendar.gif";
+	framework = "ERExtensions";
+	onclick= "scwShow (scwID('edit_date2'), event);";
+
+}
+
+Image3: WOImage {
+	filename = "calendar.gif";
+	framework = "ERExtensions";
+	onclick= "scwShow (scwID('edit_date3'), event);";
+
+}
+
+Image4: WOImage {
+	filename = "calendar.gif";
+	framework = "ERExtensions";
+	onclick= "scwShow (scwID('edit_date5'), event);";
+
+}
+
+Image5: WOImage {
+	filename = "calendar.gif";
+	framework = "ERExtensions";
+	onclick= "scwShow (scwID('edit_date4'), event);";
+
+}
+
+
+PageWrapper : PageWrapper {
+};
+
+PopUpButton1: WOPopUpButton {
+	item = aMilestone;
+	list = potentialMilestones;
+	selection = currentObject.milestone;
+	value = aMilestone;
+	name = "miletone";
+	onChange = "toggleDates(this.value);";
+}
+
+PopUpButton2: WOPopUpButton {
+	item = aRelease;
+	list = potentialVersions;
+	selection = currentObject.releaseName;
+	name = "release";
+	onChange = "submit();";
+
+}
+
+PopUpButton3: WOPopUpButton {
+	item = aType;
+	list = potentialTypes;
+	selection = selectedType;
+	onChange = "submit();";
+
+	name = "type";
+}
+
+SprintDatesTR: WOGenericContainer {
+	elementName = "tr";
+	id = "sprintDates";
+	style = sprintDatesDefault;
+}
+
+String1: WOString {
+	value = currentObject.milestone;
+}
+
+String2: WOString {
+	value = currentObject.releaseName;
+}
+
+SubmitChanges : WOImageButton {
+	width = "88";
+	filename = "SaveMetalBtn.gif";
+	alt = "Saves your changes";
+	name = "Saves your changes";
+	border = "0";
+	action = submitAction;
+	height = "31";
+	framework = "JavaDirectToWeb";
+};
+
+Text1: WOText {
+	cols = 80;
+	rows = 6;
+	value = currentObject.comment;
+}
+

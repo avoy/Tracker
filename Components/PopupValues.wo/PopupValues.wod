@@ -1,0 +1,5 @@
+PopUpButton1: WOPopUpButton {
+	item = iteratedValue;
+	list = potentialValues;
+	selection = selectedValue;
+}

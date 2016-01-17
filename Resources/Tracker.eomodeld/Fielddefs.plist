@@ -1,0 +1,64 @@
+{
+    attributes = (
+        {
+            columnName = description; 
+            externalType = mediumtext; 
+            name = defDescription; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            columnName = fieldid; 
+            externalType = mediumint; 
+            name = fieldid; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = mailhead; 
+            externalType = tinyint; 
+            name = mailhead; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = name; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = obsolete; 
+            externalType = tinyint; 
+            name = obsolete; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = sortkey; 
+            externalType = smallint; 
+            name = sortkey; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }
+    ); 
+    attributesUsedForLocking = (fieldid, sortkey, name, defDescription, mailhead, obsolete); 
+    className = EOGenericRecord; 
+    classProperties = (sortkey, name, defDescription, mailhead, obsolete); 
+    externalName = fielddefs; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (sortkey, name, defDescription, mailhead, obsolete); 
+        uniqueID = 196630532; 
+    }; 
+    name = Fielddefs; 
+    primaryKeyAttributes = (fieldid); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

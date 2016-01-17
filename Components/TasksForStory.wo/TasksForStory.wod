@@ -1,0 +1,847 @@
+Conditional1: WOConditional {
+	condition = other.@count;
+}
+
+Conditional10: WOConditional {
+	condition = other.@count;
+}
+
+Conditional11: WOConditional {
+	condition = parentItem.allChildren.@count;
+}
+
+Conditional12: WOConditional {
+	condition = parentItem.isStoryReviewedSet;
+}
+
+Conditional13: WOConditional {
+	condition = parentItem.isEngDocsCompleted;
+}
+
+Conditional14: WOConditional {
+	condition = parentItem.isEngDocsNotCompleted;
+}
+
+Conditional15: WOConditional {
+	condition = parentItem.isEngDocsCompletedSet;
+}
+
+Conditional16: WOConditional {
+	condition = parentItem.isCodeReviewed;
+}
+
+Conditional17: WOConditional {
+	condition = parentItem.isCodeNotReviewed;
+}
+
+Conditional18: WOConditional {
+	condition = parentItem.isCodeReviewedSet;
+}
+
+Conditional19: WOConditional {
+	condition = parentItem.isUnitTestsCompleted;
+}
+
+Conditional2: WOConditional {
+	condition = other.@count;
+	negate = true;
+}
+
+Conditional20: WOConditional {
+	condition = parentItem.isUnitTestsNotCompleted;
+}
+
+Conditional21: WOConditional {
+	condition = parentItem.isUnitTestsCompletedSet;
+}
+
+Conditional22: WOConditional {
+	condition = parentItem.isStoryReviewed;
+}
+
+Conditional23: WOConditional {
+	condition = parentItem.isStoryNotReviewed;
+}
+
+Conditional24: WOConditional {
+	condition = parentItem.isStoryReviewedNA;
+}
+
+Conditional25: WOConditional {
+	condition = parentItem.isEngDocsCompletedNA;
+}
+
+Conditional26: WOConditional {
+	condition = parentItem.isCodeReviewedNA;
+}
+
+Conditional27: WOConditional {
+	condition = parentItem.isUnitTestsCompletedNA;
+}
+
+Conditional28: WOConditional {
+	condition = isListEmpty;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = tasks.@count;
+}
+
+Conditional4: WOConditional {
+	condition = tasks.@count;
+	negate = true;
+}
+
+Conditional5: WOConditional {
+	condition = errorMessage.length;
+}
+
+Conditional6: WOConditional {
+	condition = qaTasks.@count;
+	negate = true;
+}
+
+Conditional7: WOConditional {
+	condition = qaTasks.@count;
+}
+
+Conditional8: WOConditional {
+	condition = tasks.@count;
+}
+
+Conditional9: WOConditional {
+	condition = qaTasks.@count;
+}
+
+Hyperlink1: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+}
+
+Hyperlink10: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+
+}
+
+Hyperlink11: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+
+}
+
+Hyperlink12: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+}
+
+Hyperlink13: WOHyperlink {
+	href = urlForAll;
+	target = "_blank";
+}
+
+Hyperlink14: WOHyperlink {
+	href = urlForTasks;
+	target = "_blank";
+}
+
+Hyperlink15: WOHyperlink {
+	href = urlForQATasks;
+	target = "_blank";
+}
+
+Hyperlink16: WOHyperlink {
+	href = urlForOthers;
+	target = "_blank";
+}
+
+Hyperlink2: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+}
+
+Hyperlink3: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+}
+Hyperlink30: WOHyperlink {
+	href = "http://jquery.com";
+}
+
+Hyperlink4: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+}
+
+Hyperlink5: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+
+}
+
+Hyperlink6: WOHyperlink {
+	href = anEo.bugURL;
+	target="_blank";
+
+
+}
+
+Hyperlink7: WOHyperlink {
+	href = parentItem.bugURL;
+	target = "_blank";
+}
+
+Hyperlink8: WOHyperlink {
+	href = parentItem.treeURL;
+	target = "_blank";
+}
+
+Hyperlink9: WOHyperlink {
+	action = addChild;
+}
+
+Image1: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image2: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image3: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image4: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image5: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image6: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Image7: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOn.gif";
+}
+
+Image8: WOImage {
+	src = "http://www.lightningbolt.com/image/CheckboxOff.gif";
+}
+
+Repetition1: WORepetition {
+	item = anEo;
+	list = resolvedNontasks;
+}
+
+Repetition10: WORepetition {
+	item = sprintKey;
+	list = sprintKeys;
+}
+
+Repetition11: WORepetition {
+	item = anEo;
+	list = storiesForCurrentSprint;
+}
+
+Repetition2: WORepetition {
+	item = anEo;
+	list = openNontasks;
+}
+
+Repetition3: WORepetition {
+	item = anEo;
+	list = closedNontasks;
+}
+
+Repetition4: WORepetition {
+	item = anEo;
+	list = openTasks;
+}
+
+Repetition5: WORepetition {
+	item = anEo;
+	list = resolvedTasks;
+}
+
+Repetition6: WORepetition {
+	item = anEo;
+	list = closedTasks;
+}
+
+Repetition7: WORepetition {
+	item = anEo;
+	list = closedQATasks;
+}
+
+Repetition8: WORepetition {
+	item = anEo;
+	list = resolvedQATasks;
+}
+
+Repetition9: WORepetition {
+	item = anEo;
+	list = openQATasks;
+}
+
+String1: WOString {
+	value = anEo.bugId;
+}
+
+String10: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String100: WOString {
+	value = anEo.versionShort;
+}
+
+String101: WOString {
+	value = anEo.versionShort;
+}
+
+String102: WOString {
+	value = anEo.versionShort;
+}
+
+String103: WOString {
+	value = anEo.versionShort;
+}
+
+String104: WOString {
+	value = anEo.versionShort;
+}
+
+String105: WOString {
+	value = anEo.lastModified;
+}
+
+String106: WOString {
+	value = anEo.lastModified;
+}
+
+String107: WOString {
+	value = anEo.lastModified;
+}
+
+String108: WOString {
+	value = anEo.lastModified;
+}
+
+String109: WOString {
+	value = anEo.lastModified;
+}
+
+String11: WOString {
+	value = anEo.type;
+}
+
+String110: WOString {
+	value = anEo.lastModified;
+}
+
+String111: WOString {
+	value = anEo.lastModified;
+}
+
+String112: WOString {
+	value = anEo.lastModified;
+}
+
+String113: WOString {
+	value = anEo.lastModified;
+}
+
+String114: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String115: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String116: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String117: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String118: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String119: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String12: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String120: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String121: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String122: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String123: WOString {
+	value = parentItem.version;
+}
+
+String124: WOString {
+	value = selectedProject;
+}
+
+String125: WOString {
+	value = selectedProject;
+}
+
+String126: WOString {
+	value = anEo.shortDesc;
+}
+
+String127: WOString {
+	value = selectedProject;
+}
+
+String13: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String14: WOString {
+	value = anEo.assignee.realname;
+}
+
+String15: WOString {
+	value = anEo.bugStatus;
+}
+
+String16: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String17: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String18: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String19: WOString {
+	value = anEo.bugStatus;
+}
+
+String2: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String20: WOString {
+	value = anEo.assignee.realname;
+}
+
+String21: WOString {
+	value = anEo.type;
+}
+
+String22: WOString {
+	value = anEo.bugId;
+}
+
+String23: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String24: WOString {
+	value = anEo.shortDesc;
+}
+
+String25: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String26: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String27: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String28: WOString {
+	value = anEo.bugStatus;
+}
+
+String29: WOString {
+	value = anEo.assignee.realname;
+}
+
+String3: WOString {
+	value = anEo.shortDesc;
+}
+
+String30: WOString {
+	value = anEo.type;
+}
+
+String31: WOString {
+	value = anEo.type;
+}
+
+String32: WOString {
+	value = anEo.bugId;
+}
+
+String33: WOString {
+	value = anEo.shortDesc;
+}
+
+String34: WOString {
+	value = anEo.bugId;
+}
+
+String35: WOString {
+	value = anEo.shortDesc;
+}
+
+String36: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String37: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String38: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String39: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String4: WOString {
+	value = anEo.assignee.realname;
+}
+
+String40: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String41: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String42: WOString {
+	value = anEo.bugStatus;
+}
+
+String43: WOString {
+	value = anEo.assignee.realname;
+}
+
+String44: WOString {
+	value = anEo.type;
+}
+
+String45: WOString {
+	value = anEo.bugId;
+}
+
+String46: WOString {
+	value = anEo.shortDesc;
+}
+
+String47: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String48: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String49: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String5: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String50: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String51: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String52: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String53: WOString {
+	value = anEo.bugStatus;
+}
+
+String54: WOString {
+	value = anEo.assignee.realname;
+}
+
+String55: WOString {
+	value = anEo.type;
+}
+
+String56: WOString {
+	value = anEo.bugId;
+}
+
+String57: WOString {
+	value = anEo.shortDesc;
+}
+
+String58: WOString {
+	value = labelForSprintKey;
+}
+
+String59: WOString {
+	value = labelForSprint;
+}
+
+String6: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String60: WOString {
+	value = parentItem.shortDesc;
+}
+
+String61: WOString {
+	value = parentItem.bugId;
+}
+
+String62: WOString {
+	value = errorMessage;
+}
+
+String63: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String64: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String65: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String66: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String67: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String68: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String69: WOString {
+	value = anEo.bugStatus;
+}
+
+String7: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String70: WOString {
+	value = anEo.assignee.realname;
+}
+
+String71: WOString {
+	value = anEo.type;
+}
+
+String72: WOString {
+	value = anEo.bugId;
+}
+
+String73: WOString {
+	value = anEo.shortDesc;
+}
+
+String74: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String75: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String76: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String77: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String78: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String79: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String8: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String80: WOString {
+	value = anEo.bugStatus;
+}
+
+String81: WOString {
+	value = anEo.assignee.realname;
+}
+
+String82: WOString {
+	value = anEo.type;
+}
+
+String83: WOString {
+	value = anEo.bugId;
+}
+
+String84: WOString {
+	value = anEo.shortDesc;
+}
+
+String85: WOString {
+	value = anEo.statusWhiteboard;
+}
+
+String86: WOString {
+	value = anEo.percentCompleteString;
+}
+
+String87: WOString {
+	value = anEo.remainingTime;
+	numberformat = "0";
+}
+
+String88: WOString {
+	value = anEo.numHoursWorked;
+	numberformat = "0";
+}
+
+String89: WOString {
+	value = anEo.currentEstimate;
+	numberformat = "0";
+}
+
+String9: WOString {
+	value = anEo.bugStatus;
+}
+
+String90: WOString {
+	value = anEo.estimatedTime;
+	numberformat = "0";
+}
+
+String91: WOString {
+	value = anEo.bugStatus;
+}
+
+String92: WOString {
+	value = anEo.assignee.realname;
+}
+
+String93: WOString {
+	value = anEo.type;
+}
+
+String94: WOString {
+	value = anEo.bugId;
+}
+
+String95: WOString {
+	value = anEo.shortDesc;
+}
+
+String96: WOString {
+	value = anEo.versionShort;
+}
+
+String97: WOString {
+	value = anEo.versionShort;
+}
+
+String98: WOString {
+	value = anEo.versionShort;
+}
+
+String99: WOString {
+	value = anEo.versionShort;
+}
+
+fontRelease: WOGenericContainer {
+	color = releaseFontColor;
+	elementName = "font";
+	size=2;
+}

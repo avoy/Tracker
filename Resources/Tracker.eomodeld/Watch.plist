@@ -1,0 +1,28 @@
+{
+    attributes = (
+        {
+            columnName = watched; 
+            externalType = mediumint; 
+            name = watched; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = watcher; 
+            externalType = mediumint; 
+            name = watcher; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    className = EOGenericRecord; 
+    classProperties = (watcher, watched); 
+    externalName = watch; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {"_clientClassPropertyNames" = (watcher, watched); uniqueID = 196630348; }; 
+    name = Watch; 
+    primaryKeyAttributes = (watcher, watched); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

@@ -1,0 +1,113 @@
+{
+    attributes = (
+        {
+            columnName = "classification_id"; 
+            externalType = smallint; 
+            name = classificationId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = defaultmilestone; 
+            externalType = varchar; 
+            name = defaultmilestone; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 20; 
+        }, 
+        {
+            columnName = disallownew; 
+            externalType = tinyint; 
+            name = disallownew; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = maxvotesperbug; 
+            externalType = smallint; 
+            name = maxvotesperbug; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = milestoneurl; 
+            externalType = tinytext; 
+            name = milestoneurl; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 255; 
+        }, 
+        {
+            columnName = id; 
+            externalType = smallint; 
+            name = productId; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = productName; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 64; 
+        }, 
+        {
+            columnName = description; 
+            externalType = mediumtext; 
+            name = productsDescription; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 16777215; 
+        }, 
+        {
+            columnName = votesperuser; 
+            externalType = smallint; 
+            name = votesperuser; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = votestoconfirm; 
+            externalType = smallint; 
+            name = votestoconfirm; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }
+    ); 
+    attributesUsedForLocking = (productId, productName); 
+    className = EOGenericRecord; 
+    classProperties = (productName, productId, versions); 
+    externalName = products; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (
+            milestoneurl, 
+            maxvotesperbug, 
+            votestoconfirm, 
+            votesperuser, 
+            classificationId, 
+            defaultmilestone, 
+            disallownew, 
+            productsDescription
+        ); 
+        uniqueID = 196630449; 
+    }; 
+    name = Products; 
+    primaryKeyAttributes = (productId); 
+    relationships = (
+        {
+            destination = Versions; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = productId; sourceAttribute = productId; }); 
+            name = versions; 
+        }
+    ); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

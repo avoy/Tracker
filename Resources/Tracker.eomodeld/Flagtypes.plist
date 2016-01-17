@@ -1,0 +1,153 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = "cc_list"; 
+            externalType = varchar; 
+            name = ccList; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 200; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = description; 
+            externalType = text; 
+            name = flagTypeDescription; 
+            valueClassName = NSString; 
+            valueType = C; 
+            width = 65535; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "grant_group_id"; 
+            externalType = mediumint; 
+            name = grantGroupId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = id; 
+            externalType = smallint; 
+            name = id; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "is_active"; 
+            externalType = tinyint; 
+            name = isActive; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "is_multiplicable"; 
+            externalType = tinyint; 
+            name = isMultiplicable; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "is_requestable"; 
+            externalType = tinyint; 
+            name = isRequestable; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "is_requesteeble"; 
+            externalType = tinyint; 
+            name = isRequesteeble; 
+            precision = 3; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = name; 
+            externalType = varchar; 
+            name = name; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 50; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "request_group_id"; 
+            externalType = mediumint; 
+            name = requestGroupId; 
+            precision = 7; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = sortkey; 
+            externalType = smallint; 
+            name = sortkey; 
+            precision = 5; 
+            valueClassName = NSNumber; 
+            valueType = s; 
+        }, 
+        {
+            columnName = "target_type"; 
+            externalType = char; 
+            name = targetType; 
+            valueClassName = NSString; 
+            valueType = c; 
+            width = 1; 
+        }
+    ); 
+    attributesUsedForLocking = (
+        id, 
+        isRequestable, 
+        targetType, 
+        isMultiplicable, 
+        flagTypeDescription, 
+        grantGroupId, 
+        isActive, 
+        ccList, 
+        name, 
+        sortkey, 
+        isRequesteeble, 
+        requestGroupId
+    ); 
+    className = EOGenericRecord; 
+    classProperties = (
+        isRequestable, 
+        targetType, 
+        isMultiplicable, 
+        flagTypeDescription, 
+        grantGroupId, 
+        isActive, 
+        ccList, 
+        name, 
+        sortkey, 
+        isRequesteeble, 
+        requestGroupId
+    ); 
+    externalName = flagtypes; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (
+            isRequestable, 
+            targetType, 
+            isMultiplicable, 
+            flagTypeDescription, 
+            grantGroupId, 
+            isActive, 
+            ccList, 
+            name, 
+            sortkey, 
+            isRequesteeble, 
+            requestGroupId
+        ); 
+        uniqueID = 196630538; 
+    }; 
+    name = Flagtypes; 
+    primaryKeyAttributes = (id); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}
