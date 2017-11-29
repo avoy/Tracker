@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'ant compile'
+                sh '/usr/local/apache-ant-1.9.3/bin/ant compile'
             }
         }
     }
